@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/goi_y_item_rl"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_while">
+    <TextView
+        android:id="@+id/tu_khoa_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="Vinh Tuy, Ha Noi"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/search_goi_y_item_margin"
+        android:paddingTop="@dimen/search_goi_y_item_margin"
+        android:paddingStart="@dimen/search_goi_y_item_margin"
+        android:textStyle="normal" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/search_goi_y_item_margin"
+        android:paddingEnd="@dimen/search_goi_y_item_margin"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/arrow_right"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/margin_all"
+        android:layout_marginEnd="@dimen/margin_all"
+        android:background="@color/bg_line_listview"
+        android:layout_below="@+id/tu_khoa_tv">
+
+    </View>
+</RelativeLayout>

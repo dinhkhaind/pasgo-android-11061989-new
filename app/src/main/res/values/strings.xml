@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_slogan_share_email">PasGo- Reservation Smart Applications!</string>
+    <string name="connect_error_check_network">Server connection  error. Please check the internet connection again</string>
+    <string name="loading_data">Loading data...</string>
+    <string name="loi_ko_the_ket_noi_den_may_chu">Can not connect to server</string>
+
+    <!-- Menu -->
+    <string name="goi_xe">Call Driver</string>
+    <string name="goi_xe_h">CALL DRIVER</string>
+    <string name="lich_su_chuyen_di">Successful Trips</string>
+    <string name="menu_tai_tro">PasGo Card</string>
+    <string name="menu_check_in">Reserve</string>
+    <string name="gioi_thieu_ban_be">Share PasGo</string>
+    <string name="thong_tin_ca_nhan">My account</string>
+    <string name="dang_ki_tai_khoan">Register</string>
+    <string name="huong_dan_su_dung_menu">Guide</string>
+    <string name="dk_thong_tin">Register</string>
+    <string name="cai_dat_menu">Setting(Thiết Lập)</string>
+    <string name="thoat_ung_dung">Exit</string>
+    <string name="cuocgoi">Call</string>
+    <string name="mien_phi">Free</string>
+    <string name="diem_quan_tam">Favorite</string>
+    <!-- End  Menu -->
+    <string name="chon">Select</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <string name="thoi_gian">00:00:00</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix"></string>
+    <string name="time_ago_seconds">A few minutes before</string>
+    <string name="time_ago_minute">A first second</string>
+    <string name="time_ago_minutes">%d first second</string>
+    <string name="time_ago_hour">A first hour</string>
+    <string name="time_ago_hours">%d first hour</string>
+    <string name="time_ago_day">Yesterday</string>
+    <string name="time_ago_days">%d yesterday</string>
+    <string name="time_ago_week">Last week</string>
+    <string name="time_ago_weeks">%d last week</string>
+    <string name="time_ago_month">A last month</string>
+    <string name="time_ago_months">%d last month</string>
+    <string name="time_ago_year">one year ago</string>
+    <string name="time_ago_years">%d year ago</string>
+    <string name="time_minutes">Minute</string>
+    <string name="thong_tin_dat_xe">Driver finding</string>
+    <string name="xac_nhan_title">Confirmation</string>
+    <string name="theo_doi_tai_xe">Tracking driver</string>
+    <string name="dang_tim_tai_xe">Finding drivers</string>
+    <string name="dia_diem_hien_tai">My location</string>
+    <string name="plz_nhap_diem_dau_cuoi">Enter start address and destination</string>
+    <string name="dia_diem_den">Destination</string>
+    <string name="chon_loai_xe">Select car</string>
+    <string name="tin_khuyen_mai">Announcements</string>
+    <string name="lich_su_chuyen_di1">HISTORY</string>
+    <string name="di_xe_mien_phi_menu">Free ride</string>
+    <string name="di_xe_mien_phi">FREE RIDE</string>
+    <string name="search_dia_diem">Search Places</string>
+    <string name="search_dia_diem_don">From</string>
+    <string name="search_dia_diem_den">To</string>
+    <string name="huy">Cancel</string>
+    <string name="chia_se">Sharing</string>
+    <string name="message_enable_network">Internet connection is interrupted. Do you want to turn on it?</string>
+    <string name="no_know_location">Unlocated. The default location will be displayed</string>
+    <string name="title_error_network">Not internet connection. Please try again</string>
+    <string name="warning_time_dat_truoc">Service is not available now. Please submit request about 30 minutes before.</string>
+    <string name="tb_dich_vu_google_bi_vo_hieu_hoa">Location service is disabled</string>
+    <string name="setting">Setting</string>
+    <string name="dat_xe">Call driver</string>
+    <string name="khoang">Estimation: </string>
+    <string name="thu_lai">Retry</string>
+    <string name="complete">DONE</string>
+    <string name="goi_hang">Call support</string>
+    <string name="hang_xe">Taxi company: </string>
+    <string name="loai_xe">Car type: </string>
+    <string name="phut">Minute</string>
+    <string name="taxi">Taxi: </string>
+    <string name="dang_dung_duong_don_ban"> Driver is coming: </string>
+    <string name="da_bao_gom_khuyen_mai">include sponsor:</string>
+    <string name="khong_co_khuyen_mai">No having any sponsors</string>
+    <string name="khong_co_du_lieu">No data</string>
+    <string name="chua_co_diem_nao">Sorry, we can not find the location which you requested. Please try again.</string>
+    <string name="link_kmNodata"><a href="http://pasgo.vn/">PasGo.VN</a></string>
+    <string name="khong_co_dia_diem">Undefine the place.</string>
+    <string name="tb_khong_the_ket_noi_voi_voi_may_chu">Can not connect to server</string>
+    <string name="tb_thong_tin_khuyen_mai">Sponsor for new members</string>
+    <string name="btn_thu_lai">Retry</string>
+    <string name="tb_tai_du_lieu">Loading...</string>
+    <string name="tb_chung_toi_khong_the_lien_lac_duoc">We can not communicate with taxi company.</string>
+    <string name="do_khoang_cach_duong_di">Caculating the distance.</string>
+    <string name="tb_lai_xe_huy_dat_xe">The order is rejected</string>
+    <string name="tb_toi_da_den_don_ban"> Driver has to meet you.</string>
+    <string name="tb_khach_len_xe"> Passengers got in taxi.</string>
+    <string name="tb_khach_xuong_xe">Passengers got off taxi.</string>
+    <string name="tb_chuyen_di_ket_thuc"> Drivers finished the ride.</string>
+    <string name="tb_thoi_gian_dat_xe">Pick-up time must be more than the current time</string>
+    <string name="huy_dat_xe">Are you sure to cancel request</string>
+    <string name="tb_xac_dinh_vi_tri"> Defining the location </string>
+    <string name="tb_thoat_app">Are you sure to close the application?</string>
+    <string name="tb_khong_tim_thay_duong_di">Not find the route to get passenger.</string>
+    <string name="title_connect_channel_state_connect">Connected</string>
+    <string name="title_connect_channel_state_reconnect">Reconnecting</string>
+    <string name="title_connect_channel_state_disconnect">Disconnected</string>
+    <string name="title_connect_channel_state_success">Message received</string>
+    <string name="title_connect_channel_state_error">Error connection</string>
+    <string name="title_not_get_current_location">Unlocatable</string>
+    <string name="title_put_down_to_download">Scroll down to download the data</string>
+    <string name="title_release_to_update">Drop to update</string>
+    <string name="title_no_driver_near_here">Not having any drivers around you. Please try again after a few minutes</string>
+    <!-- Dat xe -->
+    <string name="dat_xe_dia_chi_don">From:\u0020</string>
+    <string name="dat_xe_dia_chi_den">To:\u0020</string>
+    <string name="dat_xe_nhan_chon_dia_diem">Touch here to select the destination</string>
+    <string name="dat_xe_mo_ta_them_de_taxi_don">More describing for the convenient of driver coming</string>
+    <string name="dat_xe_goi_ngay_bay_gio">Time: Now</string>
+    <string name="dat_xe_ma_khuyen_mai">Use Code sponsors here</string>
+    <string name="dat_xe_text">CALL TAXI</string>
+    <string name="dat_xe_thong_bao_thuong">Thank you for using PasGo.</string>
+    <string name="dat_xe_thong_bao">The system automatically search taxi company/ type of taxi following your choice. or you can choose taxi company, type of taxi above the system.</string>
+    <string name="dat_xe_phut">Minute</string>
+    <string name="dat_xe_chon_thoi_gian_de_taxi_don">Fill in pick-up time</string>
+    <string name="dat_xe_popup_thong_bao">Check order information again, please!</string>
+    <string name="nhap_binh_luan">Leave your comment</string>
+    <string name="nhap_tin_nhan">Write your message</string>
+    <string name="toi">Me:</string>
+    <!-- End dat xe -->
+    <string name="tb_tooltip_goixe">Call driver taxi hit enter call driver</string>
+    <string name="tb_tooltip_khuyenmai">Hit enter to watch sponsor news</string>
+    <string name="tb_tooltip_datxe">Show detail, hit enter CONTINUE</string>
+    <string name="tb_tooltip_tieptuc">Hit enter CONFIRM to find driver</string>
+    <string name="tb_tooltip_hoanthanh">Hit enter Done to complete call driver</string>
+    <string name="tb_tooltip_goihang">Hit enter Call support number to be supported</string>
+    <string name="tb_tooltip_tdtx_goi_di_dong">Hit enter Call mobile number to comunicate with driver</string>
+    <string name="tb_tooltip_tdtx_xong">Hit enter Done to complete call taxi</string>
+
+
+    <!-- toopTip -->
+
+
+    <!-- end tooltip -->
+    <!-- Dat xe -->
+    <string name="loai_xe_">Car type:\u0020 </string>
+    <string name="chon_loai_xe_tat_ca">Car types: All</string>
+    <string name="chon_loai_xe_taxi_4_cho_hatback">Taxi 4 chỗ hatback</string>
+    <string name="chon_loai_xe_taxi_4_cho_sedan">Taxi 4 chỗ sedan</string>
+    <string name="chon_loai_xe_taxi_7_cho">Taxi 7 chỗ</string>
+    <string name="tiep_tuc">CONTINUES</string>
+    <string name="uoc_tinh">Estimation</string>
+    <!-- End dat xe -->
+
+    <string name="tim_kiem_dd">Search</string>
+    <string name="search_address">Search address</string>
+    <string name="bt_huy">Cancel</string>
+    <string name="expand_more">Read more</string>
+    <string name="dia_chi_da_tim">Address found</string>
+    <string name="dia_chi_quen_thuoc">Favorite</string>
+    <string name="vt_hien_tai">Current Location</string>
+    <string name="doi_sdt">Are you sure want to change phone number</string>
+    <string name="dia_diem_quen_thuoc">Favorite</string>
+    <string name="dia_diem_quen_thuoc1">Favorite</string>
+    <string name="ho_va_ten">Name (*)</string>
+    <string name="nhap_tt_nhan_xet">Enter your comment</string>
+    <string name="ho_ten">Name:</string>
+    <string name="sdt">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="so_dt">Phone number (*)</string>
+    <string name="email_ko_bat_buoc">Email (*)</string>
+    <string name="nguoi_gioi_thieu_ko_bat_buoc">Inviter code (Optinal)</string>
+    <string name="thong_tin_cua_ban">YOUR INFORMATION</string>
+    <string name="nhap_sdt_chinhxac">Fill in your correct phone number to get active code</string>
+    <string name="nhap_txt1">Read Using term and Security policy</string>
+    <string name="nhap_txt3">Using term</string>
+    <string name="nhap_txt4"> By registering, you have agreed with </string>
+    <string name="nhap_txt5">Security policy</string>
+
+    <!-- tim tai xe -->
+    <string name="dang_tim_tai_xe_no_driver">Finding drivers</string>
+    <string name="dang_tim_tai_xe_s">Finding drivers (</string>
+    <string name="watting_driver">Waiting for driver</string>
+    <string name="have_number_driver">Have %s driver respond</string>
+    <string name="have_all_driver_left">Have  </string>
+    <string name="have_all_driver_right"> Searching taxi  \'s respond &lt;font color=\'red\'>(%s)&lt;/font></string>
+    <string name="tim_tai_xe_ban_1">Call taxi successful. We ll send you feedback as soon as possible.</string>
+    <string name="price_open_door">Giá mở cửa:</string>
+    <!-- end tim tai xe -->
+    <string name="price_unit">VNĐ</string>
+    <string name="goi_di_dong">Call phone</string>
+    <string name="goi">Call</string>
+    <string name="gui">Send</string>
+    <string name="gui_lai">Send again</string>
+    <string name="goi_tai_xe">Call driver: </string>
+    <string name="xong">Done</string>
+    <string name="dong">Close</string>
+    <string name="gioi_thieu_pastaxi">Take a taxi quickly and free. Download here:</string>
+    <string name="gioi_thieu_pastaxi_sms">Take a taxi quickly and free. Download here:</string>
+    <string name="da_duoc_luu">Place </string>
+    <string name="danh_gia_thanh_cong">Rating successful. </string>
+    <string name="dat_xe_truoc_tc">Advanced call taxi </string>
+    <string name="input_sdt_kh">Fill in your phone number! </string>
+    <string name="input_sdt_kh_ed">Fill in your phone number</string>
+    <string name="noi_dung_tb_dat_xe">Successfully call taxi in advance. the detailed information will be sent to you 15 mins before your ride. More support, please call 19006005</string>
+    <string name="ban_danh_gia_tx">Voting for driver </string>
+    <string name="dia_diem_da_duoc_luu">Saved to the favourite place</string>
+    <string name="key_search_empty">Enter Keyword</string>
+    <string name="dang_cach">Estimate</string>
+    <string name="da_gap">Yes</string>
+    <string name="rate_pastaxi">Rating now </string>
+    <string name="remind_me_later">Remind later</string>
+    <string name="no_rating">No, thanks</string>
+    <string name="chua_gap">No</string>
+    <!-- thong tin tai xe -->
+    <string name="tttx_da_co_tai_xe">DRIVER FOUND!</string>
+    <string name="tttx_theo_doi_tai_xe_">TRACKING DRIVER</string>
+    <string name="ban_da_gap_tai_xe_chua">Have you meet to driver?</string>
+    <string name="rat_tiec_tb">Sorry, we can not serve you, please give your reasons.</string>
+    <string name="cho_xe_qua_lau">Taxi was taking too long</string>
+    <string name="hoac_ly_do_khac">Other reason...</string>
+    <string name="khach">Client: </string>
+    <string name="kh_goi_ho">Client </string>
+    <string name="tai_xe">Driver: </string>
+    <string name="kem">Not good </string>
+    <string name="tot">Good </string>
+    <string name="dong_y">OK</string>
+    <string name="confirm">Confirm</string>
+    <string name="change">Change</string>
+    <string name="ban_chac_chan_muon_huy">Are you sure want to cancel? </string>
+    <string name="chat_error_check_network">Can\'t send message. Please check the internet connection again</string>
+    <!-- end thong tin tai xe -->
+
+    <string name="dang_ky_info">Register now</string>
+    <string name="thieu_thong_tin">Missing information</string>
+    <string name="email_kott">Email is invalid</string>
+    <string name="ok">OK</string>
+    <string name="sua_info_cn">Save</string>
+    <string name="xoa_acc">Remove account</string>
+    <string name="xoa_txt">Delete</string>
+    <string name="xoa_acc_thanh_cong">Remove account successfully</string>
+    <string name="sua_info">Edit</string>
+    <string name="kich_hoat">Activation</string>
+    <string name="ma_kich_hoat">Activation code</string>
+    <string name="ma_kich_hoat_des">Enter the activation code which was sent to your phone number</string>
+    <string name="ma_kich_hoat_plz">The activation code has been sent to your phone number. It may take up to minutes if the network is busy</string>
+    <string name="lich_su_tim_kiem">History</string>
+    <string name="lich_su_diem_qt">History</string>
+    <string name="share_introduce">PasGo is a network of restaurants, help you choose the right restaurant, nearest and easy to book restaurants, free. Next-Generation Catering: Every day PasGo has more than 2,000 quality dining options, which are offered free of charge through booking restaurants before going out to PasGo! Right now you no longer have to buy Voucher / Deal to eat, all just use PasGo to enjoy free food, free!</string>
+    <string name="gio_thieu_link"><a href="http://google.com.vn/">Register for API</a></string>
+    <string name="title_share_pastaxi">Sharing PasGo </string>
+
+    <!-- noi_dung_sheare -->
+    <string-array name="noi_dung_sheare_0">
+        <item>Take a taxi quickly and free. Download here.</item>
+        <item>Download the new free application to book taxi quickly.</item>
+        <item>Call taxi taxi by one touch. Download here.</item>
+        <item>The convenient free app to get a taxi. Download here.</item>
+    </string-array>
+    <string name="share_facebook_email_content">PasGo is a good restaurant network. Restaurant reservations offer free attractive incentives</string>
+    <string name="share_sms_content">PasGo is a good restaurant network. Restaurant reservations offer free attractive incentives</string>
+    <string name="download_app">Download app</string>
+    <string name="download_app_sms">Download app</string>
+    <!-- rate app -->
+    <string name="rate_pastxi_title">Rating PasGo </string>
+    <string name="rate_pastxi_title_message">Thank for your using PasGo, please support us by voting.</string>
+    <string name="link"><a href="https://www.google.pl/">Google</a></string>
+    <string name="link_gui_lai1">If you don\'t receive a activation code, please touch: </string>
+    <string name="link_gui_lai2">Resend </string>
+    <string name="bien_so_xe">Car number : </string>
+    <string name="di_dong">Mobile: </string>
+    <string name="goi_di_dong_cho_tx">Call driver</string>
+    <string name="diem_don">From : </string>
+    <string name="diem_den">To : </string>
+    <string name="gia_tien">Price : </string>
+    <string name="thong_tin_tai_xe">DRIVER INFORMATION </string>
+    <string name="thong_tin_chuyen_di">TRIP INFORMATION </string>
+    <string name="ban_chua_dk">You have not register</string>
+    <string name="ban_chua_danh_gia">You haven\'t voted driver yet. Please leave your rating</string>
+    <string name="ban_chua_dk_tk">You have not register</string>
+    <string name="gioi_thieu_title">Share</string>
+    <string name="huong_dan_sd">USER GUIDE</string>
+    <string name="website">Website :</string>
+    <string name="pastaxi_vn">http://pasgo.vn</string>
+    <string name="dieu_khoan_su_dung">Terms of use PasGo</string>
+    <string name="chinh_sach_bao_mat">Security policy</string>
+    <string name="san_pham_cung_nha_phat_trien">Products of provider</string>
+    <string name="chia_se_pastaxi_voi_ban_be">Sharing PasGo</string>
+    <string name="menu_huong_dan_su_dung">Introduction</string>
+    <string name="menu_binh_chon">PasGo Rating</string>
+    <string name="error_connect_to_driver">can\'t connect to driver</string>
+    <string name="plz_check_gps">Please turn on GPS to locate better</string>
+    <string name="cancelled">Cancel</string>
+    <string name="permission_not_granted">Fail. Please, try again after a few minutes.</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected></string>
+    <string name="no_place_selected">&lt;No place selected></string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="description_register">You haven\'t registered.\nRegister an account, please</string>
+    <string name="description_register_from_khuyen_mai">Please Login/Register an account to use this functionality</string>
+    <string name="btnRegister">Register</string>
+    <string name="dia_chi_ban_do">Address</string>
+    <string name="yeu_thich">My favorite</string>
+    <string name="searching">Searching...</string>
+    <!-- Menu -->
+
+    <string name="vnd">vnđ</string>
+    <string name="message_unique_phone">Your phone number has been registered on other devices. Please register again..</string>
+    <string name="message_register">Register again</string>
+    <string name="pastaxi_da_tim_dc_tx">Register again</string>
+    <string name="ket_noi_mang_yeu">PasGo</string>
+    <string name="ket_noi_mang_yeu_and_connecttoserver">Internal server error. Please try again </string>
+    <string name="xoa_tai_khoan">Remove account</string>
+    <string name="xoa_tai_khoan_">Do you want remove account ?</string>
+    <string name="mat_ket_noi">Disconnect </string>
+    <string name="ket_noi_mang_yeu_ndung">Can\'t connect the network. Can\'t caculate the distance and taxi fare </string>
+
+    <string-array name="title_introduction">
+        <item>Home</item>
+        <item>Map</item>
+        <item>HOT Deals</item>
+        <item>Detail destination</item>
+        <item>Reserve</item>
+        <item>Chat now</item>
+    </string-array>
+
+    <string name="tat_ca">All</string>
+    <string name="xem_tren_ban_do">Map</string>
+    <string name="dien_may">Điện máy</string>
+    <string name="am_thuc">Ẩm thực</string>
+    <string name="khach_san">Khách sạn</string>
+    <string name="thoi_trang">Thời trang</string>
+    <string name="mua_sam">Mua sắm</string>
+    <string name="lam_dep_spa">Làm đẹp &amp; Spa</string>
+    <string name="giai_tri">Giải trí</string>
+    <string name="suc_khoe">Sức khỏe</string>
+    <string name="dang_tim_tai_xe_ko_nen_thoat"> Please stay still while we are looking for a driver.</string>
+    <string name="dat_xe_nhan_chon_dia_diem_partner">Free ride</string>
+    <string name="dat_xe_thong_bao_partner">Thank you for using PasGo </string>
+    <string name="chon_tinh">Select City</string>
+    <string name="ha_noi">Hà Nội </string>
+
+    <!-- So dien thoai tong dai- -->
+    <string name="goi_tong_dai_">Support: 19006005 </string>
+    <string name="tim_tai_xe_ban_2">Support: 19006005</string>
+    <string name="so_dt_tong_dai">19006005</string>
+    <string name="link_gui_lai3"> or call support number: 19006005</string>
+    <string name="hay_di_ngay">GO NOW</string>
+    <string name="di_mien_phi">FREE RIDE</string>
+    <string name="search_hint">Enter word for searching</string>
+    <string name="xem_thon_tin_ct">Show Detail: </string>
+    <string name="tai_day">Click here</string>
+    <string name="di_luon">Go now</string>
+    <string name="lich_su_">HISTORY</string>
+    <string name="image_view">Image</string>
+    <string name="het_han">This call is expired</string>
+    <string name="hom_nay">Today </string>
+    <string name="hom_qua">Yesterday </string>
+    <string name="khong_co_km">There is no information about your trip. Many interesting DESTINATION are waiting to be discovered. Please call taxi and go now!</string>
+    <string name="khong_co_kmv1">We are looking for partners in this field. Join with us to provide better service for our customers.</string>
+    <string name="chi_phi">Estimation:</string>
+    <string name="taxi_filter">Taxi </string>
+    <string name="mien_phi_filter">Sponsor </string>
+    <string name="not_facebook">Facebook is not installed on your phone </string>
+    <string name="khong_co_check_in">Not yet any reserve</string>
+    <!-- language- -->
+    <string name="language_cai_dat_chung">GENERAL </string>
+    <string name="language_title">Language( Ngôn ngữ) </string>
+    <string name="language_name">English </string>
+    <string name="language_tiengviet">Tiếng Việt </string>
+    <string name="language_tienganh">English </string>
+    <string name="km_nodata">Giải pháp PasGo - Ứng dụng Đặt chỗ Thông minh giúp người dùng tìm kiếm Nhà cung cấp sản phẩm/Dịch vụ gần nhất và đặt chỗ trực tuyến một cách nhanh chóng, tiện lợi!
+                            Đồng thời PasGo cũng giúp người dùng tìm các Nhà cung cấp với các ưu đãi tuyệt vời, đảm bảo cạnh tranh, uy tín, chất lượng và nhận ưu đãi hết sức dễ dàng chỉ với vài cú chạm!</string>
+    <string name="km_nodata_1">Mời bạn xem thêm tại: </string>
+    <string name="gia_taxi">Price: ~%sK</string>
+    <string name="khoang_cach">Distance: ~%sKm</string>
+    <string name="cach">Distance</string>
+    <string name="khoang_cach_common">Distance:</string>
+    <string name="tb_km">Thousands of prestigious Destination, quality with big incentives for members PasGo. Make Reserve/ Call driver form to experience and enjoy soon.</string>
+    <!-- phan them -->
+    <string name="ban_kinh">Radius: ~%s</string>
+    <string name="comment">Comment</string>
+    <string name="dat_xe_nhan_chon_diem_don">Fill in the start address</string>
+    <string name="read_more">Read more...</string>
+    <string name="doc_tiep">Read more</string>
+    <string name="promotion_to_driver">Discount %s</string>
+    <string name="promotion_code">Sponsor code(optional)</string>
+    <string name="diem_tai_tro">Destination</string>
+    <string name="tb_ma_tai_tro_khong_hople">Sponsor code is not valid. please fill in again\nCall for support: 19006005</string>
+    <string name="diem_duoc_tai_tro">Sponsor place</string>
+    <string name="tb_giam_tru_khuyen_mai">You get %s off for this route, you just have to pay for arising cost</string>
+    <string name="popup_chon_diem_don_title">You choose the place</string>
+    <string name="dia_chi_don">Location</string>
+    <string name="dia_chi_den">Destinaton</string>
+    <string name="check_in_exist">You have booked a reservation at &lt;b>%s&lt;/b>. See details in &lt;b>"Edit/Cancel reservation"&lt;/b> or call support: 19006005(1000đ/min).</string>
+    <!-- ma tai tro -->
+    <string name="ma_tai_tro">Sponsor code:</string>
+    <string name="menh_gia">Denomination:</string>
+    <string name="han_su_dung">Expiration date:</string>
+    <string name="di_ngay">Go now</string>
+    <string name="vui_long_xem_them">Please read more</string>
+    <string name="de_xuat_xem_them">Thêm</string>
+    <string name="thu_gon">Hide</string>
+    <string name="bang_gia">Price list &amp; Suggestions</string>
+    <string name="promotion_code_is_not_active">The sponsor code has not been active.\nSupport: 19006005 </string>
+    <string name="not_yet_ready">Inactive</string>
+    <string name="tb_phuc_vu_1">We have received your request, your driver will reach you in some minutes.</string>
+    <string name="tb_phuc_vu_2">Sorry, there are no drivers around here..</string>
+    <!-- menu -->
+    <string name="tai_khoan">Account</string>
+    <string name="dich_vu">SERVICES</string>
+    <string name="nhat_ki_su_dung">USER\'S DIARY</string>
+    <string name="thong_tin_pasgo">PasGo\'S INFOMATION</string>
+    <string name="ma">ID PasGo:</string>
+    <string name="reserve">Reserve</string>
+    <string name="reserve_now">Reserve Now</string>
+    <string name="noi_da_check_in">Reserved</string>
+    <string name="tim_kiem_dia_diem">Search</string>
+    <string name="check_in_info">Information</string>
+    <!-- check in Intro -->
+    <string name="diem_den_tai_tro">Destination</string>
+    <string name="tb_dat_xe_ma_tai_tro">Enter your sponsored code ( If existing ) to save money for your trip!</string>
+    <string name="support_number">Support: 19006005</string>
+    <string name="tb_chua_co_ma_tai_tro">You have not got any PasGo Card yet!</string>
+    <string name="read_less">View less</string>
+    <string name="gioi_han_check_in">The number of guests reserve can not be more than 30 times</string>
+    <string name="share_check_in">Share reserve</string>
+    <string name="ten_parner">Parner name</string>
+    <string name="dia_chi">Address</string>
+    <string name="quy_dinh_chung_menu">Overview of PasGo</string>
+
+    <string name="term_and_policies1">Introduction solutions PasGo</string>
+    <string name="term_and_policies2">Application Regulation</string>
+    <string name="term_and_policies3">Security policy</string>
+    <string name="term_and_policies4">Dispute resolution policy</string>
+    <string name="term_and_policies5">Regulation of PasGo Card</string>
+    <string name="term_and_policies6">For restaurants</string>
+
+    <string name="hang_xe_dieu_xe">%s is operating the driver to pick you up</string>
+    <string name="tb_khong_co_tai_xe_phuc_vu">Sorry, all drivers are busy at the moment. Please try again!</string>
+    <string name="connect_to_driver">Connecting to driver, waiting feedback </string>
+    <string name="nt_voi_tai_xe">Send message for driver </string>
+    <string name="thong_tin_hang_xe">INFORMATION OF CARRIERS</string>
+    <string name="so_hieu_xe">Serial number:</string>
+    <string name="tong_dai">Call center:</string>
+    <string name="dang_cap_nhat">Updating</string>
+    <string name="thang">MONTH</string>
+    <string name="hang_xe_pop">Taxi company </string>
+    <string name="thoi_gian_lich_su">Time:</string>
+    <string name="popup_checkin_title">To booking, Please fill in total of information below!</string>
+    <string name="so_nguoi_den">Number of customer:</string>
+    <string name="thoi_gian_colon">Time:</string>
+    <string name="check_in_chon_thoi_gian">Fill in pick-up time</string>
+
+    <string-array name="check_in_success1" formatted="false">
+        <item>* Đặt chỗ tới nhà hàng &lt;b>%s&lt;/b> đã được tiếp nhận Thành công!</item>
+        <item>* PasGo sẽ gọi điện tới số ĐT: &lt;b>%s&lt;/b> để xác nhận trong vòng 10 phút tới. Vui lòng giữ liên lạc!</item>
+        <item>* Lưu ý: Quý khách vui lòng chủ động gọi đến số: &lt;b>19006005&lt;/b> để PasGo Xác nhận trong trường hợp PasGo cố gắng liên lạc không thành công!</item>
+        <item>Đặt chỗ thành công chỉ khi có sự xác nhận từ PasGo!</item>
+        <item>&lt;b>Cảm ơn Quý Khách đã sử dụng PasGo!&lt;/b>.</item>
+    </string-array>
+    <string-array name="check_in_success1_khunggio1va3" formatted="false">
+        <item>* Đặt chỗ tới nhà hàng &lt;b>%s&lt;/b> đã được tiếp nhận Thành công!</item>
+        <item>* PasGo sẽ gọi điện tới số ĐT: &lt;b>%s&lt;/b> để xác nhận trước 8h30 ngày &lt;b>%s&lt;/b>. Vui lòng giữ liên lạc!</item>
+        <item>* Lưu ý: Quý khách vui lòng chủ động gọi đến số: &lt;b>19006005&lt;/b> để PasGo Xác nhận trong trường hợp PasGo cố gắng liên lạc không thành công!</item>
+        <item>Đặt chỗ thành công chỉ khi có sự xác nhận từ PasGo!</item>
+        <item>&lt;b>Cảm ơn Quý Khách đã sử dụng PasGo!&lt;/b>.</item>
+    </string-array>
+
+    <string name="check_in_success2" formatted="false">
+        Lưu ý:\n
+        - Nếu cần hỗ trợ hoặc thay đổi xin liên hệ Tổng đài PasGo.\n
+        - Để xem lại thông tin đặt chỗ, vào mục &lt;b>Lịch sử Đặt chỗ.&lt;/b>\n\n
+        &lt;b>Cảm ơn Bạn đã sử dụng PasGo!&lt;/b>
+    </string>
+
+    <string name="thoi_gian_den">Time</string>
+    <string name="thoi_gian_den_common">Time:</string>
+    <string name="chon_thoi_gian_den">Time coming</string>
+    <string name="plz_chon_thoi_gian_den">Please choose time You\'re coming</string>
+    <string name="plz_nhap_so_nguoi_den">Please fill in the number of customer</string>
+    <string name="plz_so_nguoi_den_lon_hon">Please Check the number of customer again</string>
+    <string name="tb_thoi_gian_checkIn">Pick-up time must be more than the current time</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <!--login-->
+    <string name="phone_number">Enter phone number</string>
+    <string name="pass_word">Enter password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="singup_menber_pasgo">Register PasGo</string>
+    <string name="change_language">Thay đổi</string>
+    <string name="imput_national_phone_number">Please enter nation code and phone number to register</string>
+    <string name="dieukhoan1">I agree to the Terms of Use</string>
+    <string name="dieukhoan2">Terms of Use</string>
+    <string name="dieukhoan">I agree to the &lt;font color=\'red\'>Terms of Use&lt;/font></string>
+    <string name="input_phone_number">Enter phone number</string>
+    <string name="select_nation_code">Choose your country code</string>
+    <string name="confirm_content">An SMS with the activation code will be sent to this number. If you want to change the phone number, press \"Change\"</string>
+    <string name="continue_login">Continue</string>
+    <string name="update">Update</string>
+    <string name="update_password">Update password</string>
+    <string name="update_content">Use a password to login on other devices without activating via SMS. The password is not the activation code you received in the SMS.\nNote: For safety reasons, do not share your password with anyone.</string>
+    <string name="update_content_popup">To optimize the user experience &lt;font color=\'red\'>PasGo&lt;/font> has released a new updated version. Please update your password to increase security and ensure all your rights.</string>
+    <string name="update_content_popup2">Any questions please read&lt;font color=\'red\'> the Policy and Terms of Use&lt;/font> or contact us.</string>
+    <string name="pass_word_again">Confirm password</string>
+    <string name="user_info">Personal data</string>
+    <string name="pasword_manager">Change password</string>
+    <string name="language">English</string>
+
+    <string name="import_info_from_facebook">Use Facebook information</string>
+    <string name="name">Name</string>
+    <string name="input_name">Enter name</string>
+    <string name="input_email">Enter Email</string>
+    <string name="input_birthday">Enter your date of birth</string>
+    <string name="input_email_title">Email</string>
+    <string name="input_birthday_title">Birthday</string>
+    <string name="input_sex_title">Sex</string>
+    <string name="input_sex">Select sex</string>
+    <string name="areas_of_interest">Areas of Interest</string>
+    <string name="areas_of_interest_select">Select Areas of Interest</string>
+    <string name="plz_input_language">Choose your country code</string>
+    <string name="plz_input_phone_number">Enter phone number</string>
+    <string name="plz_input_password">Enter password</string>
+    <string name="plz_input_phone_number_format">Please enter a valid phone number</string>
+    <string name="input_ma_kich_hoat">Enter activation code</string>
+    <string name="change_avata">Change avata!</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <string name="select_file">Select File</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="password_leng">Password greater than 5 characters</string>
+    <string name="password_khong_trung_nhau">Password mismatched, please try again</string>
+    <string name="pass_word_old">Current password</string>
+    <string name="pass_word_new">New password</string>
+    <string name="plz_input_password_old">Enter your current password</string>
+    <string name="plz_input_password_new">Update new password for this account</string>
+    <string name="plz_input_password_new_again">Enter new password again</string>
+    <string name="tb_change_account">Are you sure to exit account?</string>
+    <string name="change_account">Logout</string>
+    <string name="update_password_successfully">Update successfully</string>
+    <string name="tb_register_phone_is_exits">This phone number has already been registered account. Please enter the password to login</string>
+    <string name="update_user_successfully">Update successfully</string>
+    <string name="register">Register</string>
+    <string name="resend_activation_code">Resend activation code</string>
+    <string name="ndkm_title">Tap one of three icons to receive benefit</string>
+    <string name="goi_toi">Call to</string>
+    <string name="sdt_tong_dai">1900 6005</string>
+    <string name="call1">1900 6005 (1.000đ/phút)</string>
+    <string name="nhay">\"</string>
+    <string name="de_den_diem_tai_tro">To the Destination</string>
+    <string name="de_cho_diem_tai_tro">Call taxi point Destination</string>
+    <string name="chi_duong">Direction</string>
+    <string name="chua_co_bang_gia">No price list</string>
+    <string name="rating_comment">Tap a Star to Rate</string>
+    <string name="rating_confirm">Do you want to rate %s Stars for this place?</string>
+    <string name="booking_title_confirm">Call taxi to go %s to receive all benefit for PasGo\'s member</string>
+    <string name="call_title_thongbao">Call to PASGO\’s Reserving Consultant (1000đ/ minute) to book table and receive the benefit of TenNhaHang %s </string>
+    <string name="datxe_call_thongbao">Call to the operator (1000đ/minute) to book and receive the benefit.</string>
+    <string name="loi_ket_noi">Disconnect, please try again</string>
+    <string name="noi_dung_khuyen_mai_share">Big discount at %s for PasGo\'s members! FREE DOWNLOAD IS JOINING!</string>
+    <string name="detail">Detail</string>
+    <string name="tb_khong_the_ket_noi_voi_voi_may_chu_again">Can not connect to server, please try again</string>
+    <!-- phần thay đổi 2.1.1 -->
+    <string name="update_presenter">Enter The Register Code</string>
+    <string name="update_presenter_des">Please enter the &lt;b>Register Code&lt;/b>, otherwise you enter the code: 123456. To get attractive gifts.</string>
+    <string name="update_presenter_des_2">Each Code Register have different gifts, this gift can be PasGo Card discounts to destinations in PasGo.</string>
+    <string name="update_presenter_tit">Register Code</string>
+    <string name="update_presenter_err">Enter the Register Code invalid, please try again</string>
+    <string name="update_presenter_successful">Updated successfully! Thank you!</string>
+    <string name="plz_enter_presenter">Please enter the ID or phone number of the Sponsor</string>
+    <string name="skip">Skip</string>
+    <string name="notify">NOTIFY</string>
+    <string name="da_gioi_thieu">Sponsored members</string>
+
+    <string name="register_phone_text_notifi_1">Please enter the correct phone number to receive your activation code from our switchboard  &lt;font color=\'red\'>+841227066066&lt;/font>. It is safe and free of charge. </string>
+    <string name="register_phone_text_notifi_2">We are fully committed to adhering to strict safety and privacy regulations to protect your confidential information.</string>
+    <string name="notify_khong_tim_thay_check_in">Not find any sponsors at the request</string>
+    <string name="checkin_huong_dan_su_dung1">Welcome to the online reservation system PasGo! </string>
+    <string name="checkin_huong_dan_su_dung2">There are hundreds of attractive financing points around you, with many categories such as restaurants, hotels, karaoke, spa beauty. .. with big incentives for Members PasGo await you to explore.</string>
+    <string name="checkin_huong_dan_su_dung3">Let\'s choose a category or a specific sponsor and reservations for up to experience and enjoy soon!</string>
+    <string name="dia_diem_tim_kiem">Is the place you are looking for?</string>
+    <string name="birth_valid">Your age is not valid</string>
+    <string name="continue_booking">Continues</string>
+    <string name="continue_reserver">Continues</string>
+    <string name="confirm_booking">Confirm</string>
+    <string name="diem_don1">From</string>
+    <string name="diem_den1">To</string>
+
+    <string name="hang_xe_name">Taxi company</string>
+    <string name="taxi_4_cho">Taxi 4 chỗ</string>
+    <string name="taxi_4_cho_ariport">Airport Taxi 4 chỗ</string>
+    <string name="xe_dich_vu">Xe dịch vụ</string>
+    <string name="chon_dia_diem_den">Destination</string>
+    <string name="plz_nhap_dich_vu">Please wait loading service</string>
+    <string name="input_sponsor_code">Nhập mã tài trợ</string>
+    <string name="plz_enter_sponsor_code">Vui lòng nhập mã tài trợ để nhận ưu đãi</string>
+    <string name="menu_filter">Filter</string>
+    <string name="filter_no_data">Unable to find partners that match your preferences</string>
+    <string name="diem_tai_tro_search">Suggest food places</string>
+    <string name="goi_tong_dai">Call Support</string>
+
+    <string name="dat_truoc">Called Drivers</string>
+    <string name="da_check_in">My Reserve</string>
+    <string name="da_nhan">Received(%s)</string>
+    <string name="chua_nhan">Not received(%s)</string>
+    <string name="mo_ta">Description : </string>
+    <string name="muc_tai_tro">Level of sponsor : </string>
+
+    <string name="dang_cho">Waiting(%s)</string>
+    <string name="hoan_thanh">Completed</string>
+    <string name="tai_tro">Sponsor</string>
+    <string name="dat_xe_loai0">Taxi common</string>
+    <string name="dat_xe_loai1">Taxi common</string>
+    <string name="dat_xe_loai2">Taxi airport</string>
+    <string name="dat_xe_loai3">Taxi go back</string>
+
+    <string name="tinh_default">Near</string>
+    <string name="danh_muc_default">Nhà hàng</string>
+    <string name="khu_vuc">Province</string>
+    <string name="de_xuat_danh_muc">Danh mục</string>
+    <string name="loai_hinh">Loại hình</string>
+
+    <string name="no_data_ma_tai_tro_diem_den">No matching destination</string>
+    <string name="vnd_up">VNĐ</string>
+    <string name="use">Use</string>
+    <string name="filter_tinh_title">CHOOSE REGIONAL USE</string>
+    <string name="filter_nhom_km_title">CHOOSE FIELD SPONSOR INTEREST</string>
+    <string name="checkin_xacnhan_1">You are reserving to: &lt;b>%s&lt;/b>.</string>
+    <string name="checkin_xacnhan_2">You will get surely the listed benefits of &lt;b>%s&lt;/b>.\nPlease review the above information, then click &lt;b>Confirmation&lt;/b> to complete your reservation!</string>
+    <string name="checkin_xacnhan_3">\nAnd you will be offered &lt;font color=\'red\'>%s&lt;/font>, unless the charges dropped!</string>
+    <string name="view_detail">Detail</string>
+    <string name="skip_intro">Skip ></string>
+    <string name="tong_dai_ho_tro">Call Support</string>
+
+    <string name="share_now">Share Now</string>
+    <string name="an_de_goi_xe">Press to call driver</string>
+    <string name="call_center_support">Call center/Support</string>
+    <string name="call_center_support_booking">Call center/Support</string>
+    <string name="di_xe">Call Driver</string>
+    <string name="the_pasgo_intro">Usage and receive PasGo card: </string>
+    <string name="the_pasgo_intro1">Step 1: Press Detail\nStep 2: Select Destination\nStep 3: Reservation and experience</string>
+    <string name="the_pasgo_intro2">Change the par value or the card expiry date of the PasGo card.\nCall &lt;b>19006005&lt;/b> </string>
+    <string name="the_pasgo_intro3">&lt;font color=\'black\' >&lt;strong>Share with friends to get PasGo Cards&lt;strong>&lt;/font> &lt;font color=\'#1662bf\'>&lt;u>&lt;i>View detail&lt;/i>&lt;/u>&lt;/font></string>
+    <string name="tab_reserve1">List</string>
+    <string name="tab_reserve2">Near by</string>
+    <string name="tab_reserve3">Map</string>
+    <string name="tab_reserve4">Search</string>
+    <string name="tab_reserve5">PASGO Card</string>
+
+    <string name="tu_khoa_tim_kiem">Trending Searches</string>
+    <string name="reserve_vi_tri">Province:</string>
+    <string name="reserve_diem_de_xuat">Other propose reserves corresponding to this card!</string>
+    <string name="no_data_diem_den_yeu_thich">You choose your own favorite restaurant!</string>
+    <string name="no_data_nhom_km">Unable to find service. Please choose another area or check the location</string>
+    <string name="no_data_diem_den">Unable to find DESTINATION that match your preferences. Please select the region or other options!</string>
+    <string name="dat_taxi_toi_day">Call Driver</string>
+    <string name="continue_popup_booking">Continue</string>
+    <string name="pasgo_card">PasGo Card</string>
+
+    <string name="ndkm_nguoi_da_den">%s users to</string>
+
+    <string name="so_nguoi">Adults</string>
+    <string name="tre_em">Children</string>
+    <string name="ngay_thang">Date</string>
+    <string name="thoi_gian_dat_cho">Time</string>
+    <string name="so_nguoi_lon_common">Adults:</string>
+    <string name="so_nguoi_tre_em_common">Children:</string>
+    <string name="ngay_thang_common">Date:</string>
+    <string name="gio_common">Time:</string>
+    <string name="ghi_chu_1">Note</string>
+    <string name="ghi_chu_3">Leave your message here</string>
+    <string name="hotline_call_taxi">Taxi Ha Noi - Noi Bai only since 120.000 VNĐ</string>
+    <string name="hotline_reserver">Reserve via a Reserving Consultant</string>
+    <string name="hotline_booking">Bookings via Support</string>
+
+    <string name="thu2">Monday</string>
+    <string name="thu3">Tuesday</string>
+    <string name="thu4">Wednesday</string>
+    <string name="thu5">Thursday</string>
+    <string name="thu6">Friday</string>
+    <string name="thu7">Saturday</string>
+    <string name="thu0">Sunday</string>
+
+    <string name="share_text_2">&lt;b>The network of over 1000 fine restaurants in Saigon, Danang and Hanoi is ready to welcome you, book your table and enjoy it!&lt;/b></string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+
+    <string name="presenrer_read_more">Read more</string>
+    <string name="presenrer_read_less">Hide</string>
+
+    <string name="utilities">UTILITIES</string>
+    <string name="introduce">INTRODUCE</string>
+    <string name="diem_dac_trung">NOTABLE FEATURES</string>
+
+    <string name="dung_ngay">Try now</string>
+
+    <string name="resered_so_nguoi_common">People:</string>
+    <string name="call_support">Call support</string>
+    <string name="support">Support</string>
+    <string name="thoi_gian_den_colon">Time:</string>
+    <string name="pasgo_card_login_msg">Please Login to check PasGo Card</string>
+    <string name="call_history_reserve">If you want to change your reservation. please call to center support (1000đ/minute)</string>
+    <string name="chon_khu_vuc">SELECT PROVINCE</string>
+    <string name="nodata_yeu_thich_chua_dang_nhap">Đăng ký/Đăng nhập để xem hoặc lựa chọn Điểm đến Yêu thích của bạn!</string>
+    <string name="nodata_yeu_thich">Bạn chưa chọn Điểm đến yêu thích nào!</string>
+    <string name="edit_infomation">Edit/Cancel</string>
+    <string name="edit_infomation_pop">Edit/Cancel reserve</string>
+    <string name="edit_info_content">Contact with support to edit or cancel reserved information</string>
+    <string name="result_number">Results: %s</string>
+    <string name="result_text">For: &lt;font color=\'#d31e1e\'>%s&lt;/font></string>
+    <string name="quan_huyen">District</string>
+    <string name="goi_y_title">Latest search trends present</string>
+    <string name="thong_bao_title">Hot notice from PasGo</string>
+    <string name="muc_uu_dai">Deals</string>
+    <string name="gan_ban">Near you</string>
+    <string name="danh_gia">Rate</string>
+    <string name="goi_y_tim_kiem">Search suggestions</string>
+    <string name="filter">Filter</string>
+    <string name="ket_qua">Result</string>
+    <string name="restaurant_search_hint">Search for restaurants</string>
+
+    <string name="gio_phuc_vu">Open Now:</string>
+    <string name="khoang_gia">Average cost (</string>
+    <string name="detail_uu_dai_title">Benefits for Members PasGo</string>
+    <string name="diem_noi_bat_title">Summary</string>
+    <string name="detail_gioi_thieu_title">Description</string>
+    <string name="menu">Menu</string>
+    <string name="menus">Menus</string>
+    <string name="anh">Photos</string>
+    <string name="dia_chi_va_ban_do">Maps &amp; Directions</string>
+    <string name="xem_tat_ca_number">Read more (%s)</string>
+    <string name="xem_chi_tiet">Detail</string>
+    <string name="binh_luan">Review</string>
+    <string name="binh_luan_tai_day">Add a Review</string>
+    <string name="detail_quan_tam_title">Open Now</string>
+    <string name="chat_ngay">Chat Now</string>
+    <string name="goi_ngay">Call Now</string>
+    <string name="them">Add</string>
+    <string name="title_photos">Photos (%s)</string>
+    <string name="uu_dai">Deals</string>
+    <string name="menu_nha_hang">Menu</string>
+    <string name="ban_do">Map</string>
+    <string name="image_nha_hang">Photos</string>
+    <string name="categoty">Category</string>
+
+    <string name="tab_home1">Home</string>
+    <string name="tab_home2">Near by</string>
+    <string name="tab_home3">Search</string>
+    <string name="tab_home4">HOT deals</string>
+    <string name="tab_home5">Chat now</string>
+
+    <string name="xem_tat_ca">View all</string>
+    <string name="den">Come</string>
+    <string name="home_den_danh_gia">Please give us your review!</string>
+    <string name="vi_tri">Location</string>
+    <string name="ship_ve">Ship</string>
+    <string name="ket_qua_title">%s Destination</string>
+    <string name="danh_muc_chinh">Main category</string>
+
+    <string name="home_filter_text">By region, prices, types ...</string>
+    <string name="home_filter">Filter</string>
+    <string name="distance">Distance</string>
+    <string name="bo_loc">Reset</string>
+    <string name="loc_kq">Filter Results</string>
+    <string name="kq_loc">Results filter</string>
+
+    <string name="thong_tin_dat_cho">Reservations Information</string>
+    <string name="dat_cho_that_bai_title">Reservations are not successful</string>
+    <string name="dat_cho_thanh_cong_title">Receiving success</string>
+    <string name="xac_nhan_dat_cho_title">reserve confirmation</string>
+    <string name="thong_bao">Notification</string>
+    <string name="reserve_is_exists">had reserve here</string>
+    <string name="nha_hang">Restaurant</string>
+    <string name="bo_suu_tap_mo_ta">The collection of popular chain restaurant, cuisine, food type, space, book your party...is update regularly at PasGo.</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="action_copy">Copy</string>
+    <string name="hint_enter_a_message">Type a message…</string>
+    <string name="chat_update_info_title">Please fill out the information below to start chatting right away.</string>
+    <string name="chat_update_info_input_sdt">Phone</string>
+    <string name="chat_update_info_input_email">Email</string>
+    <string name="start_chat">Start chatting</string>
+    <string name="view_history">View history</string>
+    <string name="datcho_va_uudai">Reserve  &amp; Deals</string>
+
+    <string name="reserved_infomation" formatted="false">Reservation information\n
+        number of reservations: %s\n
+        Destination: %s\n
+        Number of customer: %d adults, %d children\n
+        Time: %s\n
+        Address: %s\n
+        Time set: %s
+    </string>
+    <string name="favorite_added">You have successfully added a favorite</string>
+    <string name="favorite_cancel">You gave up your favorite success</string>
+</resources>

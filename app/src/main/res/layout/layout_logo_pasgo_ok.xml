@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/layout_popup_width"
+    android:layout_height="match_parent"
+    android:background="@color/mau_nen_chung"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_pasgo_popup"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_all"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/border_vien"
+        android:layout_marginStart="@dimen/margin_popup_line"
+        android:layout_marginEnd="@dimen/margin_popup_line"/>.
+    <TextView
+        android:id="@+id/tvThongBaoPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_all"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:autoLink="email"
+        android:textSize="@dimen/popup_text_size"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

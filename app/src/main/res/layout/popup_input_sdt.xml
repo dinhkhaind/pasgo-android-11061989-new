@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom_popup"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <EditText
+            android:id="@+id/ed_input_sdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/input_sdt_kh_ed"
+            android:inputType="number"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnGui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="@dimen/datxe_buttom_datxe_left_right"
+            android:layout_marginEnd="@dimen/datxe_buttom_datxe_left_right"
+            android:layout_marginTop="@dimen/datxe_buttom_margin_top"
+            android:background="@drawable/corner_btn_all"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

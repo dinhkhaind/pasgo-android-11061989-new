@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:presco="http://schemas.android.com/tools"
+    android:id="@+id/category_view_ln"
+    android:background="@drawable/selector_bg_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="@dimen/home_column_item_margin"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_category3_height"
+            android:orientation="vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_loading"
+                presco:placeholderImage="@drawable/image_loading"
+                android:layout_alignParentTop="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@color/home_item_black_transfarent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/home_rating_margin"
+                    android:layout_marginBottom="@dimen/home_rating_margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.5"
+                        android:textSize="@dimen/diem_den_rating_text_km"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_sao_vang"/>
+
+                    <View
+                        android:id="@+id/view_v1"
+                        android:layout_width="0.1dp"
+                        android:layout_height="@dimen/diem_den_view_height"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/white">
+                    </View>
+                    <RatingBar
+                        android:id="@+id/ratingChatLuong"
+                        style="@style/rowChatLuongRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:isIndicator="true"
+                        android:layout_marginStart="@dimen/rating_margin_left"
+                        android:numStars="5"
+                        android:rating="2.5"
+                        android:stepSize="0.10" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTenDoiTac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_diem_den_text_margin"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:ellipsize="marquee"
+            android:textColor="@color/black"
+            android:text="Tên đối tác"
+            android:textSize="@dimen/home_category_item_tv_name_size">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_diem_den_text_margin"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray_detail_text"
+            android:text="177 Bùi thị xuân. Q HBT "
+            android:textSize="@dimen/home_category_item_tv_address_size">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_diem_den_text_margin"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Buffet hải sản"
+            android:textSize="@dimen/home_category_item_tv_address_size">
+        </TextView>
+        <TextView
+            android:id="@+id/tvNoiDungTaiTro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/home_diem_den_text_margin"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:textColor="@color/diem_den_item_text_tai_tro"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="Giảm đến 50%"
+            android:textSize="@dimen/home_category_item_tv_address_size">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

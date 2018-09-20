@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tool_bar_ln"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_actionbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/function_toolbar_right_ln"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:paddingStart="3dp"
+                    android:text="Toolbar Title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/home_detail_title" />
+
+                <TextView
+                    android:id="@+id/toolbar_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text="..."
+                    android:textColor="@color/gray_1"
+                    android:textSize="@dimen/home_detail_ket_qua_title" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/function_toolbar_right_ln"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+
+                <ProgressBar
+                    android:id="@+id/toolbar_progress_bar"
+                    android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+                    android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+                    android:indeterminateTint="@color/white"
+                    android:indeterminateTintMode="src_in"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/filter_rl"
+                    android:layout_width="@dimen/filter_img_width"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_bg_thong_bao">
+
+                    <ImageView
+                        android:id="@+id/filter_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/reserve_filter_img_margin" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

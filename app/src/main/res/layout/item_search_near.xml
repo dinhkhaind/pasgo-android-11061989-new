@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="9dp"
+    android:paddingTop="9dp" >
+
+    <LinearLayout
+        android:id="@+id/lnDiemQT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgDiemQuanThuoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@+id/tvKhoangCach"
+        android:layout_toEndOf="@+id/lnDiemQT"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="So 25 Lac Trung"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblTenDoiTac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinh Tuy, Ha Noi"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvKhoangCach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="5dp"
+        android:text="0.5Km"
+        android:textStyle="normal" />
+
+</RelativeLayout>

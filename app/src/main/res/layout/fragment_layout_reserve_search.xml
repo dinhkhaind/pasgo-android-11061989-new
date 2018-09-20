@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_layout_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_backdrop_height"
+                android:fitsSystemWindows="true"
+                app:behavior_overlapTop="54dp"
+                android:background="@android:color/transparent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    android:background="@drawable/toolbar_remove_dropshadow"
+                    app:layout_scrollFlags="exitUntilCollapsed">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="parallax">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@color/red_strong">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_actionbar"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/layoutSearch"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/reserve_search_view_height"
+                                android:layout_marginStart="@dimen/reserve_search_view_margin"
+                                android:layout_marginEnd="@dimen/reserve_search_view_margin"
+                                android:layout_marginBottom="@dimen/reserve_search_view_margin"
+                                android:background="@drawable/rounded_item_search"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <EditText
+                                    android:id="@+id/search_edt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="@color/white"
+                                    android:hint="@string/restaurant_search_hint"
+                                    android:textColorHint="@color/hint_text"
+                                    android:imeOptions="actionSearch"
+                                    android:inputType="text"
+
+                                    android:paddingStart="6dp"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:id="@+id/search"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:paddingStart="10dp"
+                                    android:src="@drawable/ic_search" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/tool_bar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/tool_bar_height"
+                        android:background="@color/bg_actionbar"
+                        android:gravity="center"
+                        app:titleTextColor="@color/black"
+                        android:layout_alignParentTop="true"
+                        app:contentInsetLeft="0dp"
+                        app:contentInsetStart="0dp"
+                        app:titleTextAppearance="@style/Toolbar.TitleText"
+                        style="@style/Widget.AppCompat.Toolbar">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:id="@+id/filter_rl"
+                                android:layout_width="@dimen/search_filter_img_width"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="center"
+                                android:layout_gravity="right"
+                                android:background="@drawable/selector_bg_thong_bao">
+
+                                <ImageView
+                                    android:id="@+id/filter_img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_filter"
+                                    android:layout_margin="@dimen/search_filter_img_margin"/>
+
+                            </LinearLayout>
+                            <ProgressBar
+                                android:id="@+id/toolbar_progress_bar"
+                                android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+                                android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="right"
+                                android:layout_marginEnd="3dp"
+                                android:layout_toStartOf="@+id/filter_rl"
+                                android:indeterminateTint="@color/white"
+                                android:indeterminateTintMode="src_in"
+                                android:visibility="gone" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/main_actionbar_margin_right">
+                                <LinearLayout
+                                    android:id="@+id/tinh_ln"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_centerHorizontal="true"
+
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:background="@drawable/selector_bg_thong_bao">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/khu_vuc_icon"/>
+                                    <TextView
+                                        android:id="@+id/tinh_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingStart="2dp"
+                                        android:paddingEnd="3dp"
+                                        android:text="@string/tinh_default"
+                                        android:textSize="@dimen/tool_bar_reserver_title_size"
+                                        android:textColor="@color/white"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="5dp"
+                                        android:src="@drawable/mui_ten_xuong"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_ln"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/transparent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include layout="@layout/content_reserve_search"></include>
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

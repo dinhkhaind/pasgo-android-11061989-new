@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/language_cai_dat_chung" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_row_action_all"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/textViecccccw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/language_title"
+            android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+        <ImageView
+            android:id="@+id/imgLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViecccccw1"
+            android:layout_alignBottom="@+id/textViecccccw1"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/imgLanguage"
+            android:gravity="center_vertical"
+            android:text="English"
+            android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+    </RelativeLayout>
+</LinearLayout>

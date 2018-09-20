@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <item
+        android:id="@+id/playAudio"
+        android:icon="@drawable/ic_emai_taxi"
+        app:showAsAction="ifRoom"
+        android:title="ban_tin"
+        android:titleCondensed="ban_tin"
+        android:visible="true"/>
+    <item
+        android:id="@+id/suco_details"
+        android:icon="@drawable/ic_emai_taxi"
+        app:showAsAction="ifRoom"
+        android:title="u_co_giao_thong"
+        android:titleCondensed="su_co_giao_thong"
+        android:visible="true"/>
+
+</menu>

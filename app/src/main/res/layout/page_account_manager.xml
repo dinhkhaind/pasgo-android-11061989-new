@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:background="@color/mau_nen_chung"
+    android:orientation="vertical">
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <LinearLayout
+        android:id="@+id/ln_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/error_connect_network_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_info_height"
+        android:background="@color/account_manager_info"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lnAvata"
+            android:layout_width="@dimen/account_manager_layout_image_width"
+            android:layout_height="@dimen/account_manager_layout_image_width"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/account_manager_image_margin_left"
+            android:layout_gravity="center_horizontal" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgAvata"
+                android:layout_width="@dimen/account_manager_image_width"
+                android:layout_height="@dimen/account_manager_image_width"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                app:roundAsCircle="true"
+                fresco:placeholderImage="@drawable/image_loading"
+                android:background="@drawable/no_avatar" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_toEndOf="@+id/lnAvata"
+            android:layout_alignBottom="@+id/lnAvata"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ma"
+                    android:textSize="@dimen/account_manager_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvIdPASGO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" UBXQRC"
+                    android:textSize="@dimen/account_manager_text_size"
+                    android:layout_marginStart="@dimen/user_info_text_margin_left"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sdt"
+                    android:textSize="@dimen/account_manager_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvNumberPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" +84983690260"
+                    android:textSize="@dimen/account_manager_text_size"
+                    android:layout_marginStart="@dimen/user_info_text_margin_left"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_row_height"
+        android:background="@drawable/selector_row_action_all">
+
+        <ImageView
+            android:id="@+id/imgAccount"
+            android:layout_width="@dimen/account_manager_row_image_width"
+            android:layout_height="@dimen/account_manager_row_image_width"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:background="@drawable/thong_tin_ng_dung" />
+
+        <TextView
+            android:id="@+id/tvDiaDiemDonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginTop="@dimen/datxe_text_margin_top"
+            android:layout_toStartOf="@+id/imgArrowRight1"
+            android:layout_toEndOf="@+id/imgAccount"
+            android:text="@string/user_info"
+            android:textSize="@dimen/account_manager_row_text_size" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/account_manager_row_line_margin_left"
+        android:background="@drawable/border_vien" />
+
+    <RelativeLayout
+        android:id="@+id/rlPaswordManager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_row_height"
+        android:background="@drawable/selector_row_action_all">
+
+        <ImageView
+            android:id="@+id/imgPaswordManager"
+            android:layout_width="@dimen/account_manager_row_image_width"
+            android:layout_height="@dimen/account_manager_row_image_width"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:background="@drawable/quan_li_mat_khau" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginTop="@dimen/datxe_text_margin_top"
+            android:layout_toStartOf="@+id/imgArrowRight2"
+            android:layout_toEndOf="@+id/imgPaswordManager"
+            android:text="@string/pasword_manager"
+            android:textSize="@dimen/account_manager_row_text_size" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/account_manager_row_line_margin_left"
+        android:background="@drawable/border_vien" />
+
+    <RelativeLayout
+        android:id="@+id/rlSponsorCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_row_height"
+        android:background="@drawable/selector_row_action_all">
+
+        <ImageView
+            android:id="@+id/imgSponsorCode"
+            android:layout_width="@dimen/account_manager_row_image_width"
+            android:layout_height="@dimen/account_manager_row_image_width"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:background="@drawable/ac_ma_tai_tro" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginTop="@dimen/datxe_text_margin_top"
+            android:layout_toStartOf="@+id/imgArrowRight3"
+            android:layout_toEndOf="@+id/imgSponsorCode"
+            android:text="@string/menu_tai_tro"
+            android:textSize="@dimen/account_manager_row_text_size" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/account_manager_row_line_margin_left"
+        android:background="@drawable/border_vien" />
+
+    <RelativeLayout
+        android:id="@+id/rlSoNguoiGioiThieu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_row_height"
+        android:background="@drawable/selector_row_action_all">
+
+        <ImageView
+            android:id="@+id/imgSoNguoiGioiThieu"
+            android:layout_width="@dimen/account_manager_row_image_width"
+            android:layout_height="@dimen/account_manager_row_image_width"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:background="@drawable/a_gioi_thieu" />
+
+        <TextView
+            android:id="@+id/tv44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginTop="@dimen/datxe_text_margin_top"
+            android:layout_toStartOf="@+id/tvDaGioiThieuNumber"
+            android:layout_toEndOf="@+id/imgSoNguoiGioiThieu"
+            android:text="@string/da_gioi_thieu"
+            android:textSize="@dimen/account_manager_row_text_size" />
+
+        <TextView
+            android:id="@+id/tvDaGioiThieuNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/account_manager_row_text_size"
+            android:text="0" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/account_manager_row_line_margin_left"
+        android:background="@drawable/border_vien" />
+    <RelativeLayout
+        android:id="@+id/rlRemoveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_manager_row_height"
+        android:visibility="gone"
+        android:background="@drawable/selector_row_action_all">
+
+        <ImageView
+            android:id="@+id/imgRemoveAccount"
+            android:layout_width="@dimen/account_manager_row_image_width"
+            android:layout_height="@dimen/account_manager_row_image_width"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:background="@drawable/log_out" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginTop="@dimen/datxe_text_margin_top"
+            android:layout_toStartOf="@+id/imgArrowRight4"
+            android:layout_toEndOf="@+id/imgRemoveAccount"
+            android:text="@string/change_account"
+            android:textSize="@dimen/account_manager_row_text_size" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/account_manager_row_line_margin_left"
+        android:background="@drawable/border_vien" />
+</LinearLayout>

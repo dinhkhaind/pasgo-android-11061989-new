@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <RelativeLayout
+        android:layout_below="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnChatComment"
+            android:orientation="vertical" >
+
+            <include layout="@layout/error_connect_network_layout" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:rating="0.0"
+                    style="@style/commentRatingBar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/rating_comment"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvXemThem"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_row_action_all"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/margin_all"
+                android:text="@string/read_more" >
+            </TextView>
+
+            <ListView
+                android:id="@+id/lvComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/layout_no_data" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnChatComment"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lnChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/lyCh"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tttx_view_chat"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/theo_doi_tai_xe_popup_header_bg" >
+
+                    <EditText
+                        android:id="@+id/edtChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/datxe_edittext_datxe_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/tttx_huy_view_margin"
+                        android:layout_marginEnd="@dimen/tttx_huy_view_margin"
+                        android:layout_toStartOf="@+id/btnChat"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:hint="@string/nhap_binh_luan"
+                        android:imeOptions="actionDone"
+                        android:inputType="textNoSuggestions"
+                        android:lines="1"
+                        android:ellipsize="end" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <com.onepas.android.pasgo.widgets.AutoBGButton
+                        android:id="@+id/btnChat"
+                        android:layout_width="55dp"
+                        android:layout_height="@dimen/datxe_edittext_datxe_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/tttx_huy_view_margin"
+                        android:background="@drawable/bg_edittext"
+                        android:text="@string/gui"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mau_nen_chung"
+    android:orientation="vertical">
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ln_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <include layout="@layout/error_connect_network_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyKhongCoThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:background="@color/mau_nen_chung"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvKhongCoDuLieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/mau_nen_chung"
+                android:gravity="center_horizontal"
+                android:text="@string/khong_co_du_lieu"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <com.onepas.android.pasgo.widgets.IndexableListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:divider="@color/xam"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:dividerHeight="0.2dp"/>
+    </RelativeLayout>
+</LinearLayout>

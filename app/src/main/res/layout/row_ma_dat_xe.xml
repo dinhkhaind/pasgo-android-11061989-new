@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="5dp"
+    android:background="@color/bg_layout_listview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_lv_full" >
+
+        <RelativeLayout
+            android:id="@+id/lnGiaTien"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tai_tro_gia_tien_ln_height"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:id="@+id/layoutTopContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="5dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/tvt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ma_tai_tro_ttt">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvMaTaiTro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text=" ...."
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/darker_gray"
+                    >
+                </TextView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/pasgo_card_price_tv_margin"
+                android:layout_marginEnd="@dimen/pasgo_card_price_tv_margin"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/tvMenhGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="1000."
+                        android:gravity="center_vertical"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/tai_tro_gia_tien_tv_text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/red_strong" >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tvVnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="@string/vnd_up"
+                        android:paddingStart="3dp"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/tai_tro_vnd_text_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/red_strong" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/imgArrowRight"
+            android:layout_below="@+id/lnGiaTien"
+            android:orientation="vertical"
+            android:paddingStart="5dp" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/tvtss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hsd_ttt">
+                </ImageView>
+                <TextView
+                    android:id="@+id/tvHanSuDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text=" ...."
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/darker_gray" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnKhuyenMaiChiNhanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/tvtsss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/diem_den_item_ttt">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvDiemDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text=" ...."
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/darker_gray" >
+                </TextView>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnKhuyenMaiTuDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <com.onepas.android.pasgo.widgets.AutoBGButton
+                android:id="@+id/btnDiNgay"
+                android:layout_width="@dimen/tai_tro_buttom_width"
+                android:layout_height="@dimen/tai_tro_buttom_row"
+                android:layout_marginStart="@dimen/tai_tro_buttom_margin"
+                android:background="@drawable/selector_bg_transparent"
+                android:paddingStart="@dimen/tai_tro_buttom_margin"
+                android:paddingEnd="@dimen/tai_tro_buttom_margin"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:text="@string/di_ngay"
+                android:textColor="@color/btn_button_ma_tai_tro"
+                android:textSize="@dimen/button_khuyenmai_size" />
+
+            <com.onepas.android.pasgo.widgets.AutoBGButton
+                android:id="@+id/btnDiemTaiTro"
+                android:layout_width="@dimen/tai_tro_buttom_width"
+                android:layout_height="@dimen/tai_tro_buttom_row"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/tai_tro_buttom_margin"
+                android:layout_marginEnd="@dimen/tai_tro_buttom_margin"
+                android:background="@drawable/selector_bg_transparent"
+                android:paddingStart="@dimen/tai_tro_buttom_margin"
+                android:paddingEnd="@dimen/tai_tro_buttom_margin"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="@string/diem_tai_tro"
+                android:textColor="@color/btn_button_ma_tai_tro"
+                android:textSize="@dimen/button_khuyenmai_size" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnGiaTien"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/go_to_ttt" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/transparent">
+    </LinearLayout>
+
+</LinearLayout>

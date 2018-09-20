@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/ket_noi_mang_yeu_and_connecttoserver"
+            android:textColor="@color/info_taxi"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tttx_buttom_height" >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_vien" />
+
+            <com.onepas.android.pasgo.widgets.AutoBGButton
+                android:id="@+id/btThulai"
+                android:layout_width="@dimen/datxe_buttom_ok_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/view"
+                android:background="@drawable/btn_all"
+                android:text="@string/thu_lai"
+                android:textColor="@android:color/white" />
+
+            <com.onepas.android.pasgo.widgets.AutoBGButton
+                android:id="@+id/btHuy"
+                android:layout_width="@dimen/datxe_buttom_ok_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/view"
+                android:background="@drawable/btn_all"
+                android:text="@string/huy"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

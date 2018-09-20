@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="booking_hotline_tv_size">14.5sp</dimen>
+    <dimen name="home_category3_height">105dp</dimen>
+    <dimen name="home_category_bo_su_tap_height">135dp</dimen>
+    <dimen name="home_bo_suu_tap_tong_nha_hang_ln_w_h">50dp</dimen>
+
+</resources>

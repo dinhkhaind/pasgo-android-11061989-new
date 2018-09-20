@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnErrorConnectNetwork"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/rlStateNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warning_layout_background"
+        android:paddingBottom="@dimen/padding_ln_item_state_pager"
+        android:paddingStart="@dimen/padding_right_ln_item_state_pager"
+        android:paddingEnd="@dimen/padding_right_ln_item_state_pager"
+        android:paddingTop="@dimen/padding_ln_item_state_pager" >
+
+        <TextView
+            android:id="@+id/tvTitleStateNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/title_error_network"
+            android:textColor="@color/warning_layout_text"
+            android:textSize="@dimen/text_network_tb" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_line_padding" />
+
+</LinearLayout>

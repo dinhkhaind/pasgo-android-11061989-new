@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:minWidth="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvHoTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Pham Van Lam"
+                android:textStyle="bold"
+                android:textColor="@color/info_taxi"
+                android:layout_marginTop="@dimen/margin_all"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_all"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvDiDongName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    android:text="@string/di_dong"
+                    android:textColor="@color/info_taxi"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvDiDong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="0949419689"
+                    android:textColor="@color/info_taxi"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/padding_gray" />
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnCallDriver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_popup_call_driver_width"
+            android:background="@drawable/selector_bg_call_driver"
+            android:text="@string/goi_di_dong_cho_tx"
+            android:textColor="@color/tttx_text"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/padding_gray" />
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_popup_call_driver_width"
+            android:background="@drawable/selector_bg_call_driver"
+            android:text="@string/nt_voi_tai_xe"
+            android:textColor="@color/tttx_text"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/padding_gray" />
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_popup_call_driver_width"
+            android:background="@drawable/selector_bg_call_driver"
+            android:text="@string/huy"
+            android:textStyle="bold"
+            android:textColor="@color/tttx_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

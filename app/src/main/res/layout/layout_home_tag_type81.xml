@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin_all">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/category8_1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginTop="@dimen/home_title_margin_top"
+            android:layout_marginBottom="@dimen/home_title_margin_bottom"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_text_title" />
+    </RelativeLayout>
+
+    <com.onepas.android.pasgo.utils.ExpandableHeightListView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/category8_1_lv"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/home_lv_column_item_margin"
+        android:paddingEnd="@dimen/home_lv_column_item_margin"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.HomeActivity"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_all"
+        android:visibility="gone"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:id="@+id/all_8_1_ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_home_view_all"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/home_view_all_height"
+        android:paddingTop="@dimen/home_view_all_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xem_tat_ca"
+            android:layout_marginStart="@dimen/margin_all"
+            android:textColor="@color/red"
+            android:textSize="@dimen/home_text_view_all" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/margin_all"
+            android:src="@drawable/arr_small_next_red" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

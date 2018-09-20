@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:presco="http://schemas.android.com/tools"
+    android:id="@+id/category_view_ln"
+    android:background="@drawable/selector_bg_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/home_category1_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/home_category1_item_margin"
+        android:layout_marginStart="@dimen/home_category1_item_margin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_category1_image_height"
+            android:orientation="vertical"
+            android:layout_above="@+id/rating_km_ln">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_loading"
+                presco:placeholderImage="@drawable/image_loading"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chiet_khau_tk_ln"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dat_cho_km_height"
+            android:paddingStart="@dimen/dat_cho_text_km_margin_left"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/chiet_khau_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/chiet_khau"
+
+                android:text="-15%"
+                android:paddingStart="@dimen/diem_den_chiet_khau_margin_left_right"
+                android:paddingEnd="@dimen/diem_den_chiet_khau_margin_left_right"
+                android:gravity="center"
+                android:textSize="@dimen/dat_cho_text_km_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTenDoiTac"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_all_one_half"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:maxLines="2"
+            android:minLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Chợ quê Restaurent"
+            android:textSize="@dimen/home_category_item_tv_name_size">
+        </TextView>
+        <TextView
+            android:id="@+id/tvNoiDungTaiTro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/home_km_text_margin_top"
+            android:layout_marginBottom="@dimen/home_km_text_margin_bottom"
+            android:layout_marginStart="@dimen/text_margin_left_right"
+            android:layout_marginEnd="@dimen/text_margin_left_right"
+            android:textColor="@color/diem_den_item_text_tai_tro"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="Giảm đến 50%"
+            android:textSize="@dimen/home_category_item_tv_name_km_size">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

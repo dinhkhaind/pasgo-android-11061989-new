@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reserved_parent_ln"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_layout_listview"
+    android:paddingTop="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_background_fill_all"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lnDetaila"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/reserved_row_image_width_height"
+                        android:layout_height="@dimen/reserved_row_image_width_height">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/diem_den_row_image_height"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="@dimen/home_item_margin_all"
+                            android:layout_marginEnd="@dimen/home_item_margin_all"
+                            android:layout_marginTop="@dimen/home_item_margin_all"
+                            android:orientation="vertical">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/imgLogo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/image_loading"
+                                android:scaleType="centerCrop" />
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/imgLogoDefault"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/logo_partnerdf"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rating_km_ln"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/home_item_margin_all"
+                            android:layout_marginEnd="@dimen/home_item_margin_all"
+                            android:layout_marginTop="@dimen/home_item_margin_top"
+                            android:layout_alignParentBottom="true">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/gia_trung_binh_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="150.000 - 180.000đ"
+                                    android:textSize="@dimen/diem_den_item_text_km"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dien_den_cach_height"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <RatingBar
+                                    android:id="@+id/ratingChatLuong"
+                                    style="@style/rowChatLuongRatingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:isIndicator="true"
+                                    android:layout_marginStart="@dimen/rating_margin_left"
+                                    android:numStars="5"
+                                    android:rating="2.5"
+                                    android:stepSize="0.10" />
+                                <View
+                                    android:id="@+id/view_v1"
+                                    android:layout_width="1dp"
+                                    android:layout_height="@dimen/diem_den_view_height"
+                                    android:layout_marginStart="3dp"
+                                    android:background="@color/line_diem_den">
+                                </View>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/khoang_cach"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="@dimen/diem_den_km_text_margin_right"
+                                    android:paddingEnd="@dimen/diem_den_km_text_margin_right"
+                                    android:visibility="visible"
+                                    android:layout_toStartOf="@+id/tvKhoangCach"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tvKhoangCach"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:lines="1"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="2.0km"
+                                    android:textColor="@color/doitac_lv_km"
+                                    android:textSize="@dimen/diem_den_item_text_km" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/layoutContent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lnDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selector_white">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/ten_doi_tac_ln"
+                                        android:layout_width="match_parent"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:layout_marginTop="@dimen/home_item_margin_all"
+                                        android:orientation="horizontal">
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:layout_marginStart="2dp"
+                                            android:background="@drawable/corner_item_rating"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_marginStart="@dimen/diem_den_item_rating_margin"
+                                                android:layout_marginEnd="@dimen/diem_den_item_rating_margin"
+                                                android:gravity="center_vertical"
+                                                android:layout_height="wrap_content">
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:src="@drawable/icon_sao_trang"/>
+                                                <TextView
+                                                    android:id="@+id/tvRating"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="3.5"
+                                                    android:gravity="center_vertical"
+                                                    android:textSize="@dimen/diem_den_rating_text_km"
+                                                    android:textColor="@color/white"/>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <TextView
+                                            android:id="@+id/tvTenDoiTac"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/text_margin_left_right"
+                                            android:layout_marginEnd="@dimen/di_xe_mien_phi_tv_ten_margin_right"
+                                            android:gravity="center_vertical"
+                                            android:lines="1"
+                                            android:ellipsize="end"
+                                            android:textColor="@color/black"
+                                            android:text="Chợ quê Restaurent"
+                                            android:textSize="@dimen/di_xe_mien_phi_item_text_size">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/ratingbar_ln"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/ten_doi_tac_ln"
+                                        android:layout_marginStart="@dimen/di_xe_mien_phi_rating_margin_left"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tvTenDuong"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/diem_den_text_margin"
+                                            android:layout_marginTop="@dimen/diem_den_text_margin"
+                                            android:lines="1"
+                                            android:ellipsize="end"
+                                            android:text="ha noi"
+                                            android:textColor="@color/doitac_lv_km"
+                                            android:textSize="@dimen/di_xe_mien_phi_item_name_text_size">
+
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvNoiDungTaiTro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:lines="1"
+                                            android:ellipsize="end"
+                                            android:text="Giảm đến 50% khi đặt chỗ trước"
+                                            android:textColor="@color/diem_den_item_text_tai_tro"
+                                            android:layout_marginBottom="@dimen/home_diem_den_text_margin"
+                                            android:textSize="@dimen/di_xe_mien_phi_item_name_text_size">
+
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvChuyenMon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:lines="1"
+                                            android:ellipsize="end"
+                                            android:text="Chuyên món ăn hà nội"
+                                            android:textColor="@color/diem_den_item_text_chuyen_mon"
+                                            android:layout_marginTop="@dimen/diem_den_text_margin"
+                                            android:layout_marginBottom="@dimen/diem_den_text_margin"
+                                            android:textSize="@dimen/di_xe_mien_phi_item_name_text_size">
+
+                                        </TextView>
+                                        <LinearLayout
+                                            android:id="@+id/lnPeople"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/home_diem_den_text_margin"
+                                            android:gravity="center_vertical"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/so_nguoi_common_tv"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/so_nguoi_lon_common"
+                                                    android:textColor="@color/doitac_lv_km"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+
+                                                <TextView
+                                                    android:id="@+id/tvSoNguoiDen"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:layout_marginStart="@dimen/da_check_in_item_text_margin_to_left"
+                                                    android:gravity="center_vertical"
+                                                    android:lines="1"
+                                                    android:ellipsize="end"
+                                                    android:text="1"
+                                                    android:textColor="@color/red"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/so_nguoi__tre_em_common_tv"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/so_nguoi_tre_em_common"
+                                                    android:textColor="@color/doitac_lv_km"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTreEm"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical"
+                                                    android:lines="1"
+                                                    android:ellipsize="end"
+                                                    android:text="0"
+                                                    android:textColor="@color/red"
+                                                    android:layout_marginStart="@dimen/da_check_in_item_text_margin_to_left"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+                                                <TextView
+                                                    android:id="@+id/tvThoiGianDenTitle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:gravity="center_vertical"
+                                                    android:lines="1"
+                                                    android:ellipsize="end"
+                                                    android:textStyle="bold"
+                                                    android:text="@string/thoi_gian_den_common"
+                                                    android:textColor="@color/doitac_lv_km"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+                                                <TextView
+                                                    android:id="@+id/tvThoiGianDen"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:gravity="center_vertical"
+                                                    android:layout_marginStart="@dimen/text_margin_left_right"
+                                                    android:lines="1"
+                                                    android:ellipsize="end"
+                                                    android:textStyle="bold"
+                                                    android:text="@string/thoi_gian_den"
+                                                    android:textColor="@color/red"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_horizontal">
+
+                                                <ImageView
+                                                    android:id="@+id/imgChietKhau"
+                                                    android:layout_width="@dimen/dia_diem_tu_do_width_height"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/chiet_khau" />
+`
+                                                <TextView
+                                                    android:id="@+id/tvChietKhau"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center_vertical"
+                                                    android:lines="1"
+                                                    android:ellipsize="end"
+                                                    android:text="125"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/da_check_in_item_text_size" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+                                    <ImageView
+                                        android:id="@+id/chua_den_img"
+                                        android:layout_width="@dimen/di_xe_mien_phi_rating_size"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginEnd="7dp"
+                                        android:src="@drawable/icon_dang_cho" />
+                                    <ImageView
+                                        android:id="@+id/da_den_img"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:src="@drawable/icon_dat_cho_da_den" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@+id/lnDetaila"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/chua_den_ln"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/reserved_btn_margin_all"
+                        android:background="@drawable/bg_vien"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnCallSuport"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/reserved_btn_dat_cho_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/edit_infomation"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/resered_btn_text_size" />
+                        <Button
+                            android:id="@+id/btnDirection"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/reserved_btn_dat_cho_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/chi_duong"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/resered_btn_text_size" />
+                        <Button
+                            android:id="@+id/share_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/reserved_btn_dat_cho_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/share_check_in"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/resered_btn_text_size" />
+                        <Button
+                            android:id="@+id/btnDeals"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/reserved_btn_dat_cho_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_white"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/uu_dai"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/resered_btn_text_size" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/reserve_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/reserved_btn_dat_cho_height"
+                        android:background="@drawable/selector_white"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:layout_margin="@dimen/reserved_btn_margin_all"
+                        android:text="@string/reserve"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/resered_btn_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "734987776088",
+    "firebase_url": "https://windy-marker-658.firebaseio.com",
+    "project_id": "windy-marker-658",
+    "storage_bucket": "windy-marker-658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734987776088:android:6b754ef71e5b0cf2",
+        "android_client_info": {
+          "package_name": "com.onepas.android.pasgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734987776088-ickj81v9vj4s163e4ker1l4j5ihh714v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onepas.android.pasgo",
+            "certificate_hash": "319ab61b67757ed564eac30a45e0882b9032a092"
+          }
+        },
+        {
+          "client_id": "734987776088-r30d1s5855h3p8ih7v9vaeeuo6hvtt83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onepas.android.pasgo",
+            "certificate_hash": "ed11a96ae75210fa2a91da10d7916808f4e7cbaa"
+          }
+        },
+        {
+          "client_id": "734987776088-ih6u5vtrbv70bva8n85ti0k4pjbddo5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onepas.android.pasgo",
+            "certificate_hash": "1fa06b2a72e36bd23cf627463b4615592c2a08c0"
+          }
+        },
+        {
+          "client_id": "734987776088-ie1msgdg4lvb66tqo9t02hn7gm58peq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEurYE9g8lbHWikfVjmYNyzohP6cJxyvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734987776088-ie1msgdg4lvb66tqo9t02hn7gm58peq4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734987776088-kp4q8bhce9lj1khu1hjqgo3c9ro5hglq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onepas.ios.pasgo"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

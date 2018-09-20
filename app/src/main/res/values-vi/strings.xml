@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_slogan_share_email">PasGo – Ứng dụng Đặt chỗ Thông minh!</string>
+    <string name="connect_error_check_network">Không thể kết nối dữ liệu. Vui lòng kiểm tra lại kết nối mạng</string>
+    <string name="loading_data">Đang tải dữ liệu...</string>
+    <string name="loi_ko_the_ket_noi_den_may_chu">Không thể kết nối đến máy chủ</string>
+
+    <!-- Menu -->
+    <string name="goi_xe">Đặt Xe</string>
+    <string name="goi_xe_h">ĐẶT XE</string>
+    <string name="lich_su_chuyen_di">Lịch Sử Chuyến Đi</string>
+    <string name="gioi_thieu_ban_be">Chia Sẻ PasGo</string>
+    <string name="thong_tin_ca_nhan">Thông tin Tài Khoản</string>
+    <string name="dang_ki_tai_khoan">Đăng ký Tài Khoản</string>
+    <string name="huong_dan_su_dung_menu">Hướng Dẫn Sử Dụng</string>
+    <string name="menu_tai_tro">Thẻ PasGo</string>
+    <string name="menu_check_in">Đặt Chỗ</string>
+    <string name="dk_thong_tin">ĐĂNG KÝ TÀI KHOẢN</string>
+    <string name="cai_dat_menu">Thiết Lập(Setting)</string>
+    <string name="thoat_ung_dung">Thoát ứng dụng</string>
+    <string name="cuocgoi">Cuộc gọi</string>
+    <string name="diem_quan_tam">Điểm quan tâm</string>
+    <string name="mien_phi">Miễn phí</string>
+    <!-- End  Menu -->
+    <string name="chon">Chọn</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <string name="thoi_gian">00:00:00</string>
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix"></string>
+    <string name="time_ago_seconds">Vài giây trước</string>
+    <string name="time_ago_minute">1 phút trước</string>
+    <string name="time_ago_minutes">%d phút trước</string>
+    <string name="time_ago_hour">1 giờ trước</string>
+    <string name="time_ago_hours">%d giờ trước</string>
+    <string name="time_ago_day">Hôm qua</string>
+    <string name="time_ago_days">%d ngày trước</string>
+    <string name="time_ago_week">Tuần trước</string>
+    <string name="time_ago_weeks">%d tuần trước</string>
+    <string name="time_ago_month">1 tháng trước</string>
+    <string name="time_ago_months">%d tháng trước</string>
+    <string name="time_ago_year">1 năm trước</string>
+    <string name="time_ago_years">%d năm trước</string>
+    <string name="time_minutes">Phút</string>
+    <string name="thong_tin_dat_xe">Đang tìm tài xế</string>
+    <string name="xac_nhan_title">Xác nhận</string>
+    <string name="theo_doi_tai_xe">Theo dõi tài xế</string>
+    <string name="dang_tim_tai_xe">Đang tìm tài xế</string>
+    <string name="dia_diem_hien_tai">Vị trí hiện tại của tôi</string>
+    <string name="plz_nhap_diem_dau_cuoi">Nhập điểm đón và địa điểm đến</string>
+    <string name="dia_diem_den">Địa điểm đến</string>
+    <string name="chon_loai_xe">Chọn loại xe</string>
+    <string name="tin_khuyen_mai">Thông báo</string>
+    <string name="lich_su_chuyen_di1">LỊCH SỬ CHUYẾN ĐI</string>
+    <string name="di_xe_mien_phi_menu">Đi xe miễn phí</string>
+    <string name="di_xe_mien_phi">ĐI MIỄN PHÍ</string>
+    <string name="search_dia_diem">Địa Điểm</string>
+    <string name="search_dia_diem_don">Điểm Đón</string>
+    <string name="search_dia_diem_den">Điểm Đến</string>
+    <string name="huy">Hủy</string>
+    <string name="chia_se">Chia sẻ</string>
+    <string name="message_enable_network">Kết nối mạng của bạn đã bị tắt ! Bạn muốn bật nó ngay bây giờ? </string>
+    <string name="no_know_location">Không thể xác định được vị trí. Vị trí mặc định sẽ được hiển thị</string>
+    <string name="title_error_network">Mất kết nối internet. Vui lòng thử lại</string>
+    <string name="warning_time_dat_truoc">Qúy khách vui lòng đặt trước từ 30 phút trở lên cho lộ trình này!</string>
+    <string name="tb_dich_vu_google_bi_vo_hieu_hoa">Dịch vụ vị trí đã bị vô hiệu hóa</string>
+    <string name="setting">Thiết lập</string>
+    <string name="dat_xe">Đặt xe</string>
+    <string name="khoang">Khoảng: </string>
+    <string name="thu_lai">Thử lại</string>
+    <string name="complete">HOÀN THÀNH</string>
+    <string name="goi_hang">Gọi tổng đài</string>
+    <string name="hang_xe">Hãng xe: </string>
+    <string name="loai_xe">Loai xe: </string>
+    <string name="phut">Phút</string>
+    <string name="taxi">Taxi: </string>
+    <string name="dang_dung_duong_don_ban">Taxi đang trên đường đón bạn: </string>
+    <string name="da_bao_gom_khuyen_mai">Đã bao gồm KM:</string>
+    <string name="khong_co_khuyen_mai">Không có tài trợ</string>
+    <string name="khong_co_du_lieu">Không có dữ liệu</string>
+    <string name="khong_co_dia_diem">Chưa có điểm quen thuộc nào</string>
+    <string name="chua_co_diem_nao">Xin lỗi, chúng tôi không tìm thấy địa điểm nào như yêu cầu. Vui lòng thử lại.</string>
+    <string name="link_kmNodata"><a href="http://pasgo.vn/">PasGo.VN</a></string>
+    <string name="tb_khong_the_ket_noi_voi_voi_may_chu">Không thể kết nối được với máy chủ</string>
+    <string name="tb_thong_tin_khuyen_mai">Chương trình tài trợ thành viên mới</string>
+    <string name="btn_thu_lai">Thử lại</string>
+    <string name="tb_tai_du_lieu">Đang tải dữ liệu</string>
+    <string name="tb_chung_toi_khong_the_lien_lac_duoc">Chúng tôi không thể liên lạc được với hãng nào.</string>
+    <string name="do_khoang_cach_duong_di">Đang đo khoảng cách.</string>
+    <string name="tb_lai_xe_huy_dat_xe">Lái xe đã hủy đặt xe</string>
+    <string name="tb_toi_da_den_don_ban">Tôi đã đến đón bạn.</string>
+    <string name="tb_khach_len_xe"> Khách đã lên xe.</string>
+    <string name="tb_khach_xuong_xe">Khách đã xuống xe.</string>
+    <string name="tb_chuyen_di_ket_thuc">Tài xế kết thúc chuyến đi.</string>
+    <string name="tb_thoi_gian_dat_xe">Thời gian đặt xe phải lớn hơn thời gian hiện tại</string>
+    <string name="huy_dat_xe">Bạn chắc chắn muốn hủy đặt xe</string>
+    <string name="tb_xac_dinh_vi_tri">Chưa xác định được vị trí</string>
+    <string name="tb_thoat_app">Bạn có chắc chắn muốn thoát khỏi ứng dụng?</string>
+    <string name="tb_khong_tim_thay_duong_di">Không tìm thấy đường đi để đón khách.</string>
+    <string name="title_connect_channel_state_connect">Đã kết nối</string>
+    <string name="title_connect_channel_state_reconnect">Đang kết nối lại</string>
+    <string name="title_connect_channel_state_disconnect">Mất kết nối</string>
+    <string name="title_connect_channel_state_success">Tin nhắn đến</string>
+    <string name="title_connect_channel_state_error">Lỗi kết nối</string>
+    <string name="title_not_get_current_location">Không xác định được vị trí hiện tại</string>
+    <string name="title_put_down_to_download">Kéo xuống để tải lại dữ liệu</string>
+    <string name="title_release_to_update">Thả để cập nhật</string>
+    <string name="title_no_driver_near_here">Hiện tại không có tài xế nào quanh bạn. Hãy thử lại sau ít phút nữa</string>
+    <string name="dia_chi_ban_do">Địa chỉ bản đồ</string>
+    <string name="yeu_thich">Yêu thích của bạn</string>
+    <string name="searching">Đang tìm kiếm...</string>
+    <!-- Dat xe -->
+    <string name="dat_xe_dia_chi_don">Đón:\u0020</string>
+    <string name="dat_xe_dia_chi_den">Đến:\u0020</string>
+    <string name="dat_xe_nhan_chon_dia_diem">Nhấn chọn địa điểm đến</string>
+    <string name="dat_xe_mo_ta_them_de_taxi_don">Mô tả thêm để tài xế tiện đón bạn</string>
+    <string name="dat_xe_goi_ngay_bay_gio">Đặt giờ: Hiện tại</string>
+    <string name="dat_xe_ma_khuyen_mai">Sử dụng thẻ PasGo tại đây</string>
+    <string name="dat_xe_text">ĐẶT XE</string>
+    <string name="dat_xe_thong_bao_thuong">Cảm ơn bạn đã sử dụng dịch vụ của PasGo.</string>
+    <string name="dat_xe_thong_bao">Hệ thống tự động tìm hãng xe/ loại xe phù hợp cho bạn. Nếu không bạn cũng có thể tự chọn hãng xe loại xe trên hệ thống.</string>
+    <string name="dat_xe_phut">Phút</string>
+    <string name="dat_xe_chon_thoi_gian_de_taxi_don">Chọn thời gian để taxi đón</string>
+    <string name="dat_xe_popup_thong_bao">Vui lòng kiểm tra thông tin yêu cầu đặt xe</string>
+    <string name="nhap_binh_luan">Nhập bình luận</string>
+    <string name="nhap_tin_nhan">Nhập tin nhắn</string>
+    <string name="toi">Tôi:</string>
+    <!-- End dat xe -->
+    <string name="tb_tooltip_goixe">Nhấn nút ĐẶT XE để bắt đầu đặt xe</string>
+    <string name="tb_tooltip_khuyenmai">Nhấn để xem thông tin TÀI TRỢ</string>
+    <string name="tb_tooltip_datxe">Nhấn nút TIẾP TỤC để xem chi tiết</string>
+    <string name="tb_tooltip_tieptuc">Nhấn nút XÁC NHẬN để tìm tài xế</string>
+    <string name="tb_tooltip_hoanthanh">Nhấn nút HOÀN THÀNH để hoàn thành đặt xe</string>
+    <string name="tb_tooltip_goihang">Nhấn nút GỌI TỔNG ĐÀI để được trợ giúp</string>
+    <string name="tb_tooltip_tdtx_goi_di_dong">Nhấn nút GỌI DI ĐỘNG để liên lạc với tài xế</string>
+    <string name="tb_tooltip_tdtx_xong">Nhấn nút XONG để hoàn thành cuộc gọi</string>
+    <!-- toopTip -->
+
+
+    <!-- end tooltip -->
+    <!-- Dat xe -->
+    <string name="chon_loai_xe_tat_ca">Loại xe: Tất cả</string>
+    <string name="loai_xe_">Loại xe:\u0020</string>
+    <string name="chon_loai_xe_taxi_4_cho_hatback">Taxi 4 chỗ hatback</string>
+    <string name="chon_loai_xe_taxi_4_cho_sedan">Taxi 4 chỗ sedan</string>
+    <string name="chon_loai_xe_taxi_7_cho">Taxi 7 chỗ</string>
+    <string name="tiep_tuc">TIẾP TỤC</string>
+    <string name="uoc_tinh">Ước tính</string>
+    <!-- End dat xe -->
+
+    <string name="tim_kiem_dd">Tìm kiếm</string>
+    <string name="search_address">Tìm kiếm địa chỉ</string>
+    <string name="bt_huy">Huỷ</string>
+    <string name="expand_more">Xem thêm</string>
+    <string name="dia_chi_da_tim">Địa chỉ đã tìm</string>
+    <string name="dia_chi_quen_thuoc">Địa điểm quen thuộc</string>
+    <string name="vt_hien_tai">Vị trí hiện tại</string>
+    <string name="doi_sdt">Bạn có chắc muốn thay đổi số điện thoại</string>
+    <string name="dia_diem_quen_thuoc">Quen thuộc</string>
+    <string name="dia_diem_quen_thuoc1">Địa điểm quen thuộc</string>
+    <string name="ho_va_ten">Họ và tên (*)</string>
+    <string name="nhap_tt_nhan_xet">Nhập thông tin nhận xét</string>
+    <string name="ho_ten">Họ tên:</string>
+    <string name="sdt">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="so_dt">Số điện thoại (*)</string>
+    <string name="email_ko_bat_buoc">Email (*)</string>
+    <string name="nguoi_gioi_thieu_ko_bat_buoc">Mã giới thiệu(không bắt buộc)</string>
+    <string name="thong_tin_cua_ban">THÔNG TIN CỦA BẠN</string>
+    <string name="nhap_sdt_chinhxac">Nhập số điện thoại chính xác để nhận được mã kích hoạt</string>
+    <string name="nhap_txt1">Bằng việc đăng ký thông tin bạn đã đồng ý với điều khoản sử dụng  và chính sách bảo mật</string>
+    <string name="nhap_txt3">Điều khoản sử dụng</string>
+    <string name="nhap_txt4"> Bằng việc đăng ký thông tin bạn đã đồng ý với </string>
+    <string name="nhap_txt5">chính sách bảo mật</string>
+
+    <!-- tim tai xe -->
+    <string name="dang_tim_tai_xe_no_driver">Đang tìm tài xế</string>
+    <string name="dang_tim_tai_xe_s">Đang tìm tài xế (</string>
+    <string name="watting_driver">Đang đợi tài xế trả lời</string>
+    <string name="have_number_driver">Có %s tài xế phản hồi</string>
+    <string name="have_all_driver_left">Hiện đang có </string>
+    <string name="have_all_driver_right"> Đang tìm tài xế &lt;font color=\'red\'>(%s)&lt;/font></string>
+
+    <string name="tim_tai_xe_ban_1">Yêu cầu đặt xe đã gửi thành công. Chúng tôi sẽ gửi thông tin
+         phản hồi sớm nhất đến bạn.</string>
+    <string name="price_open_door">Giá mở cửa:</string>
+    <!-- end tim tai xe -->
+    <string name="price_unit">VNĐ</string>
+    <string name="goi_di_dong">Gọi di động</string>
+    <string name="goi">Gọi</string>
+    <string name="gui">Gửi</string>
+    <string name="gui_lai">Gửi lại</string>
+    <string name="goi_tai_xe">Gọi tài xế: </string>
+    <string name="xong">Xong</string>
+    <string name="dong">Đóng</string>
+    <string name="gioi_thieu_pastaxi">Gọi taxi nhanh, miễn phí và thuận lợi. Download tại đây:</string>
+    <string name="gioi_thieu_pastaxi_sms">Goi taxi nhanh, mien phi va thuan loi. Download tai day:</string>
+    <string name="da_duoc_luu">Địa điểm </string>
+    <string name="danh_gia_thanh_cong">Đánh giá thành công. </string>
+    <string name="dat_xe_truoc_tc">Đặt xe trước</string>
+    <string name="input_sdt_kh">Nhập số điện thoại khách hàng! </string>
+    <string name="input_sdt_kh_ed">Nhập sđt khách hàng</string>
+    <string name="noi_dung_tb_dat_xe">Đã đặt xe trước thành công, Chúng tôi sẽ gửi thông tin chi tiết đến bạn trước 15 phút khởi hành. Nếu cần thêm thông tin vui lòng liên hệ số điện thoại 19006005 </string>
+    <string name="ban_danh_gia_tx">Bạn đánh giá tài xế </string>
+    <string name="dia_diem_da_duoc_luu">đã được lưu vào điểm quen thuộc</string>
+    <string name="key_search_empty">Hãy nhập từ khoá để tìm kiếm</string>
+    <string name="dang_cach">Đang cách</string>
+    <string name="da_gap">Đã gặp</string>
+    <string name="rate_pastaxi">Đánh giá PasGo </string>
+    <string name="remind_me_later">Nhắc nhở tôi lần sau</string>
+    <string name="no_rating">Không đánh giá</string>
+    <string name="chua_gap">Chưa gặp</string>
+    <!-- thong tin tai xe -->
+    <string name="tttx_da_co_tai_xe">ĐÃ CÓ TÀI XẾ</string>
+    <string name="tttx_theo_doi_tai_xe_">THEO DÕI TÀI XẾ</string>
+    <string name="ban_da_gap_tai_xe_chua">Bạn đã gặp tài xế chưa</string>
+    <string name="rat_tiec_tb">Rất tiếc chúng tôi không thể phục vụ bạn, bạn vui lòng cho biết lý do.</string>
+    <string name="cho_xe_qua_lau">Chờ xe lâu quá</string>
+    <string name="hoac_ly_do_khac">Hoặc lý do khác...</string>
+    <string name="khach">Khách: </string>
+    <string name="kh_goi_ho">Khách hàng </string>
+    <string name="tai_xe">Tài xế: </string>
+    <string name="kem">Kém </string>
+    <string name="tot">Tốt </string>
+    <string name="dong_y">Đồng ý</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="change">Thay đổi</string>
+    <string name="ban_chac_chan_muon_huy">Bạn chắc chắn muốn hủy? </string>
+    <string name="chat_error_check_network">Tin nhắn không thể gửi đi. Vui lòng kiểm tra kết nối mạng</string>
+    <!-- end thong tin tai xe -->
+
+    <string name="dang_ky_info">Đăng ký ngay</string>
+    <string name="thieu_thong_tin">Thiếu thông tin</string>
+    <string name="email_kott">Email không tồn tại</string>
+    <string name="ok">OK</string>
+    <string name="sua_info_cn">Ghi lại</string>
+    <string name="xoa_acc">Xoá tài khoản</string>
+    <string name="xoa_txt">Xoá</string>
+    <string name="xoa_acc_thanh_cong">Xoá tài khoản thành công</string>
+    <string name="sua_info">Sửa</string>
+    <string name="kich_hoat">Kích hoạt</string>
+    <string name="ma_kich_hoat">Mã kích hoạt</string>
+    <string name="ma_kich_hoat_des">Bạn nhập mã kích hoạt đã được gửi vào số điện thoại mà bạn đã đăng ký</string>
+    <string name="ma_kich_hoat_plz">Vui lòng chờ, mã kích hoạt đang được gửi tới số điện thoại bạn đã đăng ký</string>
+    <string name="lich_su_tim_kiem">Lịch sử tìm kiếm</string>
+    <string name="lich_su_diem_qt">Lịch sử điểm quan tâm</string>
+    <string name="share_introduce">PasGo là Mạng Lưới Nhà Hàng Ngon, giúp bạn lựa chọn nhà hàng phù hợp, gần nhất và đặt bàn nhà hàng dễ dàng, miễn phí. Ưu đãi ăn uống thế hệ mới: Mỗi ngày trên PasGo có hơn 2000 ưu đãi ăn uống chất lượng, được tặng kèm miễn phí thông qua việc đặt bàn nhà hàng trước khi đi ăn qua PasGo! Ngay bây giờ bạn không còn phải mua Voucher/Deal ăn uống nữa, tất cả chỉ là dùng PasGo để tận hưởng ưu đãi ăn uống trực tiếp, miễn phí!</string>
+    <string name="gio_thieu_link"><a href="http://google.com.vn/">Register for API</a></string>
+    <string name="title_share_pastaxi">Chia sẻ PasGo </string>
+
+    <!-- noi_dung_sheare -->
+    <string-array name="noi_dung_sheare_0">
+        <item>Bắt taxi nhanh, miễn phí. Download tại đây</item>
+        <item>Download tại đây để gọi taxi miễn phí và nhanh nhất.</item>
+        <item>Gọi taxi miễn phí chỉ với một cú chạm. Download tại đây</item>
+        <item>Ứng dụng gọi taxi miễn phí nhanh chóng thuận tiện. Download tại đây</item>
+    </string-array>
+    <!-- Ứng dụng Tìm và Đặt chỗ trực tuyến với ưu đãi lên tới 40%. Tặng thêm quà từ 100k vnđ khi thử ngay cùng tôi: -->
+    <string name="share_facebook_email_content">PasGo là Mạng lưới nhà hàng ngon. Đặt bàn nhà hàng tặng kèm ưu đãi hấp dẫn miến phí</string>
+    <string name="share_sms_content">PasGo la Mang luoi nha hang ngon. Dat ban nha hang tang kem uu dai hap dan mien phi </string>
+    <string name="download_app">Tải app:</string>
+    <string name="download_app_sms">Tai app:</string>
+    <!-- rate app -->
+    <string name="rate_pastxi_title">Đánh giá PasGo </string>
+    <string name="rate_pastxi_title_message">Cảm ơn Quý Khách đã sử dụng PasGo. Vui lòng đánh giá PasGo để chúng tôi phục vụ Quý Khách tốt hơn.</string>
+    <string name="link"><a href="https://www.google.pl/">Google</a></string>
+    <string name="link_gui_lai1">Nếu bạn chưa nhận được mã kích hoạt. Xin vui lòng bấm: </string>
+    <string name="link_gui_lai2">Gửi lại </string>
+    <string name="bien_so_xe">Biển số xe : </string>
+    <string name="di_dong">Gọi di động: </string>
+    <string name="goi_di_dong_cho_tx">Gọi tài xế</string>
+    <string name="diem_don">Điểm đón : </string>
+    <string name="diem_den">Điểm đến : </string>
+    <string name="gia_tien">Giá tiền : </string>
+    <string name="thong_tin_tai_xe">THÔNG TIN TÀI XẾ </string>
+    <string name="thong_tin_chuyen_di">THÔNG TIN CHUYẾN ĐI </string>
+    <string name="ban_chua_dk">Bạn chưa đăng ký thông tin</string>
+    <string name="ban_chua_danh_gia">Bạn chưa đánh giá cho tài xế</string>
+    <string name="ban_chua_dk_tk">Bạn chưa đăng ký tài khoản</string>
+    <string name="gioi_thieu_title">GIỚI THIỆU</string>
+    <string name="huong_dan_sd">HƯỚNG DẪN</string>
+    <string name="website">Website :</string>
+    <string name="pastaxi_vn">http://pasgo.vn</string>
+    <string name="dieu_khoan_su_dung">Điều khoản sử dụng PasGo</string>
+    <string name="chinh_sach_bao_mat">Chính sách bảo mật</string>
+    <string name="san_pham_cung_nha_phat_trien">Sản phẩm cùng nhà phát triển</string>
+    <string name="chia_se_pastaxi_voi_ban_be">Chia sẻ PasGo với bạn bè</string>
+    <string name="menu_huong_dan_su_dung">Hướng dẫn sử dụng</string>
+    <string name="menu_binh_chon">Bình chọn PasGo </string>
+    <string name="error_connect_to_driver">Không thể kết nối đến tài xế</string>
+    <string name="plz_check_gps">Vui lòng bật GPS để xác định tốt hơn</string>
+    <string name="cancelled">Hủy</string>
+    <string name="permission_not_granted">Thực hiện không thành công vui lòng đợi vài giây trước khi thử lại.</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="description_register">Bạn vẫn chưa đăng ký tài khoản.\nXin vui lòng Đăng ký!</string>
+    <string name="description_register_from_khuyen_mai">Vui lòng Đăng nhập/Đăng ký Tài Khoản để sử dụng chức năng này</string>
+    <string name="btnRegister">Đăng ký</string>
+    <!-- Menu -->
+
+    <string name="vnd">vnđ</string>
+    <string name="message_unique_phone">Số điện thoại của bạn đã được đăng nhập trên máy khác.</string>
+    <string name="message_register">Đăng ký lại</string>
+    <string name="pastaxi_da_tim_dc_tx">Đăng ký lại</string>
+    <string name="ket_noi_mang_yeu">PasGo</string>
+    <string name="ket_noi_mang_yeu_and_connecttoserver">Kết nối mạng yếu, không thể kết nối đến server, vui lòng thử lại </string>
+    <string name="mat_ket_noi">Mất kết nối mạng </string>
+    <string name="xoa_tai_khoan">Xóa tài khoản  </string>
+    <string name="xoa_tai_khoan_">Bạn có chắc muốn xóa tài khoản ?</string>
+    <string name="ket_noi_mang_yeu_ndung">Kết nối mạng yếu, không thể xác định được khoảng cách và giá tiền </string>
+
+    <string-array name="title_introduction">
+        <item>Trang chủ</item>
+        <item>Bản đồ</item>
+        <item>Ưu đãi HOT</item>
+        <item>Chi tiết điểm đến</item>
+        <item>Đặt chỗ</item>
+        <item>Chat Ngay</item>
+    </string-array>
+
+    <string name="tat_ca">Tất cả</string>
+    <string name="xem_tren_ban_do">Xem trên bản đồ</string>
+    <string name="dien_may">Điện máy</string>
+    <string name="am_thuc">Ẩm thực</string>
+    <string name="khach_san">Khách sạn</string>
+    <string name="thoi_trang">Thời trang</string>
+    <string name="mua_sam">Mua sắm</string>
+    <string name="lam_dep_spa">Làm đẹp &amp; Spa</string>
+    <string name="giai_tri">Giải trí</string>
+    <string name="suc_khoe">Sức khỏe</string>
+    <string name="dang_tim_tai_xe_ko_nen_thoat"> Vui lòng giữ ở màn hình này trong lúc chúng tôi đang tìm tài xế cho bạn.</string>
+    <string name="dat_xe_nhan_chon_dia_diem_partner">Địa điểm đến đi xe miễn phí</string>
+    <string name="dat_xe_thong_bao_partner">Cám ơn bạn đã sử dụng dịch vụ của PasGo </string>
+    <string name="chon_tinh">Chọn tỉnh</string>
+    <string name="ha_noi">Hà Nội </string>
+
+    <!-- So dien thoai tong dai- -->
+    <string name="goi_tong_dai_">Gọi tới số tổng đài 19006005 </string>
+    <string name="tim_tai_xe_ban_2">Tổng đài hỗ trợ: 19006005</string>
+    <string name="so_dt_tong_dai">19006005</string>
+    <string name="link_gui_lai3"> hoặc gọi đến tổng đài hỗ trợ :  19006005 </string>
+    <string name="hay_di_ngay">HÃY ĐI NGAY</string>
+    <string name="di_mien_phi">ĐI MIỄN PHÍ</string>
+    <string name="search_hint">Nhập từ để tìm kiếm</string>
+    <string name="xem_thon_tin_ct">Xem thông tin chi tiết: </string>
+    <string name="tai_day">Tại đây</string>
+    <string name="di_luon">Đi luôn</string>
+    <string name="lich_su_">LỊCH SỬ</string>
+    <string name="image_view">Image</string>
+    <string name="het_han">Cuộc gọi hết thời hạn</string>
+    <string name="hom_nay">Hôm nay </string>
+    <string name="hom_qua">Hôm qua </string>
+    <string name="khong_co_km">Chưa có ghi nhận nào về lịch sử chuyến đi của bạn. Rất nhiều ĐIỂM ĐẾN hấp dẫn đang chờ đón bạn. Hãy lên đường ngay thôi!</string>
+    <string name="khong_co_kmv1">Hiện tại chưa có đơn vị nào cung cấp Điểm Đến ở lĩnh vực này. Hãy tham gia ngay cùng PasGo để là đơn vị đầu tiên sử dụng phương thức chăm sóc khách hàng một cách khác biệt.</string>
+    <string name="chi_phi">Ước tính:</string>
+    <string name="taxi_filter">Taxi </string>
+    <string name="mien_phi_filter">Tài trợ </string>
+    <string name="khong_co_check_in">Chưa có địa điểm nào được đặt chỗ</string>
+    <!-- language- -->
+    <string name="language_cai_dat_chung">CÀI ĐẶT CHUNG </string>
+    <string name="language_title">Language( Ngôn ngữ) </string>
+    <string name="language_name">Tiếng Việt </string>
+    <string name="language_tiengviet">Tiếng Việt </string>
+    <string name="language_tienganh">English </string>
+    <string name="km_nodata">Giải pháp PasGo - Ứng dụng Đặt chỗ Thông minh giúp người dùng tìm kiếm Nhà cung cấp sản phẩm/Dịch vụ gần nhất và đặt chỗ trực tuyến một cách nhanh chóng, tiện lợi!
+                            Đồng thời PasGo cũng giúp người dùng tìm các Nhà cung cấp với các ưu đãi tuyệt vời, đảm bảo cạnh tranh, uy tín, chất lượng và nhận ưu đãi hết sức dễ dàng chỉ với vài cú chạm!</string>
+    <string name="km_nodata_1">Mời bạn xem thêm tại: </string>
+    <string name="not_facebook">Ứng dụng facebook chưa được cài đặt trên máy của bạn </string>
+    <string name="gia_taxi">Giá taxi: ~%sK</string>
+    <string name="khoang_cach">Cách: ~%sKm</string>
+    <string name="cach">Cách</string>
+    <string name="khoang_cach_common">Cách:</string>
+    <string name="tb_km">Hàng nghìn Điểm Đến uy tín, chất lượng với ưu đãi lớn cho Thành viên PasGo. Cùng Đặt chỗ/Đặt xe tới trải nghiệm và tận hưởng thôi!</string>
+    <!-- phan them -->
+    <string name="ban_kinh">Bán kính: ~%s</string>
+    <string name="comment">Bình luận</string>
+    <string name="dat_xe_nhan_chon_diem_don">Nhấn chọn điểm đón</string>
+    <string name="read_more">Xem thêm...</string>
+    <string name="doc_tiep">Đọc tiếp</string>
+    <string name="promotion_to_driver">Quý Khách được giảm trừ %s</string>
+    <string name="promotion_code">Mã tài trợ (nếu có)</string>
+    <string name="diem_tai_tro">Điểm Đến</string>
+    <string name="tb_ma_tai_tro_khong_hople">Mã tài trợ chưa hợp lệ, vui lòng nhập lại\nTổng đài hỗ trợ: 19006005</string>
+	<string name="diem_duoc_tai_tro">Điểm được tài trợ</string>
+	<string name="tb_giam_tru_khuyen_mai">Bạn được giảm trừ %s cho chuyến đi này, bạn chỉ phải chi trả số tiền phát sinh thêm</string>
+	<string name="popup_chon_diem_don_title">Bạn chọn địa điểm đón là</string>
+	<string name="dia_chi_don">Địa chỉ đón</string>
+	<string name="dia_chi_den">Địa chỉ đến</string>
+
+    <string name="check_in_exist">Quý khách đã đặt chỗ tại nhà hàng &lt;b>%s&lt;/b>. Quý khách xem chi tiết trong &lt;b>"Sửa/Hủy đặt chỗ"&lt;/b> hoặc gọi hỗ trợ: 19006005(1000đ/phút).</string>
+
+    <!-- ma tai tro -->
+	<string name="ma_tai_tro">Mã tài trợ:</string>
+	<string name="menh_gia">Mệnh giá:</string>
+	<string name="han_su_dung">Hạn sử dụng:</string>
+	<string name="di_ngay">Đi ngay</string>
+    <string name="vui_long_xem_them">Vui lòng xem thêm</string>
+    <string name="de_xuat_xem_them">Thêm</string>
+    <string name="thu_gon">Thu gọn</string>
+    <string name="bang_gia">Bảng giá &amp; Gợi ý</string>
+	<string name="promotion_code_is_not_active">Mã tài trợ chưa được kích hoạt.\nTổng đài hỗ trợ: 19006005 </string>
+	<string name="not_yet_ready">Chưa kích hoạt</string>
+	<string name="ma">ID PasGo:</string>
+    <string name="reserve">Đặt chỗ</string>
+    <string name="reserve_now">Đặt Chỗ Ngay</string>
+	<string name="tb_phuc_vu_1">Quý Khách đã đặt xe thành công. Vui lòng chờ trong ít phút, lái xe đang trên đường đến đón Quý Khách.</string>
+    <string name="tb_phuc_vu_2">Hiện tại không cố tài xế hoặc hãng nào phục vụ.</string>
+    <!-- menu -->
+    <string name="tai_khoan">Tài khoản</string>
+    <string name="dich_vu">DỊCH VỤ</string>
+    <string name="nhat_ki_su_dung">NHẬT KÝ SỬ DỤNG</string>
+    <string name="thong_tin_pasgo">THÔNG TIN PasGo</string>
+	<string name="noi_da_check_in">Đã đặt chỗ</string>
+	<string name="tim_kiem_dia_diem">Tìm kiếm địa điểm</string>
+	<string name="check_in_info">Thông tin</string>
+    <string name="diem_den_tai_tro">Điểm đến</string>
+    <string name="tb_dat_xe_ma_tai_tro">Nhập mã tài trợ (Nếu có) tiết kiệm chi phí cho chuyến đi!</string>
+    <string name="support_number">Tổng đài hỗ trợ: 19006005</string>
+    <string name="tb_chua_co_ma_tai_tro">Bạn chưa có thẻ PasGo nào!</string>
+    <string name="read_less">Rút gọn</string>
+    <string name="ten_parner">Tên parner</string>
+    <string name="dia_chi">Địa chỉ</string>
+    <!-- 2.0.0 -->
+    <string name="gioi_han_check_in">Số lần đặt chỗ của quý khách không thể quá 30 lần</string>
+    <string name="share_check_in">Chia sẻ</string>
+    <string name="quy_dinh_chung_menu">Tổng quan về PasGo</string>
+
+    <string name="term_and_policies1">Giới thiệu giải pháp PasGo</string>
+    <string name="term_and_policies2">Quy chế Ứng dụng</string>
+    <string name="term_and_policies3">Chính sách bảo mật</string>
+    <string name="term_and_policies4">Chính sách giải quyết tranh chấp</string>
+    <string name="term_and_policies5">Quy định về Thẻ PasGo</string>
+    <string name="term_and_policies6">Dành cho nhà hàng</string>
+
+    <string name="hang_xe_dieu_xe">Hãng xe %s đang điều tài xế đến đón quý khách.</string>
+    <string name="tb_khong_co_tai_xe_phuc_vu">Rất tiếc hiện không có tài xế nào phục vụ quý khách. Xin vui lòng thử lại!</string>
+    <string name="connect_to_driver">Đang kết nối đến tài xế, chờ phản hồi</string>
+    <string name="hang_xe_pop">Hãng xe </string>
+    <string name="nt_voi_tai_xe">Nhắn tin với tài xế </string>
+    <string name="thong_tin_hang_xe">THÔNG TIN HÃNG XE</string>
+    <string name="so_hieu_xe">Số hiệu xe:</string>
+    <string name="tong_dai">Tổng đài:</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="dang_cap_nhat">Đang cập nhật</string>
+    <string name="thang">THÁNG</string>
+    <string name="thoi_gian_lich_su">Thời gian:</string>
+    <string name="check_in_chon_thoi_gian">Chọn thời gian đến</string>
+
+    <string-array name="check_in_success1" formatted="false">
+        <item>* Đặt chỗ tới nhà hàng &lt;b>%s&lt;/b> đã được tiếp nhận Thành công!</item>
+        <item>* PasGo sẽ gọi điện tới số ĐT: &lt;b>%s&lt;/b> để xác nhận trong vòng 10 phút tới. Vui lòng giữ liên lạc!</item>
+        <item>* Lưu ý: Quý khách vui lòng chủ động gọi đến số: &lt;b>19006005&lt;/b> để PasGo Xác nhận trong trường hợp PasGo cố gắng liên lạc không thành công!</item>
+        <item>Đặt chỗ thành công chỉ khi có sự xác nhận từ PasGo!</item>
+        <item>&lt;b>Cảm ơn Quý Khách đã sử dụng PasGo!&lt;/b>.</item>
+    </string-array>
+    <string-array name="check_in_success1_khunggio1va3" formatted="false">
+        <item>* Đặt chỗ tới nhà hàng &lt;b>%s&lt;/b> đã được tiếp nhận Thành công!</item>
+        <item>* PasGo sẽ gọi điện tới số ĐT: &lt;b>%s&lt;/b> để xác nhận trước 8h30 ngày &lt;b>%s&lt;/b>. Vui lòng giữ liên lạc!</item>
+        <item>* Lưu ý: Quý khách vui lòng chủ động gọi đến số: &lt;b>19006005&lt;/b> để PasGo Xác nhận trong trường hợp PasGo cố gắng liên lạc không thành công!</item>
+        <item>Đặt chỗ thành công chỉ khi có sự xác nhận từ PasGo!</item>
+        <item>&lt;b>Cảm ơn Quý Khách đã sử dụng PasGo!&lt;/b>.</item>
+    </string-array>
+
+    <string name="check_in_success2" formatted="false">
+        Lưu ý:\n
+        - Nếu cần hỗ trợ hoặc thay đổi xin liên hệ Tổng đài PasGo.\n
+        - Để xem lại thông tin đặt chỗ, vào mục &lt;b>Lịch sử Đặt chỗ.&lt;/b>\n\n
+        &lt;b>Cảm ơn Bạn đã sử dụng PasGo!&lt;/b>
+    </string>
+    <string name="popup_checkin_title">Để đặt chỗ, Quý Khách vui lòng nhập đầy đủ thông tin dưới đây!</string>
+    <string name="so_nguoi_den">Số người đến:</string>
+    <string name="thoi_gian_colon">Thời gian:</string>
+    <string name="thoi_gian_den">Thời gian đến</string>
+    <string name="thoi_gian_den_common">Thời gian đến:</string>
+    <string name="chon_thoi_gian_den">Chọn thời gian đến</string>
+    <string name="plz_chon_thoi_gian_den">Quý Khách vui lòng chọn thời gian đến</string>
+    <string name="plz_nhap_so_nguoi_den">Quý Khách vui lòng nhập số người đến</string>
+    <string name="plz_so_nguoi_den_lon_hon">Quý Khách vui lòng xem lại số người đến</string>
+    <string name="tb_thoi_gian_checkIn">Thời gian chọn phải lớn hơn thời gian hiện tại 15 phút</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <!--login-->
+    <string name="phone_number">Nhập số điện thoại</string>
+    <string name="pass_word">Nhập mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    <string name="singup_menber_pasgo">Đăng ký mới</string>
+    <string name="change_language">Change</string>
+    <string name="language">Tiếng Việt</string>
+
+    <!--login-->
+    <string name="imput_national_phone_number">Vui lòng chọn quốc gia và nhập số điện thoại để đăng ký</string>
+    <string name="dieukhoan1">Tôi đồng ý với các</string>
+    <string name="dieukhoan2">điều khoản sử dụng</string>
+    <string name="dieukhoan">Tôi đồng ý với các &lt;font color=\'red\'> điều khoản sử dụng&lt;/font> </string>
+    <string name="input_phone_number">Nhập số điện thoại</string>
+    <string name="select_nation_code">Chọn mã quốc gia</string>
+    <string name="confirm_content">Mã kích hoạt sẽ được gửi đến số điện thoại trên. Nếu muốn thay đổi số điện thoại xin vui lòng chọn \"Thay đổi\"</string>
+    <string name="continue_login">Tiếp tục</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_password">Cập nhật mật khẩu</string>
+    <string name="update_content">Sử dụng mật khẩu cho phép bạn đăng nhập PasGo trên các thiết bị khác nhau mà không cần kích hoạt lại qua SMS. Mật khẩu không phải là mã kích hoạt PasGo.\nLưu ý không chia sẻ mật khẩu với bất kỳ ai để đảm bảo an toàn cho tài khoản PasGo của bạn.</string>
+    <string name="update_content_popup">Để tối ưu hóa trải nghiệm của người dùng,&lt;font color=\'red\'>PasGo&lt;/font>  đã phát hành phiên bản cập nhật mới. Xin vui lòng cập nhật mật khẩu để tăng tính bảo mật và đảm bảo mọi quyền lợi của bạn.\n Mọi thắc mắc vui lòng đọc Chính sách và Điều khoản sử dụng hoặc liên hệ với chúng tôi.</string>
+    <string name="update_content_popup2">Mọi thắc mắc vui lòng đọc&lt;font color=\'red\'> Chính sách và Điều khoản sử dụng&lt;/font> hoặc liên hệ với chúng tôi.</string>
+    <string name="pass_word_again">Xác nhận mật khẩu</string>
+    <string name="user_info">Thông tin người dùng</string>
+    <string name="pasword_manager">Đổi mật khẩu</string>
+
+    <string name="import_info_from_facebook">Dùng thông tin từ Facebook</string>
+    <string name="name">Tên</string>
+    <string name="input_name">Nhập tên</string>
+    <string name="input_email">Nhập Email</string>
+    <string name="input_birthday">Chọn Ngày sinh</string>
+    <string name="input_email_title">Email</string>
+    <string name="input_birthday_title">Ngày sinh</string>
+    <string name="input_sex_title">Giới tính</string>
+    <string name="input_sex">Chọn giới tính</string>
+    <string name="areas_of_interest">Lĩnh vực quan tâm</string>
+    <string name="areas_of_interest_select">Chọn lĩnh vực quan tâm</string>
+    <string name="plz_input_language">Chọn mã quốc gia</string>
+    <string name="plz_input_phone_number">Nhập số điện thoại</string>
+    <string name="plz_input_password">Nhập mật khẩu</string>
+    <string name="plz_input_phone_number_format">Vui lòng nhập đúng số điện thoại</string>
+    <string name="input_ma_kich_hoat">Nhập mã kích hoạt</string>
+    <string name="change_avata">Thay ảnh!</string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="choose_from_library">Chọn từ thư viện</string>
+    <string name="select_file">Chọn tệp</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="password_khong_trung_nhau">Xác nhận mật khẩu không đúng</string>
+    <string name="password_leng">Mật khẩu phải lớn hơn 5 kí tự</string>
+    <string name="pass_word_old">Mật khẩu cũ</string>
+    <string name="pass_word_new">Mật khẩu mới</string>
+    <string name="plz_input_password_old">Bạn vui lòng nhập mật khẩu cũ</string>
+    <string name="plz_input_password_new">Bạn vui lòng nhập mật khẩu mới</string>
+    <string name="plz_input_password_new_again">Nhập lại mật khẩu</string>
+    <string name="tb_change_account">Bạn chắc chắn muốn thoát tài khoản?</string>
+    <string name="change_account">Đăng Xuất</string>
+    <string name="update_password_successfully">Cập nhật mật khẩu thành công</string>
+    <string name="tb_register_phone_is_exits">Số điện thoại này đã được đăng ký tài khoản. Vui lòng nhập mật khẩu để đăng nhập</string>
+    <string name="update_user_successfully">Cập nhật thông tin người dùng thành công</string>
+    <string name="register">Đăng ký</string>
+    <string name="resend_activation_code">Gửi lại mã kích hoạt</string>
+    <string name="ndkm_title">Nhấn ngay một trong ba nút để nhận ưu đãi</string>
+    <string name="goi_toi">Gọi tới</string>
+    <string name="sdt_tong_dai">1900 6005</string>
+    <string name="call1">1900 6005 (1.000đ/phút)</string>
+    <string name="nhay">\"</string>
+    <string name="de_den_diem_tai_tro">Để đến Điểm Đến</string>
+    <string name="de_cho_diem_tai_tro">Đặt chỗ Điểm Đến</string>
+    <string name="chi_duong">Dẫn đường</string>
+    <string name="chua_co_bang_gia">Hiện tại chưa có bảng giá</string>
+    <string name="rating_comment">Chạm vào một ngôi sao để xếp hạng</string>
+    <string name="rating_confirm">Bạn có muốn đánh giá %s Sao cho điểm này?</string>
+    <string name="booking_title_confirm">Đặt taxi để đến ngay %s và hưởng mọi ưu đãi dành cho thành viên PasGo</string>
+    <string name="call_title_thongbao">Gọi ngay tới tổng đài (1000đ/phút) để Đặt Chỗ và hưởng ưu đãi tại %s</string>
+    <string name="datxe_call_thongbao">Gọi ngay tới tổng đài (1000đ/phút) để Đặt Xe và hưởng ưu đãi.</string>
+    <string name="loi_ket_noi">Lỗi kết nối, vui lòng thử lại</string>
+    <string name="noi_dung_khuyen_mai_share">Giảm giá lớn tại %s cho thành viên PasGo! TẢI MIỄN PHÍ LÀ GIA NHẬP!</string>
+    <string name="detail">Chi tiết</string>
+    <string name="tb_khong_the_ket_noi_voi_voi_may_chu_again">Không thể kết nối được với máy chủ, vui lòng thử lại</string>
+    <!-- phần thay đổi 2.1.1 -->
+    <string name="update_presenter">Nhập Mã Đăng Ký</string>
+    <string name="update_presenter_des">Vui lòng nhập &lt;b>Mã Đăng Ký&lt;/b>(viết liền), nếu không có bạn nhập mã: 123456. Để nhận được nhiều quà tặng hấp dẫn.</string>
+    <string name="update_presenter_des_2">Mỗi Mã Đăng Ký có những quà tặng khác nhau, quà tặng này có thể là Thẻ PasGo được giảm giá khi đến các Điểm đến trong PasGo.</string>
+    <string name="update_presenter_tit">Mã Đăng Ký</string>
+    <string name="update_presenter_err">Nhập Mã Đăng Ký chưa hợp lệ, vui lòng thử lại</string>
+    <string name="plz_enter_presenter">Bạn vui lòng nhập mã ID hoặc số điện thoại của người giới thiệu</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="notify">THÔNG BÁO</string>
+    <string name="da_gioi_thieu">Đã giới thiệu</string>
+    <string name="update_presenter_successful">Cập nhật thành công!</string>
+
+    <string name="register_phone_text_notifi_1">Vui lòng nhập đúng số điện thoại để nhận được Mã kích hoạt từ Tổng đài PasGo  &lt;font color=\'red\'>+841227066066&lt;/font>. Việc này là an toàn và miễn phí. </string>
+    <string name="register_phone_text_notifi_2">Chúng tôi cam kết tuân thủ chặt chẽ các Quy định về an toàn và bảo mật thông tin khi đăng ký và sử dụng cho Thành viên PasGo, tuân theo các Điều khoản sử dụng PasGo.</string>
+    <string name="notify_khong_tim_thay_check_in">Không tìm thấy khuyến mại nào theo yêu cầu</string>
+    <string name="checkin_huong_dan_su_dung1">Chào mừng bạn đến với hệ thống đặt chỗ trực tuyến PasGo!</string>
+    <string name="checkin_huong_dan_su_dung2">Có hàng trăm Điểm Đến hấp dẫn xung quanh bạn, với nhiều danh mục như: nhà hàng, khách sạn, karaoke, spa làm đẹp... với nhiều ưu đãi lớn dành riêng cho Thành Viên PasGo đang chờ đón bạn tới khám phá.</string>
+    <string name="checkin_huong_dan_su_dung3">Hãy cùng chọn một danh mục, hoặc một Điểm Đến cụ thể và đặt chỗ để tới trải nghiệm và tận hưởng ngay thôi!</string>
+    <string name="dia_diem_tim_kiem">Có phải địa điểm bạn đang tìm?</string>
+    <string name="birth_valid">Số tuổi của bạn không hợp lệ</string>
+    <string name="continue_booking">Tiếp tục</string>
+    <string name="continue_reserver">Tiếp tục</string>
+    <string name="confirm_booking">Xác nhận</string>
+    <string name="diem_don1">Điểm đón</string>
+    <string name="diem_den1">Điểm đến</string>
+
+    <string name="chon_dia_diem_den">Địa điểm đến</string>
+    <string name="menu_filter">Tìm kiếm</string>
+    <string name="filter_no_data">Không tìm thấy đối tác nào phù hợp với tùy chọn của bạn</string>
+    <string name="diem_tai_tro_search">Gợi ý các địa điểm ăn uống
+    </string>
+    <string name="goi_tong_dai">Gọi tổng đài</string>
+
+    <string name="hang_xe_name">Hãng taxi</string>
+    <string name="taxi_4_cho">Taxi 4 chỗ</string>
+    <string name="taxi_4_cho_ariport">Airport Taxi 4 chỗ</string>
+    <string name="xe_dich_vu">Xe dịch vụ</string>
+    <string name="plz_nhap_dich_vu">Vui lòng đợi dịch vụ</string>
+    <string name="input_sponsor_code">Nhập mã tài trợ</string>
+    <string name="plz_enter_sponsor_code">Vui lòng nhập mã tài trợ để nhận ưu đãi</string>
+
+    <string name="dat_truoc">Lịch Sử Đặt Xe</string>
+    <string name="da_check_in">Đặt Chỗ của bạn</string>
+    <string name="da_nhan">Đã nhận(%s)</string>
+    <string name="chua_nhan">Chưa nhận(%s)</string>
+    <string name="mo_ta">Description : </string>
+    <string name="muc_tai_tro">Mức tài trợ : </string>
+
+    <string name="dang_cho">Đang chờ(%s)</string>
+    <string name="hoan_thanh">Hoàn thành</string>
+    <string name="tai_tro">Tài trợ</string>
+    <string name="dat_xe_loai0">Taxi thường</string>
+    <string name="dat_xe_loai1">Taxi thường</string>
+    <string name="dat_xe_loai2">Taxi sân bay</string>
+    <string name="dat_xe_loai3">Taxi chiều về</string>
+
+    <string name="tinh_default">Gần bạn</string>
+    <string name="danh_muc_default">Nhà hàng</string>
+    <string name="khu_vuc">Khu vực</string>
+    <string name="de_xuat_danh_muc">Danh mục</string>
+    <string name="loai_hinh">Loại hình</string>
+
+    <string name="no_data_ma_tai_tro_diem_den">Hiện tại chưa có điểm đến phù hợp</string>
+    <string name="vnd_up">VNĐ</string>
+    <string name="use">Sử dụng</string>
+    <string name="filter_tinh_title">CHỌN KHU VỰC SỬ DỤNG</string>
+    <string name="filter_nhom_km_title">CHỌN LĨNH VỰC TÀI TRỢ QUAN TÂM</string>
+    <string name="checkin_xacnhan_1">Bạn đang đặt chỗ tới: &lt;b>%s&lt;/b>.</string>
+    <string name="checkin_xacnhan_2">Bạn sẽ nhận được các Ưu đãi dành cho Thành viên PasGo tại: &lt;b>%s&lt;/b>\nMời Bạn kiểm tra lại thông tin và bấm nút &lt;b>Xác nhận&lt;/b> để tiếp tục việc Đặt chỗ!</string>
+    <string name="checkin_xacnhan_3">\nVà Bạn sẽ được tặng thêm &lt;font color=\'red\'>%s&lt;/font>, giảm trừ khi thanh toán!</string>
+    <string name="view_detail">Xem chi tiết</string>
+    <string name="skip_intro">Bỏ qua ></string>
+    <string name="tong_dai_ho_tro">Tổng đài hỗ trợ</string>
+
+    <string name="share_now">Chia sẻ ngay</string>
+    <string name="an_de_goi_xe">Ấn để gọi xe</string>
+    <string name="call_center_support">Gọi Đặt Chỗ/Hỗ trợ</string>
+    <string name="call_center_support_booking">Gọi Đặt Xe/Hỗ trợ</string>
+    <string name="di_xe">Đi xe</string>
+    <string name="the_pasgo_intro">Cách sử dụng và nhận thêm thẻ PasGo:</string>
+    <string name="the_pasgo_intro1">Bước 1: Ấn nút xem chi tiết\nBước 2: Chọn Điểm Đến\nBước 3: Đặt chỗ và đến trải nghiệm</string>
+    <string name="the_pasgo_intro2">Để đổi mệnh giá thẻ hoặc đổi thời hạn dùng thẻ.\nGọi &lt;b>19006005&lt;/b> </string>
+    <string name="the_pasgo_intro3">&lt;font color=\'black\' >&lt;strong>Chia sẻ PasGo với bạn bè để nhận thẻ &lt;strong>&lt;/font> &lt;font color=\'#1662bf\'>&lt;u>&lt;i>Xem chi tiết&lt;/i>&lt;/u>&lt;/font></string>
+    <string name="tab_reserve1">Danh sách</string>
+    <string name="tab_reserve2">Gần bạn</string>
+    <string name="tab_reserve3">Bản đồ</string>
+    <string name="tab_reserve4">Tìm kiếm</string>
+    <string name="tab_reserve5">Thẻ PasGo</string>
+    <string name="tu_khoa_tim_kiem">Xu hướng tìm kiếm</string>
+    <string name="reserve_vi_tri">Khu vực:</string>
+    <string name="reserve_diem_de_xuat">Những Điểm Đến khác tương ứng với Thẻ này!</string>
+    <string name="no_data_diem_den_yeu_thich">Bạn lựa cho Nhà hàng yêu thích cho riêng minh!</string>
+    <string name="no_data_nhom_km">Không tìm thấy dịch vụ. Bạn vui lòng chọn khu vực khác hoặc kiểm tra lại định vị.</string>
+    <string name="no_data_diem_den">Không tìm thấy ĐIỂM ĐẾN nào phù hợp với các tùy chọn của bạn. Vui lòng lựa chọn khu vực hoặc các tùy chọn khác!</string>
+    <string name="dat_taxi_toi_day">Đặt taxi tới đây</string>
+    <string name="continue_popup_booking">Tiếp tục</string>
+    <string name="pasgo_card">Thẻ PasGo</string>
+    <string name="ndkm_nguoi_da_den">%s người đã đến</string>
+
+    <string name="so_nguoi">Người lớn</string>
+    <string name="tre_em">Trẻ em</string>
+    <string name="ngay_thang">Ngày đến</string>
+    <string name="thoi_gian_dat_cho">Giờ đến</string>
+    <string name="so_nguoi_lon_common">Người lớn:</string>
+    <string name="so_nguoi_tre_em_common">Trẻ em:</string>
+    <string name="ngay_thang_common">Ngày đến:</string>
+    <string name="gio_common">Giờ đến:</string>
+    <string name="ghi_chu_1">Ghi chú</string>
+    <string name="ghi_chu_3">Điền ghi chú tại đây</string>
+    <string name="hotline_call_taxi">Taxi Hà Nội - Nội Bài chỉ từ 120.000 VNĐ</string>
+    <string name="hotline_reserver">Đặt chỗ ngay qua tổng đài</string>
+    <string name="hotline_booking">Đặt xe ngay qua tổng đài</string>
+
+    <string name="thu2">Thứ 2</string>
+    <string name="thu3">Thứ 3</string>
+    <string name="thu4">Thứ 4</string>
+    <string name="thu5">Thứ 5</string>
+    <string name="thu6">Thứ 6</string>
+    <string name="thu7">Thứ 7</string>
+    <string name="thu0">Chủ nhật</string>
+
+    <string name="share_text_2">&lt;b>Mạng lưới hơn 1000 nhà hàng ngon tại Sài Gòn, Đà Nẵng và Hà nội đang sẵn sàng chào đón bạn, hãy đặt bàn trước và tận hưởng ngay thôi!&lt;/b></string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
+    <string name="presenrer_read_more">Xem thêm</string>
+    <string name="presenrer_read_less">Rút gọn</string>
+
+    <string name="utilities">TIỆN ÍCH</string>
+    <string name="introduce">GIỚI THIỆU</string>
+    <string name="diem_dac_trung">ĐIỂM ĐẶC TRƯNG</string>
+
+    <string name="dung_ngay">Dùng ngay</string>
+    <string name="resered_so_nguoi_common">Số người:</string>
+    <string name="call_support">Gọi hỗ trợ</string>
+    <string name="thoi_gian_den_colon">Thời gian đến:</string>
+    <string name="pasgo_card_login_msg">Vui lòng Đăng Nhập để kiểm tra thẻ PasGo</string>
+    <string name="call_history_reserve">Gọi tới tổng đài (1000đ/phút) để thay đổi thông tin đặt chỗ</string>
+    <string name="chon_khu_vuc">CHỌN KHU VỰC</string>
+    <string name="nodata_yeu_thich_chua_dang_nhap">Đăng ký/Đăng nhập để xem hoặc lựa chọn Điểm đến Yêu thích của bạn!</string>
+    <string name="nodata_yeu_thich">Bạn chưa chọn Điểm đến yêu thích nào!</string>
+    <string name="edit_infomation">Sửa/Hủy</string>
+    <string name="edit_infomation_pop">Sửa/ hủy đặt chỗ</string>
+    <string name="edit_info_content">Nếu bạn muốn sửa hoạc hủy đặt chỗ này xin vui long liên hệ với bộ phận CSKH PasGo.</string>
+    <string name="result_number">Kết quả tìm: %s</string>
+    <string name="result_text">cho: &lt;font color=\'#d31e1e\'>%s&lt;/font></string>
+    <string name="quan_huyen">Quận, huyện</string>
+    <string name="goi_y_title">Xu hướng tìm kiếm mới nhất hiện nay</string>
+    <string name="thong_bao_title">Thông báo Hot từ PasGo</string>
+    <string name="muc_uu_dai">Ưu Đãi</string>
+    <string name="gan_ban">Gần Bạn</string>
+    <string name="danh_gia">Đánh Giá</string>
+    <string name="goi_y_tim_kiem">Gợi ý tìm kiếm</string>
+    <string name="filter">Bộ lọc</string>
+    <string name="ket_qua">Kết quả</string>
+    <string name="restaurant_search_hint">Tìm kiếm nhà hàng</string>
+
+    <string name="gio_phuc_vu">Giờ đón Khách:</string>
+    <string name="khoang_gia">Khoảng giá (</string>
+    <string name="detail_uu_dai_title">Lợi ích khi Đặt bàn PasGo</string>
+    <string name="diem_noi_bat_title">Thông tin tóm tắt</string>
+    <string name="detail_gioi_thieu_title">Giới thiệu chi tiết</string>
+    <string name="menu">Menu</string>
+    <string name="menus">Menus</string>
+    <string name="anh">Image</string>
+    <string name="dia_chi_va_ban_do">Địa chỉ &amp; Bản đồ</string>
+    <string name="xem_tat_ca_number">Xem tất cả (%s)</string>
+    <string name="xem_chi_tiet">Xem chi tiết</string>
+    <string name="binh_luan">Bình luận</string>
+    <string name="binh_luan_tai_day">Bình luận tại đây</string>
+    <string name="detail_quan_tam_title">Có thể bạn quan tâm</string>
+    <string name="chat_ngay">Chat Ngay</string>
+    <string name="goi_ngay">Gọi Ngay</string>
+    <string name="them">Thêm</string>
+    <string name="title_photos">Photos (%s)</string>
+    <string name="uu_dai">Ưu đãi</string>
+    <string name="menu_nha_hang">Menu nhà hàng</string>
+    <string name="ban_do">Map</string>
+    <string name="image_nha_hang">Ảnh nhà hàng</string>
+    <string name="categoty">Danh mục</string>
+
+    <string name="tab_home1">Trang chủ</string>
+    <string name="tab_home2">Quanh đây</string>
+    <string name="tab_home3">Tìm kiếm</string>
+    <string name="tab_home4">Ưu đãi HOT</string>
+    <string name="tab_home5">Chat ngay</string>
+
+    <string name="xem_tat_ca">Xem tất cả</string>
+    <string name="den">Đến</string>
+    <string name="home_den_danh_gia">Hãy dành cho chúng tôi đánh giá của bạn!</string>
+    <string name="vi_tri">Vị trí</string>
+    <string name="ship_ve">Ship về</string>
+    <string name="ket_qua_title">%s Điểm đến</string>
+
+    <string name="danh_muc_chinh">Danh mục chính</string>
+    <string name="distance">Khoảng cách</string>
+
+    <string name="home_filter_text">Theo khu vực,mức giá,loại hình...</string>
+    <string name="home_filter">Lọc</string>
+    <string name="bo_loc">Bỏ lọc</string>
+    <string name="loc_kq">Lọc kết quả</string>
+    <string name="kq_loc">Kết quả lọc</string>
+
+    <string name="thong_tin_dat_cho">Thông tin đặt chỗ</string>
+    <string name="dat_cho_that_bai_title">Đặt chỗ chưa thành công</string>
+    <string name="dat_cho_thanh_cong_title">Tiếp nhận thành công</string>
+    <string name="xac_nhan_dat_cho_title">Xác nhận đặt chỗ</string>
+    <string name="thong_bao">Thông báo</string>
+    <string name="reserve_is_exists">Có đặt chỗ chưa đến tại đây</string>
+    <string name="nha_hang">Nhà hàng</string>
+    <string name="bo_suu_tap_mo_ta">Các bộ sưu tập về chuỗi nhà hàng nổi tiếng, phong cách ẩm thực, loại hình ăn uống, không gian, đặt tiệc,... được cập nhật thường xuyên tại PasGo.</string>
+
+    <string name="action_delete">Xóa</string>
+    <string name="action_copy">Sao chép</string>
+    <string name="hint_enter_a_message">Nhập một tin nhắn…</string>
+    <string name="chat_update_info_title">Bạn vui lòng điền các thông tin dưới đây để bắt đầu chat ngay.</string>
+    <string name="chat_update_info_input_sdt">Điện thoại</string>
+    <string name="chat_update_info_input_email">Email</string>
+    <string name="start_chat">Bắt đầu trò chuyện</string>
+    <string name="view_history">Xem thêm lịch sử</string>
+    <string name="datcho_va_uudai">Đặt chỗ &amp; Ưu đãi</string>
+
+    <string formatted="false" name="reserved_infomation">Thông tin cuộc đặt chỗ\n
+        Số đặt chỗ: %s\n
+        Điểm đến: %s\n
+        Số người đến: %d người lớn, %d trẻ em\n
+        Thời gian đến: %s\n
+        Địa chỉ: %s\n
+        Thời gian đặt: %s
+    </string>
+    <string name="favorite_added">Bạn đã thêm yêu thích thành công</string>
+    <string name="favorite_cancel">Bạn đã bỏ yêu thích thành công</string>
+</resources>

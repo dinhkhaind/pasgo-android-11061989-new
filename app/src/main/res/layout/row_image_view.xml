@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pageview_detail_image_height"
+        android:src="@drawable/image_loading"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

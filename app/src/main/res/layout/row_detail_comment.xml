@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/selector_bg_transparent"
+    android:id="@+id/detail_comment_ln">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/lnAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:padding="@dimen/menu_account_text_padding">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imgAvata"
+                    android:layout_width="@dimen/account_manager_image_width"
+                    android:layout_height="@dimen/account_manager_image_width"
+                    android:background="@drawable/no_avatar"
+                    fresco:placeholderImage="@drawable/image_loading"
+                    android:layout_gravity="center_horizontal"
+                    app:roundAsCircle="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/menu_account_text_padding"
+                    android:paddingEnd="@dimen/menu_account_text_padding"
+                    android:text="@string/name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/detail_comment_name_tv_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thoi_gian"
+                    android:paddingStart="@dimen/menu_account_text_padding"
+                    android:textSize="@dimen/detail_comment_date_tv_size"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/detail_rating_ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:layout_marginBottom="@dimen/margin_all">
+            <TextView
+                android:id="@+id/danh_gia_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/danh_gia"
+                android:textSize="@dimen/detail_comment_rate_tv_size"
+                android:textColor="@color/gray"
+                android:gravity="bottom"
+                android:layout_marginEnd="@dimen/margin_all"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/corner_detail_rating">
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="0.0"
+                    android:textSize="@dimen/detail_tv_rating"
+                    android:layout_marginStart="@dimen/text_margin_left_right"
+                    android:layout_marginEnd="@dimen/text_margin_left_right"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_danh_gia_detail"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_text_size"
+        android:layout_margin="@dimen/margin_all"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/bg_line_listview"
+        android:layout_marginEnd="@dimen/margin_all"
+        android:layout_marginStart="@dimen/margin_all">
+
+    </View>
+</LinearLayout>

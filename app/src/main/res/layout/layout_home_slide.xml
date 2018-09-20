@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/category1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_all"
+        android:layout_marginTop="@dimen/home_title_margin_top"
+        android:layout_marginBottom="@dimen/home_title_margin_bottom"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/home_text_title" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/category1_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tag_lv_margin"
+        android:scrollbars="none"
+        tools:context=".ui.home.HomeActivity" />
+</LinearLayout>

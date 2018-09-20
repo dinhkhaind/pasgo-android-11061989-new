@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnDisconnect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loi_ket_noi"
+                android:textColor="@color/red_strong"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/btnTryAGain"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bg_red"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/thu_lai"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_line_padding" />
+
+</LinearLayout>

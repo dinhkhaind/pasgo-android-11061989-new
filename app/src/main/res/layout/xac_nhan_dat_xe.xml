@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <include layout="@layout/error_connect_network_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/lnMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnTiepTuc"
+            android:layout_below="@+id/lnThongTinTaiXe" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.onepas.android.pasgo.widgets.MySupportMapFragment" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShowLayout"
+            android:layout_width="@dimen/tttx_buttom_show_action_width_height"
+            android:layout_height="@dimen/tttx_buttom_show_action_width_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_nut_anmap_gt"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/lnThongTinTaiXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_trong"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/lnDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/viewH"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_trong"
+                            android:paddingBottom="@dimen/xndx_text_top_bottom"
+                            android:paddingTop="@dimen/xndx_text_top_bottom" >
+
+                            <ImageView
+                                android:id="@+id/imgDiaChi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/xac_nhan_margin"
+                                android:background="@drawable/ic_diemdon"
+                                android:gravity="left"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/tvDiaDiemHienTai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/imgDiaChi"
+                                android:text="@string/dia_diem_hien_tai"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xndx_text_all" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:background="@color/line_xanh" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_trong"
+                            android:paddingBottom="@dimen/xndx_text_top_bottom"
+                            android:paddingTop="@dimen/xndx_text_top_bottom" >
+
+                            <ImageView
+                                android:id="@+id/imgDiaChi1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/xac_nhan_margin"
+                                android:background="@drawable/ic_diemden_timtx"
+                                android:gravity="left"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/tvDiaDiemDen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/imgDiaChi1"
+                                android:text="@string/dia_diem_den"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/xndx_text_all" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewH"
+                        android:layout_width="0.3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lnDiaDiem"
+                        android:layout_toStartOf="@+id/lnTT"
+                        android:background="@color/line_xanh" />
+
+                    <LinearLayout
+                        android:id="@+id/lnTT"
+                        android:layout_width="@dimen/xndx_tt_right_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/theo_doi_tai_xe_img_icon_margin"
+                            android:gravity="center"
+                            android:text="@string/uoc_tinh"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/xndx_text_all" />
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="40.000 d"
+                            android:textColor="@color/bg_do_dun"
+                            android:textSize="@dimen/xndx_text_all"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvKm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0.0 Km"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/xndx_text_all" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/line_xanh" />
+
+                <TextView
+                    android:id="@+id/tvPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_trong"
+                    android:gravity="center"
+                    android:padding="@dimen/datxe_popup_datxe_margin"
+                    android:text="50k"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/xndx_text_tb_xacnhan"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent_xacnhan"
+                android:gravity="center"
+                android:padding="@dimen/datxe_popup_datxe_margin"
+                android:text="@string/dat_xe_popup_thong_bao"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xndx_text_tb_xacnhan" />
+        </LinearLayout>
+
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnTiepTuc"
+            android:layout_marginStart="10dp"
+            layout="@layout/popup_tooltip_bottom_center" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xndx_btn_tieptuc_width"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/btn_all"
+            android:gravity="center"
+            android:text="@string/confirm_booking"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xndx_text_all"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

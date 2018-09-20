@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_trong"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <ScrollView
+        android:layout_below="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/error_connect_network_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+                    android:paddingTop="@dimen/datxe_text_popup_top_bottom" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/tim_tai_xe_margin"
+                        android:background="@color/white"
+                        android:gravity="left"
+                        android:text="@string/khoang"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvKm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_toEndOf="@+id/textView2"
+                        android:text="3Km"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvKm"
+                        android:layout_alignBottom="@+id/tvKm"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/datxe_popup_datxe_margin"
+                        android:text="~40.000 VND"
+                        android:textColor="@color/bg_do_dun"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@drawable/boder_vien_thongtin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+                    android:paddingTop="@dimen/datxe_text_popup_top_bottom" >
+
+                    <ImageView
+                        android:id="@+id/imgDiaChi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/datxe_popup_datxe_margin"
+                        android:background="@drawable/ic_diemdon"
+                        android:gravity="left"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/tvDiaDiemHienTai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="@dimen/tim_tai_xe_dia_chi_maigin"
+                        android:layout_toEndOf="@+id/imgDiaChi"
+                        android:text="@string/dia_diem_hien_tai"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@drawable/boder_vien_thongtin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+                    android:paddingTop="@dimen/datxe_text_popup_top_bottom" >
+
+                    <ImageView
+                        android:id="@+id/imgDiaChia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/tim_tai_xe_margin"
+                        android:background="@drawable/ic_diemden_timtx"
+                        android:gravity="left"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/tvDiaDiemDen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="@dimen/tim_tai_xe_dia_chi_maigin"
+                        android:layout_toEndOf="@+id/imgDiaChia"
+                        android:text="@string/dia_diem_den"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnTimKiemXe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/tim_tai_xe_layout_timkiem_margin"
+                        android:background="@drawable/bg_thong_bao_vien"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+                        android:paddingTop="@dimen/datxe_text_popup_top_bottom" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                                <TextView
+                                    android:id="@+id/tvSecondNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/have_all_driver_right" />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:id="@+id/rlSearchDriver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" >
+
+                            <TextView
+                                android:id="@+id/tvHaveDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/watting_driver" />
+                        </RelativeLayout>
+
+                        <com.onepas.android.pasgo.widgets.AnimatedGifImageView
+                            android:id="@+id/animatedGifImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/dang_tim_tai_xe_ko_nen_thoat"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlTimKiemXeThatBai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/lnNot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+                            android:paddingTop="@dimen/datxe_text_popup_top_bottom"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imgDiaChi1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/tim_tai_xe_layout_timkiem_thongtin"
+                                android:layout_marginTop="@dimen/tim_tai_xe_icon_tb_margin_top"
+                                android:background="@drawable/ic_list_thongtin"
+                                android:gravity="left"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/tvThongBaoPhucVu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toEndOf="@+id/imgDiaChi1"
+                                android:text="@string/tb_phuc_vu_1" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/datxe_text_popup_top_bottom" >
+
+                            <ImageView
+                                android:id="@+id/imgDiaChis1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/tim_tai_xe_layout_timkiem_thongtin"
+                                android:layout_marginTop="@dimen/tim_tai_xe_icon_tb_margin_top"
+                                android:background="@drawable/ic_list_thongtin"
+                                android:gravity="left"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/tvDiaDiemHienTaid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_toStartOf="@+id/btnCall"
+                                android:layout_toEndOf="@+id/imgDiaChis1"
+                                android:text="@string/tim_tai_xe_ban_2" />
+
+                            <ImageButton
+                                android:id="@+id/btnCall"
+                                android:layout_width="@dimen/button_width_call_detail"
+                                android:layout_height="@dimen/button_height_call_detail"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/tim_tai_xe_layout_timkiem_margin"
+                                android:background="@drawable/call_selector"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/datxe_text_popup_top_bottom"
+                            android:layout_marginStart="@dimen/tim_tai_xe_layout_timkiem_margin"
+                            android:layout_marginEnd="@dimen/tim_tai_xe_layout_timkiem_margin"
+                            android:background="@drawable/bg_edittext"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/tvPromotion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:paddingBottom="@dimen/margin_call_detail"
+                                android:paddingStart="@dimen/margin_right_call_detail"
+                                android:paddingEnd="@dimen/margin_right_call_detail"
+                                android:paddingTop="@dimen/margin_call_detail"
+                                android:text="@string/app_name" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_bt_thu_lai"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/tim_tai_xe_layout_timkiem_margin"
+                            android:layout_marginEnd="@dimen/tim_tai_xe_layout_timkiem_margin"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <RelativeLayout
+                                android:id="@+id/relPopup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <include
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    layout="@layout/popup_tooltip_bottom_left" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlAction"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/datxe_text_popup_top_bottom" >
+
+                                <com.onepas.android.pasgo.widgets.AutoBGButton
+                                    android:id="@+id/btnComplete"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/datxe_buttom_ok_height"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/selector_bg_blue"
+                                    android:text="@string/complete"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/white" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

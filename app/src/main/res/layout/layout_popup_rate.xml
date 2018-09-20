@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tttx_gap_tai_xe_margin"
+            android:paddingTop="@dimen/tttx_gap_tai_xe_margin"
+            android:text="@string/rate_pastxi_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tttx_gap_tai_xe" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/rate_app_marginbutton"
+            android:background="@color/line_dialog" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rate_app_marginbutton"
+            android:gravity="center"
+            android:text="@string/rate_pastxi_title_message"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/popup_text_size"/>
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnRatePasTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_common"
+            android:layout_marginBottom="@dimen/rate_app_marginbutton"
+            android:background="@drawable/btn_all"
+            android:text="@string/rate_pastaxi"
+            android:textColor="@android:color/white" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnRemindMeLater"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_common"
+            android:layout_marginBottom="@dimen/rate_app_marginbutton"
+            android:background="@drawable/btn_all"
+            android:text="@string/remind_me_later"
+            android:textColor="@android:color/white" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnNoRating"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button_common"
+            android:layout_marginBottom="@dimen/rate_app_marginbutton"
+            android:background="@drawable/btn_all"
+            android:text="@string/no_rating"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

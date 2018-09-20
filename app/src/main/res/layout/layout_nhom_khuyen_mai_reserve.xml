@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tag_khuyen_mai_ln"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/de_xuat_horizontal_lv_height"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/khuyen_mai_lv"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_horizontal_lv_height"
+        android:layout_centerHorizontal="true"
+        tools:context=".MainActivity"
+        />
+    <TextView
+        android:id="@+id/no_data_nhom_km_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/arrow_left_img"
+        android:layout_toStartOf="@+id/arrow_right_img"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_nhom_km"/>
+
+    <LinearLayout
+        android:id="@+id/loading_nhomkm_ln"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/progress_width_loading_data_dialog"
+                android:layout_height="@dimen/progress_height_loading_data_dialog"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tb_tai_du_lieu"
+                android:textColor="@color/info_taxi"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

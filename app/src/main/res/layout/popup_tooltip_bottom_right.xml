@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rlToolTipBottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/lnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_corner_tooltip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBottomRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tooltip_margin_left_right"
+                android:layout_marginEnd="@dimen/tooltip_margin_left_right"
+                android:gravity="center_vertical|center_horizontal"
+                android:minHeight="30dp"
+                android:minWidth="50dp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow_down_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0.5dp"
+            android:layout_alignRight="@+id/lnView"
+            android:layout_below="@+id/lnView"
+            android:layout_marginTop="-1dip"
+            android:src="@drawable/ic_tooltip_dow" />
+    </RelativeLayout>
+
+</FrameLayout>

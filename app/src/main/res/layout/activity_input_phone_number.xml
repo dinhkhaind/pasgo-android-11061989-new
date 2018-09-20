@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mau_nen_chung"
+    tools:context="com.onepas.android.pasgo.ui.account.InputPhoneNumberActivity">
+    <include layout="@layout/layout_tool_bar_title"/>
+    <ScrollView
+        android:layout_below="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/login_margin_left_right"
+            android:layout_marginEnd="@dimen/login_margin_left_right"
+            android:layout_marginTop="@dimen/login_margin_left_right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/imput_national_phone_number"
+                android:textColor="@color/red_strong"
+                android:textSize="@dimen/input_phone_number_title"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lnSelectLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_transparent_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNationNameView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_button_langage_height"
+                    android:gravity="bottom"
+                    android:paddingStart="@dimen/login_button_langage_padding_left"
+                    android:text="@string/select_nation_code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/login_button_langage_textsize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/line_dang_nhap"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_textbox_height"
+                android:layout_marginTop="@dimen/login_button_margin_top"
+                android:background="@drawable/bg_edittext"
+                android:focusable="true"
+                android:hint="@string/phone_number"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:paddingStart="@dimen/margin_all"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_button_langage_height"
+                android:layout_marginTop="@dimen/login_button_margin_top"
+                android:background="@drawable/corner_red_login"
+                android:text="@string/continue_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_button_langage_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tvDieuKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/dieukhoan"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_add_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                </LinearLayout>
+            <TextView
+                android:id="@+id/tvNotifi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_phone_text_notifi_1"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_phone_text_notifi_2"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

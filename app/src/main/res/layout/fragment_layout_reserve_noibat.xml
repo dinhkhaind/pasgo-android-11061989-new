@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout_listview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/reserve_load_data_height"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/loading_ln"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+            <include layout="@layout/layout_loadding_data_reserve"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/diem_dien_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/load_more_footer"
+                android:divider="@color/bg_layout_listview"/>
+            <include layout="@layout/disconnect_please_try_again" />
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_centerVertical="true"
+                android:text="@string/no_data_diem_den"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/load_more_footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/top_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/xam"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/load_more_progressBar"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/costum_progress_bar"
+                    android:padding="3dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_tool_bar_reserve"></include>
+
+</FrameLayout>

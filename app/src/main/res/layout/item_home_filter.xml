@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/filter_all_ln"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lnParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line_gray_all"/>
+        <TextView
+            android:id="@+id/tvNameParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filter_item_width"
+            android:paddingStart="@dimen/margin_all"
+            android:text="Co Quan"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textStyle="normal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/line_gray_all"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnChild"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_bg_transparent"
+            android:layout_height="@dimen/filter_item_width">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_all"
+                android:text="Co Quan"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mau_den"
+                android:textStyle="normal" />
+            <CheckBox
+                android:id="@+id/chkCheck"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:button="@drawable/custom_checkbox_filter"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view_child_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_all"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:background="@color/line_gray_all"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_trong" >
+
+    <RelativeLayout
+        android:id="@+id/rlGoogleMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.onepas.android.pasgo.widgets.MySupportMapFragment" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgIconMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewCenter"
+            android:src="@drawable/ic_marker"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+        <View
+            android:id="@+id/viewCenter"
+            android:layout_width="1dp"
+            android:layout_height="0.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnMyLocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/map_search_my_location_margin_top"
+            android:layout_alignRight="@+id/lnPopupMarker"
+            android:layout_marginBottom="@dimen/mylocation_right"
+            android:layout_marginEnd="@dimen/mylocation_right"
+            android:background="@drawable/ic_action_location_searching" />
+        <LinearLayout
+            android:id="@+id/lnPopupMarker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/google_map_search"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/map_search_height" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toStartOf="@+id/lnYeuThich"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvNamePosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/searching"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lnLoadingAddress"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/google_map_search"
+                        android:orientation="horizontal" >
+
+                        <ProgressBar
+                            android:id="@+id/progressBar1"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="@dimen/progress_width_loading_data_dialog"
+                            android:layout_height="@dimen/progress_height_loading_data_dialog"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="true" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/tb_tai_du_lieu"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="@dimen/margin_line_popup"
+                        android:text="Thai Ha, Dong Da, ha Noi"
+                        android:textColor="@color/black"
+                        android:paddingBottom="10dp"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnYeuThich"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvyeu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/yeu_thich"
+                        android:textColor="@color/name_position"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/imgYeuThich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="29dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/icon_sao_quenthuoc" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ln_btn_goi_xe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <com.onepas.android.pasgo.widgets.AutoBGButton
+                    android:id="@+id/btnSelect"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/datxe_buttom_goixe"
+                    android:layout_marginBottom="@dimen/datxe_buttom_goixe_margin_bottom"
+                    android:layout_marginStart="@dimen/buttom_goixe_margin_left_right_"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg_do_dun"
+                    android:text="@string/chon"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

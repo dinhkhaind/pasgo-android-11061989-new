@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.onepas.android.pasgo.ui.reserve.SearchResultActivity"
+    android:background="@color/bg_layout">
+
+    <LinearLayout
+        android:id="@+id/lnLoadDing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/layout_loadding_data" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/no_data_ma_tai_tro_diem_den"
+                android:textSize="16sp"
+                android:visibility="gone" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/kq_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/bg_layout_listview" />
+            <RelativeLayout
+                android:id="@+id/load_more_rl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_bg_while">
+                <TextView
+                    android:id="@+id/load_more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/presenrer_read_more"
+                    android:textColor="@color/search_reserve_title"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/load_more_tv"
+                    android:paddingStart="3dp"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/icon_load_more_down"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/goi_y_tim_kiem_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goi_y_tim_kiem"
+                android:padding="@dimen/margin_all"
+                android:textSize="@dimen/search_result_goi_y_tv_size"
+                android:textColor="@color/search_reserve_title"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/goi_y_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/bg_layout_listview" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

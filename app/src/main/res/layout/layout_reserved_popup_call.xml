@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/layout_call_width"
+    android:layout_height="fill_parent"
+    android:background="@color/phone_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvContentConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/call_center_support"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/red_strong"/>
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/call_title_padding"
+                android:textColor="@color/black"
+                android:text="@string/call_title_thongbao"
+                android:textSize="@dimen/call_title_text_size"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lncall1"
+                    android:layout_width="@dimen/ln_call_width"
+                    android:layout_height="@dimen/ln_call_height"
+                    android:background="@drawable/selector_bg_white_null"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/login_button_margin_top"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/detail_call_now"
+                        />
+                    <TextView
+                        android:id="@+id/btnCall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/call_number_text_size"
+                        android:text="@string/sdt_tong_dai"
+                        android:layout_marginStart="-10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lnChatNow"
+                    android:layout_width="@dimen/ln_call_width"
+                    android:layout_height="@dimen/ln_call_height"
+                    android:background="@drawable/selector_bg_white_null"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/login_button_margin_top"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/detail_chat_now"
+                        />
+                    <TextView
+                        android:id="@+id/btnChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="-10dp"
+                        android:textSize="@dimen/call_number_text_size"
+                        android:text="@string/chat_ngay"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnHuy"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/ln_call_width"
+                android:layout_height="@dimen/ln_call_height"
+                android:layout_marginTop="@dimen/margin_all"
+                android:background="@drawable/selector_bg_white_null"
+                android:text="@string/huy"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/login_button_langage_textsize" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+</LinearLayout>

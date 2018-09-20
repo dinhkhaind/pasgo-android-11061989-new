@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/load_more_footer"
+        android:background="@color/bg_layout"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical">
+        <include layout="@layout/layout_tool_bar_title" />
+        <include layout="@layout/disconnect_please_try_again" />
+        <ScrollView
+            android:id="@+id/nested_ln"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scrollbars="none"
+            android:fillViewport="true">
+            <include layout="@layout/content_bo_suu_tap" />
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/load_more_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_2"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/xam"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/load_more_progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/costum_progress_bar"
+            android:padding="3dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>
+

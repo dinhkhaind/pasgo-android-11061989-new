@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="next_vote_slide">410</integer>
+    <integer name="slide_up_duration">410</integer>
+    <integer name="slide_up_menu_duration">200</integer>
+    <integer name="slide_down_menu_duration">310</integer>
+    <integer name="overflow_out_duration">60</integer>
+    <integer name="overflow_in_duration">60</integer>
+</resources>

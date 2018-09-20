@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_transparent_blue"
+    android:paddingBottom="@dimen/layout_dat_truoc_margin"
+    android:paddingStart="@dimen/layout_dat_truoc_margin"
+    android:paddingEnd="@dimen/layout_dat_truoc_margin"
+
+    android:paddingTop="@dimen/layout_dat_truoc_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toStartOf="@+id/imgDetail">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="@dimen/row_dat_truoc_ic_loaixe_width_height"
+                        android:layout_height="@dimen/row_dat_truoc_ic_loaixe_width_height"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_ls_taixe" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutContent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/imgLogo"
+                        android:orientation="vertical"
+                        android:paddingStart="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tvLoaiHinh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center_vertical"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="Taxi thường"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/row_dat_truoc_title_text_size"></TextView>
+                            <TextView
+                                android:id="@+id/muc_tai_tro_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="100 vnd"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/row_dat_truoc_tai_tro_text_size"
+                                android:background="@drawable/corner_red_strong_all"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgDiemDon"
+                                android:layout_width="@dimen/row_dat_truoc_ic_diadiem_width_height"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_diemdon_nksd" />
+
+                            <TextView
+                                android:id="@+id/tvDiemDon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="125"
+                                android:textColor="@color/gray_item"
+                                android:textSize="@dimen/row_dat_truoc_item_text_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgDiemDen"
+                                android:layout_width="@dimen/row_dat_truoc_ic_diadiem_width_height"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_diemden_nksd" />
+
+                            <TextView
+                                android:id="@+id/tvDiemDen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="125"
+                                android:textColor="@color/gray_item"
+                                android:textSize="@dimen/row_dat_truoc_item_text_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgThoiGian"
+                                android:layout_width="@dimen/row_dat_truoc_ic_diadiem_width_height"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_thoigian_nksd" />
+
+                            <TextView
+                                android:id="@+id/tvThoiGian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="11:06:1989"
+                                android:textColor="@color/gray_item"
+                                android:textSize="@dimen/row_dat_truoc_item_text_size" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

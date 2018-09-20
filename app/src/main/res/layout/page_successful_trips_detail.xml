@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <ScrollView
+        android:layout_below="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnBottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/error_connect_network_layout" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_trong"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/thong_tin_chuyen_di"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp" >
+                <TextView
+                    android:id="@+id/ten_loai_hinh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:text="..." />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diem_don"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/diem_don"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diem_den"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/diem_den"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="@string/thoi_gian_lich_su" />
+                    <TextView
+                        android:id="@+id/thoi_gian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...."
+                        android:textStyle="normal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:text="@string/mo_ta" />
+                    <TextView
+                        android:id="@+id/mo_ta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...."
+                        android:textStyle="normal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tai_tro_ln"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/ma_tai_tro" />
+                        <TextView
+                            android:id="@+id/ma_tai_tro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="...."
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width1"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:lines="1"
+                            android:ellipsize="end"
+                            android:text="@string/muc_tai_tro" />
+
+                        <TextView
+                            android:id="@+id/muc_tai_tro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="...." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_trong"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/thong_tin_tai_xe"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tai_xe"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ten_tai_xe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bien_so_xe"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bien_so_xe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hang_xe"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hang_xe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/lich_su_thong_tin_chuyen_di_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loai_xe"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/loai_xe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="...." />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/lnBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ibCall"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin_all"
+            android:layout_marginTop="@dimen/margin_all"
+            android:background="@color/goididong"
+            android:onClick="callOnClickHandler"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingStart="9dp"
+                android:text="@string/goi_di_dong_cho_tx"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

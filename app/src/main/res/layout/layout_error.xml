@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@color/bg_layout_error"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_khongketnoi" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tb_khong_the_ket_noi_voi_voi_may_chu"
+            android:textSize="@dimen/text_size_khong_ket_noi_voi_may_chu" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnThuLai"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="45dp"
+            android:minWidth="200dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_bg_red"
+            android:gravity="center"
+            android:text="@string/btn_thu_lai" />
+    </RelativeLayout>
+
+</RelativeLayout>

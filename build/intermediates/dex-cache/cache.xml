@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\classes-7fda0637e92ac6d24ea4ebd586aa117798d359fe.jar" />
+    </item>
+    <item
+        jar="E:\Study\android\tools\SDK Android Studio\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-5cc5baf3561ee528654f8e951717c1d546d41dff.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\httpmime-4.3.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f49e2348b768a7199e021a97e951df25cd5fb714">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\httpmime-4.3.1-6a72ba676015b919aa13f14b81b439a8c5c0487b.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\Pubnub-Android-3.6.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="233808689f7015c4e7b79f975774ead52abba081">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\Pubnub-Android-3.6.0-b18e810ad959508b480bbc8cb1ffcc1d5b903d9d.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\classes-1f713d3d4d28e17509a317ead25bee587bf2e0d2.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\apache-mime4j-core-0.7.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a81264fe0265ebe8fd1d8128aad06dc320de6eef">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\apache-mime4j-core-0.7.2-9db8a912e87d8ad9ece13084a6db0b4956efa30a.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\classes-64b30d0750beae92591448355558c6784a00bf4d.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\crashlytics.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0e821eafa1bf489a26bdb71f95078c26785b37a1">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\crashlytics-aa3d64d45195b3bf016c7b71b8b3c7fb22e8ae04.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2-77cdd9a656baa1bbe6477484c7e4bf3779a49bb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Duc\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-621e70103b5197ecb0a0d17189cf5badc40459d1.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\bcprov-jdk15on-1.47.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b6f5d9926b0afbde9f4dbe3db88c5247be7794bb">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\bcprov-jdk15on-1.47-2aa61b0d94f7d86aa81994994103733e942c7b3b.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\3.23.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c8414f03ff9e5b045f185921c9bc42914c906458">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\classes-70bba2970608d3da49046aa1786eafcd0073ae2b.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\gson-1.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4d8fc01b6cfc30c0e0fff75bd145a72e1f087a2e">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\gson-1.5-6af5a16a33874bf119a9f36603ec1380aae42ed1.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-2ad7113e058e789bd029c074d6de1391dea664c5.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\gcm.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\gcm-a4841d9f24d217af37910f04fa613ba3b7b56372.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\google-http-client-1.15.0-rc.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a1c29595b27ca983388ee025c25737728779cc94">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\google-http-client-1.15.0-rc-8c51cbfc27ab65ede8446ff4700802efb9194a0e.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\volley.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\volley-9d30fff2a290634c4c0a8329aeb85853174a0a52.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\libs\httpcore-4.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8dfd6286d04ad9dbf26cdf7d4ef5c8fad430cf30">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\httpcore-4.3-1fa0a25dee6ba597d2cd91096d43d2d2f2777ae7.jar" />
+    </item>
+    <item
+        jar="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\exploded-aar\net.simonvt.menudrawer\menudrawer\3.0.6\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6c43e8970e14e22ed8ea6bee207b27829422d516">
+        <dex dex="E:\Onepas\Android\pastaxi-android-client-new\app\build\intermediates\pre-dexed\debug\classes-49de246751406d841ce262091d27e75a9022ec86.jar" />
+    </item>
+
+</items>

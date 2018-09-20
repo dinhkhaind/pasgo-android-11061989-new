@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout_listview"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/xam_transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/progress_width_loading_data_dialog"
+            android:layout_height="@dimen/progress_height_loading_data_dialog"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tb_tai_du_lieu"
+            android:textColor="@color/info_taxi"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

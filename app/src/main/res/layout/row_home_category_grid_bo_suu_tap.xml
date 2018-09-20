@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:presco="http://schemas.android.com/tools"
+    android:id="@+id/category_view_ln"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/home_category1_item_margin"
+        android:layout_marginTop="@dimen/home_category1_item_margin"
+        android:layout_marginBottom="@dimen/home_category1_item_margin"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_category_bo_su_tap_height"
+            android:orientation="vertical"
+            android:layout_above="@+id/rating_km_ln">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_loading"
+                presco:placeholderImage="@drawable/image_loading"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/home_item_black_transfarent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTenDoiTac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin_left_right"
+                    android:layout_marginEnd="@dimen/text_margin_left_right"
+                    android:text="Nhà hàng"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/margin_all_one_half"
+                    android:textSize="@dimen/home_category_item_tv_name_size"/>
+                <TextView
+                    android:id="@+id/tvUuDai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin_left_right"
+                    android:layout_marginEnd="@dimen/text_margin_left_right"
+                    android:text="Ưu đãi tới 90%"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/margin_all_one_half"
+                    android:textSize="@dimen/home_category_item_tv_name_size">
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/home_bo_suu_tap_tong_nha_hang_ln_w_h"
+        android:layout_height="@dimen/home_bo_suu_tap_tong_nha_hang_ln_w_h"
+        android:background="@drawable/oval_bo_suu_tap"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/margin_all"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_all">
+        <TextView
+            android:id="@+id/tvTongNhaHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/home_bo_suu_tap_nha_hang_text_size"
+            android:textColor="@color/white"
+            android:lines="1"
+            android:text="120"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:lines="1"
+            android:textSize="@dimen/home_bo_suu_tap_tong_text_size"
+            android:text="@string/nha_hang"/>
+    </LinearLayout>
+</RelativeLayout>

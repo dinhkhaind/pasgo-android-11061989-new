@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/popHangXe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_infohangxe"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHangXeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tran Anh"
+            android:textColor="@color/name_position"
+            android:layout_marginTop="@dimen/margin_all"
+            android:paddingStart="@dimen/margin_all"
+            android:paddingEnd="@dimen/margin_all"
+            android:layout_marginBottom="@dimen/margin_all"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imgIconHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_pasgo_hangxe"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/popDiaDiemMienPhi"
+        android:layout_width="@dimen/popup_hang_xe"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_thongbaogt_map"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_bottom_maker"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/margin_right_maker"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvNamePosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tran Anh"
+                android:textColor="@color/name_position"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="@dimen/margin_line_popup"
+                android:text="Thai Ha, Dong Da, ha Noi d"
+                android:singleLine="true"
+                android:textColor="@color/address_window"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_line_popup"
+                android:orientation="horizontal"
+                android:layout_marginBottom="23dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/width_icon_popup_marker"
+                    android:layout_height="@dimen/width_icon_popup_marker"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_free" />
+
+                <TextView
+                    android:id="@+id/tvContentReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="klfnsldfnsldfnslgdfsdfsfsdsfnflsdnflsnfkl"
+                    android:textColor="@color/info_reason"
+                    android:singleLine="true"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

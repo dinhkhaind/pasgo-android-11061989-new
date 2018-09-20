@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:background="@color/bg_actionbar"
+            android:gravity="center"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            style="@style/Widget.AppCompat.Toolbar">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/category_ln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/selector_bg_thong_bao">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/danh_muc_chinh"
+                            android:textSize="@dimen/home_toolbar_vi_tri_tv"
+                            android:textColor="@color/gray_1"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/category_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="3dp"
+                                android:text="..."
+                                android:textSize="@dimen/tool_bar_reserver_title_size"
+                                android:textColor="@color/white"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/mui_ten_xuong"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="right">
+
+                <ProgressBar
+                    android:id="@+id/toolbar_progress_bar"
+                    android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+                    android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+                    android:indeterminateTint="@color/white"
+                    android:indeterminateTintMode="src_in"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/reset_ln"
+                    android:layout_width="@dimen/filter_img_width"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/selector_bg_thong_bao"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/filter_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bl_reset"
+                        android:layout_margin="@dimen/reserve_filter_img_margin" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/bo_loc"
+                        android:textSize="@dimen/toolbar_bo_loc_text_size"
+                        android:layout_below="@+id/filter_img"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/error_connect_network_layout" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <dimen name="tooltip_margin_left_right">120dp</dimen>
+    <dimen name="theo_doi_tai_xe_text_width">120dp</dimen>
+    <dimen name="theo_doi_tai_xe_buttom_ok_margin">10dp</dimen>
+    <dimen name="theo_doi_tai_xe_buttom_ok_margin_lr">20dp</dimen>
+    <dimen name="home_layout_thong_tin_khuyen_mai_margin">20dp</dimen>
+    <dimen name="home_layout_thong_tin_khuyen_mai_padding">10dp</dimen>
+    <dimen name="home_layout_thong_tin_khuyen_mai_text_size">20dp</dimen>
+    <dimen name="datxe_text_popup_top_bottom">12dp</dimen>
+    <dimen name="tim_tai_xe_layout_timkiem_margin">18dp</dimen>
+    <dimen name="xndx_btn_tieptuc_width">70dp</dimen>
+    <dimen name="xndx_text_tb_xacnhan">22sp</dimen>
+    <dimen name="xndx_text_all">19sp</dimen>
+    <dimen name="margin_right_popup_marker">50dp</dimen>
+    <dimen name="margin_bottom_popup_marker">50dp</dimen>
+    <dimen name="margin_right_maker">40dp</dimen>
+    <dimen name="margin_bottom_maker">10dp</dimen>
+    <dimen name="mylocation_right">10dp</dimen>
+	<dimen name="di_xe_mien_phi_text_tb_padding">25dp</dimen>
+	<!-- layout facebook -->
+	<dimen name="page1_image12_height">260dp</dimen>
+	<dimen name="page2_image12_height">330dp</dimen>
+	<dimen name="page3_image12_height">450dp</dimen>
+	<dimen name="page4_image12_height">300dp</dimen>
+	<dimen name="page5_image12_height">650dp</dimen>
+	<dimen name="page5_image12_margin">4dp</dimen>
+    <dimen name="pageview_image_height">400dp</dimen>
+    <dimen name="pageview_detail_image_height">400dp</dimen>
+
+	<dimen name="promotion_code">17sp</dimen>
+	<dimen name="height_content_intro">40sp</dimen>
+    <dimen name="menu_main_text_size">16sp</dimen>
+    <dimen name="introduction_image_margin_top">50dp</dimen>
+    <dimen name="lich_su_thong_tin_chuyen_di_width1">75dp</dimen>
+    <dimen name="layout_popup_width">350dp</dimen>
+    <dimen name="main_actionbar_margin_right">55dp</dimen>
+    <dimen name="main_actionbar_input_phone_number_right">80dp</dimen>
+    <dimen name="menu_account_text_padding_top">15dp</dimen>
+    <dimen name="account_manager_image_width">120dp</dimen>
+
+    <dimen name="layout_user_info_imgfacebook_width">45dp</dimen>
+    <dimen name="user_info_imgfacebook_margin">15dp</dimen>
+    <dimen name="user_info_imgfacebook_width">15dp</dimen>
+    <dimen name="user_info_imgfacebook_height">20dp</dimen>
+    <dimen name="user_info_facebook_view_padding_right">15dp</dimen>
+    <dimen name="user_info_facebook_text_size">16sp</dimen>
+
+    <!--login-->
+    <dimen name="login_image_width">90dp</dimen>
+
+    <dimen name="login_margin_top_again">70dp</dimen>
+    <dimen name="login_margin_top">80dp</dimen>
+    <dimen name="login_margin_top_input">140dp</dimen>
+    <dimen name="login_button_langage_margin_top">30dp</dimen>
+    <dimen name="login_button_login_margin_top">15dp</dimen>
+    <dimen name="login_button_login_margin_top_input">30dp</dimen>
+    <dimen name="login_button_login_margin_top_remove">140dp</dimen>
+    <dimen name="login_margin_left_right">40dp</dimen>
+    <dimen name="login_textbox_height">50dp</dimen>
+    <dimen name="account_manager_row_height">55dp</dimen>
+    <dimen name="datxe_edittext_datxe_height">50dp</dimen>
+    <dimen name="user_info_row_height">60dp</dimen>
+    <dimen name="kich_hoat_edt_code_width">300dp</dimen>
+    <dimen name="sdtn_text_size">15sp</dimen>
+    <dimen name="margin_all_popup">30dp</dimen>
+    <dimen name="presenter_button_margin_top">45dp</dimen>
+    <dimen name="main_function_bottom">65dp</dimen>
+    <dimen name="main_function_bottom_checkin">90dp</dimen>
+    <dimen name="main_function_text_size">16sp</dimen>
+    <dimen name="datxe_text_dia_diem_don_size">15sp</dimen>
+    <dimen name="booking_img_dia_diem_don_den">55dp</dimen>
+    <dimen name="booking_ln_dia_diem_don_den_margin_top_bottom">3dp</dimen>
+    <dimen name="booking_service_parent_margin_top_bottom">10dp</dimen>
+    <dimen name="booking_service_lv__item_margin_left_right">12dp</dimen>
+    <dimen name="booking_service_item_img">35dp</dimen>
+    <dimen name="booking_service_lv_width">80dp</dimen>
+    <dimen name="popup_text_size_close_app">17sp</dimen>
+
+    <dimen name="dat_cho_btn_text_size">16sp</dimen>
+    <dimen name="resered_btn_text_size">16sp</dimen>
+
+</resources>

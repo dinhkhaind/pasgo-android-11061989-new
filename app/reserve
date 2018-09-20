@@ -1,0 +1,4 @@
+1. Màn hình ReserveActivity sẽ truyền TinhId sang Fragment
+2. Load NhomKhuyenMai của tỉnh rồi lấy được KhuyenMaiId
+3. truyền khuyenmaiId ngược lại ReserveActivity để load filter
+=> lúc này có đủ dữ liệu đầu vào rồi Fragment mới loadData điểm đến

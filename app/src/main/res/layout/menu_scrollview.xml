@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/lnScrool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_item">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_support_height"
+                android:background="@color/menu_title"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:paddingTop="5dp"
+                android:text="@string/support_number"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_support_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/titTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_height"
+                android:background="@color/menu_title"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/tai_khoan"
+                android:textColor="@color/text_title"
+                android:visibility="gone"
+                android:textSize="@dimen/menu_title_text_size" />
+            <LinearLayout
+                android:id="@+id/lnTrial"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:text="@string/login"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2.5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/selector_bg_red"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="2.5dp"
+                    android:background="@drawable/selector_bg_red"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_item"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/menu_account_text_padding">
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/imgAvata"
+                        android:layout_width="@dimen/account_manager_image_width"
+                        android:layout_height="@dimen/account_manager_image_width"
+                        fresco:placeholderImage="@drawable/image_loading"
+                        android:background="@drawable/no_avatar"
+                        app:roundAsCircle="true"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_menu_item"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnMaId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/menu_account_text_padding_top">
+
+                        <TextView
+                            android:id="@+id/titMa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ma"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/maId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DK8"
+                            android:textColor="@color/ma_id"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/titphoneTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sdt"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+
+                            android:textColor="@color/ma_id"
+                            android:textSize="@dimen/menu_item_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/menu_line" />
+            <TextView
+                android:id="@+id/titDichV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_height"
+                android:background="@color/menu_title"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/dich_vu"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/menu_title_text_size" />
+            <TextView
+                android:id="@+id/menuCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_danh_muc"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/categoty"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuDatXe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_goi_xe"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/goi_xe"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+
+            <TextView
+                android:id="@+id/menuCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_dat_cho"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:visibility="gone"
+                android:text="@string/menu_check_in"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuTaiTro"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_the_pasgo"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/menu_tai_tro"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+            <LinearLayout
+                android:id="@+id/history_menu_all_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/titNhatKiSuDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_title_height"
+                    android:background="@color/menu_title"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/menu_title_padding_left"
+                    android:text="@string/nhat_ki_su_dung"
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/menu_title_text_size" />
+                <TextView
+                    android:id="@+id/menuYeuThich"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:background="@drawable/selector_menu_item"
+                    android:drawableLeft="@drawable/yeu_thich"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/menu_title_padding_left"
+                    android:drawablePadding="@dimen/menu_draw_padding_left"
+                    android:text="@string/yeu_thich"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_text_size" />
+                <RelativeLayout
+                    android:id="@+id/reserved_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_menu_item">
+                    <TextView
+                        android:id="@+id/menuReserved"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:drawableLeft="@drawable/ic_da_dat_cho"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/menu_title_padding_left"
+                        android:drawablePadding="@dimen/menu_draw_padding_left"
+                        android:text="@string/da_check_in"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_item_text_size"
+                        android:layout_toStartOf="@+id/number_of_reserved_tv"/>
+                    <TextView
+                        android:id="@+id/number_of_reserved_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:background="@drawable/selector_menu_item"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/menu_sl_tv_padding_left"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:text="0"
+                        android:textColor="@color/menu_sl_tv"
+                        android:textSize="@dimen/menu_item_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/called_driver_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/selector_menu_item">
+                    <TextView
+                        android:id="@+id/menuDatTruoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:drawableLeft="@drawable/ic_dattruoc_menu"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/menu_title_padding_left"
+                        android:drawablePadding="@dimen/menu_draw_padding_left"
+                        android:text="@string/dat_truoc"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/menu_item_text_size"
+                        android:layout_toStartOf="@+id/so_luong_dat_truoc_tv"/>
+                    <TextView
+                        android:id="@+id/so_luong_dat_truoc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:background="@drawable/selector_menu_item"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/menu_sl_tv_padding_left"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:text="0/0"
+                        android:textColor="@color/menu_sl_tv"
+                        android:textSize="@dimen/menu_item_text_size" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/menuLichSuChuyenDi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:background="@drawable/selector_menu_item"
+                    android:drawableLeft="@drawable/ic_lichsu"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/menu_title_padding_left"
+                    android:drawablePadding="@dimen/menu_draw_padding_left"
+                    android:text="@string/lich_su_chuyen_di"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_text_size" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titThongTinPasgo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_title_height"
+                android:background="@color/menu_title"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/thong_tin_pasgo"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/menu_title_text_size" />
+
+            <TextView
+                android:id="@+id/menuHuongDanSuDung"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_huongdan"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:text="@string/huong_dan_su_dung_menu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuTongQuanVePasGo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_quydinh"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:text="@string/quy_dinh_chung_menu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuGioiThieuBanBe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_gioithieu"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:text="@string/gioi_thieu_ban_be"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuThietLap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_setting"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:text="@string/cai_dat_menu"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+            <TextView
+                android:id="@+id/menuThoat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/selector_menu_item"
+                android:drawableLeft="@drawable/ic_menu_logout"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/menu_title_padding_left"
+                android:drawablePadding="@dimen/menu_draw_padding_left"
+                android:text="@string/change_account"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_item_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

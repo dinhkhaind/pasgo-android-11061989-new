@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theo_doi_tai_xe_popup_header_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+            android:paddingTop="@dimen/datxe_text_popup_top_bottom"
+            android:text="@string/tttx_da_co_tai_xe"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border_vien" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+            android:paddingStart="@dimen/tttx_layout_thong_tin_margin_top_bottom" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:layout_marginEnd="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:text="@string/taxi" />
+
+            <TextView
+                android:id="@+id/tvTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29H_2132" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+            android:paddingStart="@dimen/tttx_layout_thong_tin_margin_top_bottom" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:layout_marginEnd="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:text="@string/hang_xe" />
+
+            <TextView
+                android:id="@+id/tvHangXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mai Linh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+            android:paddingStart="@dimen/tttx_layout_thong_tin_margin_top_bottom" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list" />
+
+            <TextView
+                android:id="@+id/tvHoTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:layout_marginEnd="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:text="Nguyen Van Nam" />
+
+            <TextView
+                android:id="@+id/tvm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0963690260" />
+
+            <TextView
+                android:id="@+id/tvd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+            android:layout_marginTop="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+            android:paddingStart="@dimen/tttx_layout_thong_tin_margin_top_bottom" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list" />
+
+            <TextView
+                android:id="@+id/tvKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:layout_marginEnd="@dimen/tttx_layout_thong_tin_margin_top_bottom"
+                android:text="@string/dang_dung_duong_don_ban" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/border_vien" />
+
+        <TextView
+            android:id="@+id/tvTheoDoiTaiXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theo_doi_tai_xe_popup_header_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+            android:paddingTop="@dimen/datxe_text_popup_top_bottom"
+            android:text="@string/tttx_theo_doi_tai_xe_"
+            android:textColor="@color/tttx_text" />
+    </LinearLayout>
+
+</RelativeLayout>

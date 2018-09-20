@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.onepas.android.pasgo">
+
+    <uses-permission android:name="com.onepas.android.pasgo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.onepas.android.pasgo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".Pasgo"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.home.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider584525768323186"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.FilterActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.FilterDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.HomeBoSuuTapActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.HomeDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.category.CategoryDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.category.CategoryChildActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:uiOptions="none"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.calleddrivers.CalledDriverActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.FavoriteActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.reserved.ReservedHistoryActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.reserve.ReserveDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.pasgocard.ThePasgoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.termsandpolicies.TermsAndPoliciesActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.calleddrivers.CalledDriverDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.termsandpolicies.DetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.pasgocard.DatChoDiemDenActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.reserve.ReserveIntroActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.WebviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.WebviewChatNgayActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.WebviewChiTietActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.announcements.WebviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.announcements.AnnouncementsDetail3Activity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.pasgocard.MaTaiTroInfoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.pasgocard.DatXeDiemDenActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.calldriver.XacNhanDatXeActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.calldriver.ChonLoaiXeActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.search.SearchGoogle"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.guid.GuidActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullScreenV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.share.ShareActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.ActivationActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.calldriver.DatXeActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.ImageViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.HistoryActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.DestinationActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.ListDiaDiemChiNhanhActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.DetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.announcements.AnnouncementsActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.home.TinhActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.successfultrips.SuccessfulTripsActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.successfultrips.SuccessfulTripsDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.successfultrips.SuccessfulTripsDetailAdapter"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.CommentActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".PTNetWorkReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".PTService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ui.home.DialogRate"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.calldriver.DialogConfirmOk"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.account.UpdatePassWordDialog"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ui.calldriver.DialogInputSDT"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="dfca79f970a78bd311b4a70221f545487d60462d" />
+
+        <activity
+            android:name=".ui.account.LoginActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.account.LoginAgainActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.InputPhoneNumberActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.SelectNationActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.UpdatePasswordActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.PresenterActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.AccountManagerActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.UserInfoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.account.PasswordManagerActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.DirectionActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.reserve.SearchResultActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name=".MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.partner.ImageListActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.MenuActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.ImageListDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.partner.MenuDetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.category.CategoryActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeV7"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.home.SplashNewActivity"></activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar_ln"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar_height"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        app:titleTextColor="@color/white"
+        android:background="@color/bg_actionbar"
+        android:layout_gravity="center_vertical"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        style="@style/Widget.AppCompat.Toolbar">
+        <ProgressBar
+            android:id="@+id/toolbar_progress_bar"
+            android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+            android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_in"
+            android:layout_gravity="right"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tool_bar_title_size"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

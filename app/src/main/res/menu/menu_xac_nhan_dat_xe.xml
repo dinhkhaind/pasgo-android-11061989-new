@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_huy_xac_nhan"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_huy_goixe"
+        android:title="@string/huy_dat_xe"
+        android:titleCondensed="@string/huy_dat_xe"
+        android:visible="false">
+    </item>
+
+</menu>

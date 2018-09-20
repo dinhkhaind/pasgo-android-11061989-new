@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/loading_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/layout_loadding_data"/>
+    </LinearLayout>
+    <include layout="@layout/disconnect_please_try_again"/>
+    <LinearLayout
+        android:id="@+id/lnData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/tag_lv"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/tag_lv_margin"
+            android:paddingBottom="@dimen/tag_lv_margin"
+            tools:context=".ui.home.HomeActivity"/>
+
+        <com.onepas.android.pasgo.utils.ExpandableHeightListView
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/tag_special_lv"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.home.HomeActivity"/>
+        <LinearLayout
+            android:id="@+id/goi_y_ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all"
+                    android:src="@drawable/icon_goi_y"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all"
+                    android:layout_marginEnd="@dimen/margin_all"
+                    android:textColor="@color/search_reserve_title"
+                    android:textSize="@dimen/search_title_size"
+                    android:text="@string/goi_y_title"/>
+            </LinearLayout>
+
+            <com.onepas.android.pasgo.utils.ExpandableHeightListView
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/goi_y_lv"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.home.HomeActivity"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/searchnews_ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_header_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all"
+                    android:src="@drawable/icon_thong_bao"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_all"
+                    android:layout_marginEnd="@dimen/margin_all"
+                    android:textColor="@color/search_reserve_title"
+                    android:textSize="@dimen/search_title_size"
+                    android:text="@string/thong_bao_title"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/khuyen_mai_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/selector_bg_while"
+                    android:paddingTop="@dimen/margin_all">
+
+                    <LinearLayout
+                        android:id="@+id/icon_ln"
+                        android:layout_width="@dimen/search_new_icon_width"
+                        android:layout_height="@dimen/search_new_icon_width"
+                        android:layout_marginStart="@dimen/margin_all"
+                        android:layout_marginEnd="@dimen/margin_all"
+                        android:orientation="vertical">
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/icon_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            fresco:placeholderImage="@drawable/image_loading"
+                            android:background="@drawable/ic_launcher_full"
+                            app:roundAsCircle="true"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="3dp"
+                        android:layout_toEndOf="@+id/icon_ln"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/thong_bao1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="[HN] Lộ bí ẩn sau gần 10 năm từ nhà hang Shshimi đích thực"
+                            android:textSize="@dimen/search_announcements_title_tv_size"
+                            android:textColor="@color/black"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/description_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="So you can change it programmatically"
+                            android:maxLines="2"
+                            android:textSize="@dimen/announcements_title_tv_content"
+                            android:textColor="@color/gray"
+                            android:textStyle="normal" />
+                        <TextView
+                            android:id="@+id/date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/announcements_title_tv_content"
+                            android:textColor="@color/gray"
+                            android:text="Ngay 20/05/2014" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/thong_bao2_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[HN] Lộ bí ẩn sau gần 10 năm từ nhà hang Shshimi đích thực"
+                    android:drawableLeft="@drawable/icon_thong_bao_item"
+                    android:paddingTop="@dimen/search_new_tv_pading"
+                    android:paddingBottom="@dimen/search_new_tv_pading"
+                    android:drawablePadding="@dimen/margin_all"
+                    android:textSize="@dimen/search_announcements_title_tv_size"
+                    android:paddingStart="@dimen/margin_all"
+                    android:textColor="@color/black"
+                    android:background="@drawable/selector_bg_while"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/thong_bao3_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_while"
+                    android:text="[HN] Lộ bí ẩn sau gần 10 năm từ nhà hang Shshimi đích thực"
+                    android:drawableLeft="@drawable/icon_thong_bao_item"
+                    android:drawablePadding="@dimen/margin_all"
+                    android:paddingTop="@dimen/search_new_tv_pading"
+                    android:paddingBottom="@dimen/search_new_tv_pading"
+                    android:textSize="@dimen/search_announcements_title_tv_size"
+                    android:paddingStart="@dimen/margin_all"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

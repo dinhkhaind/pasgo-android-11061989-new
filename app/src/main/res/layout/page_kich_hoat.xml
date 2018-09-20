@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_trong"
+    android:orientation="vertical">
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/input_ma_kich_hoat"
+        android:textColor="@color/red_strong"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_item"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/ma_kich_hoat"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="160"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textColorHint="@color/info_driver"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line_add_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/link_gui_lai1"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txt_gui_lai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/ma_kich_hoat_plz"
+                android:textColor="@color/red_strong"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <com.onepas.android.pasgo.ui.calldriver.ProgressWheel
+            android:id="@+id/progressBarTwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            ProgressWheel:barColor="#ff1023"
+            ProgressWheel:barLength1="20dp"
+            ProgressWheel:barWidth="5dp"
+            ProgressWheel:rimColor="#44000000"
+            ProgressWheel:rimWidth="5dp"
+            ProgressWheel:spinSpeed="3dp"
+            ProgressWheel:text="60"
+            ProgressWheel:textColor="#222222"
+            ProgressWheel:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResendActivationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/datxe_buttom_datxe_left_right"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="@dimen/forgot_pasword_margin_top"
+        android:background="@drawable/selector_transparent"
+        android:gravity="right"
+        android:text="@string/resend_activation_code"
+        android:textColor="@color/info_reason" />
+
+    <com.onepas.android.pasgo.widgets.AutoBGButton
+        android:id="@+id/btnDangKyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttom_height"
+        android:layout_marginStart="@dimen/datxe_buttom_datxe_left_right"
+        android:layout_marginEnd="@dimen/datxe_buttom_datxe_left_right"
+        android:layout_marginTop="@dimen/datxe_buttom_margin_top"
+        android:background="@drawable/selector_bg_red"
+        android:text="@string/kich_hoat"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

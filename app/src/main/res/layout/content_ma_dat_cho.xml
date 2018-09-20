@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <include layout="@layout/error_connect_network_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_the_pasgo_intro" />
+
+        <LinearLayout
+            android:id="@+id/lyLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg_chitiet"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_loadding_data" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyKhongCoThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:background="@color/bg_layout_listview"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvKhongCoDuLieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_layout_listview"
+                android:gravity="center_horizontal"
+                android:text="@string/tb_chua_co_ma_tai_tro"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/disconnect_please_try_again" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/listData"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/load_more_footer"
+                android:layout_alignParentTop="true"
+                android:divider="@color/xam"
+                android:dividerHeight="0dp"></ListView>
+            <LinearLayout
+                android:id="@+id/lnTrial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pasgo_card_login_msg"
+                    android:layout_marginBottom="@dimen/margin_all"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:layout_marginStart="@dimen/margin_all"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/selector_bg_red"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/register_btn"
+                        android:layout_width="0dp"
+                        android:background="@drawable/selector_bg_red"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="@dimen/margin_all"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/load_more_footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray_2"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/top_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/xam"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/load_more_progressBar"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/costum_progress_bar"
+                    android:padding="3dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

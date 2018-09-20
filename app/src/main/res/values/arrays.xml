@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="activity_titles">
+        <item>@string/tat_ca</item>
+        <item>@string/dien_may</item>
+        <item>@string/am_thuc</item>
+        <item>@string/khach_san</item>
+        <item>@string/thoi_trang</item>
+        <item>@string/mua_sam</item>
+        <item>@string/lam_dep_spa</item>
+        <item>@string/giai_tri</item>
+        <item>@string/suc_khoe</item>
+    </array>
+    <array name="activity_logos">
+        <item>@drawable/filter_sanbay</item>
+        <item>@drawable/filter_amthuc</item>
+        <item>@drawable/filter_khachsan</item>
+        <item>@drawable/filter_thoitrang</item>
+        <item>@drawable/filter_khac</item>
+        <item>@drawable/filter_lamdep</item>
+        <item>@drawable/filter_giaitri</item>
+        <item>@drawable/filter_sukhoe</item>
+    </array>
+
+    <array name="arr_linh_vuc_quan_tam">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </array>
+    <array name="call">
+        <item>0471.066.066</item>
+        <item>012393.066.066</item>
+    </array>
+</resources>

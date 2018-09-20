@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/error_connect_network_layout" />
+
+    <include layout="@layout/warning_time_dat_truoc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reserve_detail_image_height"
+        android:background="@drawable/call_background"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/reserver_detail_name2_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/call_1_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call1"
+                        android:textColor="@color/white"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/booking_sdt_tv_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hotline_booking"
+                        android:textColor="@color/white"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/booking_hotline_tv_size" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="top|center_horizontal">
+
+                <ImageView
+                    android:id="@+id/call_img"
+                    android:layout_width="@dimen/datxe_call_img_width"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/goi_dat_cho_eng" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:baselineAlignBottom="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:src="@drawable/quang_cao_dat_xe_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotline_call_taxi"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/booking_hotline_tv_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDiemDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row_action_all"
+        android:paddingBottom="@dimen/booking_ln_dia_diem_don_den_margin_top_bottom"
+        android:paddingTop="@dimen/booking_ln_dia_diem_don_den_margin_top_bottom">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/booking_img_dia_diem_don_den"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_nguoidung" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imgChonDiemDon"
+            android:layout_toEndOf="@+id/imageView1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViecccccw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dat_xe_dia_chi_don"
+                    android:textColor="@color/den"
+                    android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+                <TextView
+                    android:id="@+id/tvDiaDiemDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text="@string/dia_diem_hien_tai"
+                    android:textColor="@color/den"
+                    android:textSize="@dimen/datxe_text_dia_diem_don_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDiaDiemDonLanCan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/den"
+                android:textSize="@dimen/datxe_text_dia_diem_don_size"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgChonDiemDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/booking_img_dia_diem_don_den"
+        android:background="@drawable/border_vien" />
+
+    <RelativeLayout
+        android:id="@+id/rlDiemDen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row_action_all"
+        android:paddingBottom="@dimen/booking_ln_dia_diem_don_den_margin_top_bottom"
+        android:paddingTop="@dimen/booking_ln_dia_diem_don_den_margin_top_bottom">
+
+        <ImageView
+            android:id="@+id/imgDiemDen"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/booking_img_dia_diem_don_den"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_diemden_an" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imgChonDiemDen"
+            android:layout_toEndOf="@+id/imgDiemDen"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDiaDiemDonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dat_xe_dia_chi_den"
+                    android:textColor="@color/den"
+                    android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+                <TextView
+                    android:id="@+id/tvDiaDiemDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text="@string/dat_xe_nhan_chon_dia_diem"
+                    android:textColor="@color/den"
+                    android:textSize="@dimen/datxe_text_dia_diem_don_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDiaDenLanCan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="diem den"
+                android:textColor="@color/den"
+                android:textSize="@dimen/datxe_text_dia_diem_don_size"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgChonDiemDen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/arrow_right"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="0.1dp"
+         android:background="@drawable/border_vien" />
+
+     <LinearLayout
+         android:id="@+id/lnLoadingService"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/booking_service_lv_width"
+         android:layout_gravity="center_vertical"
+         android:background="@color/google_map_search"
+         android:orientation="horizontal"
+         android:visibility="visible">
+
+         <ProgressBar
+             android:id="@+id/progressBar1"
+             style="?android:attr/progressBarStyleLarge"
+             android:layout_width="@dimen/progress_width_loading_data_dialog"
+             android:layout_height="@dimen/progress_height_loading_data_dialog"
+             android:layout_gravity="center_vertical"
+             android:indeterminate="true" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:text="@string/tb_tai_du_lieu"
+             android:textColor="@color/black"
+             android:textSize="16sp" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/lnServiceParent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:visibility="gone">
+
+         <LinearLayout
+             android:id="@+id/lnServiceTaxi"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/selector_bg_white_null"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/booking_service_parent_margin_top_bottom"
+             android:paddingTop="@dimen/booking_service_parent_margin_top_bottom">
+
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/imageTaxi"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:scaleType="centerInside"
+                         android:src="@drawable/taxi_selected" />
+
+                     <TextView
+                         android:id="@+id/titleTaxi"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:gravity="center_horizontal"
+                         android:singleLine="true"
+                         android:text="@string/taxi_4_cho"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/booking_service_child_text_size" />
+                 </LinearLayout>
+
+             </RelativeLayout>
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/lnServiceAirport"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/selector_bg_white_null"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/booking_service_parent_margin_top_bottom"
+             android:paddingTop="@dimen/booking_service_parent_margin_top_bottom">
+
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/imageAirport"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:scaleType="centerInside"
+                         android:src="@drawable/taxi_sanbay" />
+
+                     <TextView
+                         android:id="@+id/titleAirport"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:gravity="center_horizontal"
+                         android:singleLine="true"
+                         android:text="@string/taxi_4_cho_ariport"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/booking_service_child_text_size" />
+                 </LinearLayout>
+
+             </RelativeLayout>
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/lnService"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/selector_bg_white_null"
+             android:orientation="vertical"
+             android:paddingBottom="@dimen/booking_service_parent_margin_top_bottom"
+             android:paddingTop="@dimen/booking_service_parent_margin_top_bottom">
+
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:id="@+id/imageService"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:scaleType="centerInside"
+                         android:src="@drawable/xe_dichvu" />
+
+                     <TextView
+                         android:id="@+id/titleService"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:gravity="center_horizontal"
+                         android:singleLine="true"
+                         android:text="@string/xe_dich_vu"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/booking_service_child_text_size" />
+                 </LinearLayout>
+
+             </RelativeLayout>
+         </LinearLayout>
+     </LinearLayout>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@drawable/border_vien" />
+
+     <com.onepas.android.pasgo.widgets.HorizontalListView
+         android:id="@+id/listview"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/booking_service_lv_width"
+         android:background="@color/transparent"
+         android:visibility="gone"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/booking_img_dia_diem_don_den"
+        android:background="@drawable/border_vien"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/lnChonXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row_action_all"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/datxe_text_margin_top_bottom"
+            android:layout_marginTop="@dimen/datxe_text_margin_top_bottom">
+
+            <ImageView
+                android:id="@+id/imgTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_taxi_all" />
+
+            <ImageView
+                android:id="@+id/imgChonLoaiXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/tvTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/imgChonLoaiXe"
+                android:layout_toEndOf="@+id/imgTaxi"
+                android:text="@string/chon_loai_xe_tat_ca"
+                android:textColor="@color/den"
+                android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_vien" />
+
+    <LinearLayout
+        android:id="@+id/lnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_row_action_all">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/datxe_text_margin_top_bottom"
+            android:layout_marginTop="@dimen/datxe_text_margin_top_bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_time" />
+
+            <ImageView
+                android:id="@+id/imgChonTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/tvGoiNgayBayGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toStartOf="@+id/imgChonTime"
+                android:layout_toEndOf="@+id/imgTime"
+                android:text="@string/dat_xe_goi_ngay_bay_gio"
+                android:textColor="@color/den"
+                android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/booking_img_dia_diem_don_den"
+        android:background="@drawable/border_vien" />
+
+    <LinearLayout
+        android:id="@+id/lnKhuyenMai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/selector_row_action_all">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/datxe_text_margin_top_bottom"
+            android:layout_marginTop="@dimen/datxe_text_margin_top_bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgKhuyenMai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_khuyenmai" />
+
+            <TextView
+                android:id="@+id/tvKhuyenMai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toStartOf="@+id/imgSponsorCodeArr"
+                android:layout_toEndOf="@+id/imgKhuyenMai"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="@string/dat_xe_ma_khuyen_mai"
+                android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+            <ImageView
+                android:id="@+id/imgSponsorCodeArr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/booking_img_dia_diem_don_den"
+        android:background="@drawable/border_vien" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/datxe_text_margin_top_bottom"
+        android:layout_marginEnd="@dimen/datxe_text_margin_top_bottom"
+        android:layout_marginTop="@dimen/datxe_text_margin_top_bottom"
+        android:background="@drawable/selector_row_action_all"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgMoTa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_tips_mota" />
+
+        <EditText
+            android:id="@+id/edtMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/datxe_edittext_datxe_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/dat_xe_mo_ta_them_de_taxi_don"
+            android:textColor="@color/den"
+            android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/border_vien" />
+
+    <Button
+        android:id="@+id/btnDatxe"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttom_height"
+        android:layout_margin="@dimen/margin_all"
+        android:text="@string/continue_booking"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+</LinearLayout>

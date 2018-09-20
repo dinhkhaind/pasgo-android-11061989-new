@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mau_nen_chung"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/wvCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_height="@dimen/menu_detail_head"
+        android:background="@color/black_transfarent">
+        <LinearLayout
+            android:id="@+id/close_ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_bg_transparent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/toolbar_progress_bar"
+            android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+            android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+            android:layout_toStartOf="@+id/close_ln"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_in"
+            android:layout_marginEnd="@dimen/margin_all"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
+

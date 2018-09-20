@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_trong">
+    <include layout="@layout/layout_tool_bar_title"></include>
+    <RelativeLayout
+        android:layout_below="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnBt"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/error_connect_network_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/serach_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:hint="@string/tim_kiem_dd"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingStart="6dp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="6dp"
+                    android:paddingStart="10dp"
+                    android:src="@drawable/ic_search" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrSearchPlace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/lnDiaDiemTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/border_vien" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_all"
+                            android:layout_marginBottom="@dimen/search_diemtaitro_title_top_bottom"
+                            android:layout_marginTop="@dimen/search_diemtaitro_title_top_bottom"
+                            android:text="@string/dia_diem_tim_kiem"
+                            android:textColor="@color/den"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/datxe_text_dia_diem_don_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/border_vien" />
+                    </LinearLayout>
+                    <com.onepas.android.pasgo.utils.ExpandableHeightListView
+                        android:id="@+id/lvDiemSearch"
+                        background="@color/white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:clickable="false"
+                        android:divider="@color/bg_line_listview"
+                        android:dividerHeight="1dp"
+                        android:fadingEdge="none"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:scrollbars="none" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlReadMoreDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_address_read_more_height"
+                        android:background="@drawable/selector_bg_transparent"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/bg_line_listview">
+                        </View>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/search_address_read_more" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyKhongCoThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnBt"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_not" />
+
+            <TextView
+                android:id="@+id/tv_ko_co_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="@string/chua_co_diem_nao"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

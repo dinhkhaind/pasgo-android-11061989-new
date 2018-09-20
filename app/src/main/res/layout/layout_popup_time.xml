@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/popup_time_margin"
+        android:orientation="vertical" >
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_do_dun"
+            android:gravity="center"
+            android:paddingBottom="@dimen/datxe_text_popup_top_bottom"
+            android:paddingTop="@dimen/datxe_text_popup_top_bottom"
+            android:text="@string/dat_xe_chon_thoi_gian_de_taxi_don"
+            android:textColor="@color/white"
+            android:textSize="@dimen/popup_time_text_header_size" />
+
+        <Button
+            android:id="@+id/btnShowDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="11/11/2014" />
+
+        <LinearLayout
+            android:id="@+id/lnDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:soundEffectsEnabled="true"
+				android:timePickerMode="spinner"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/border_vien" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popup_time_btn_time"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_vien" />
+
+                    <LinearLayout
+                        android:id="@+id/ln10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_datxe_time"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/popup_time_text_number_margin_top"
+                            android:gravity="center_horizontal"
+                            android:text="10"
+                            android:textSize="@dimen/datxe_text_popup_time_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/dat_xe_phut" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_vien" />
+
+                    <LinearLayout
+                        android:id="@+id/ln20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_datxe_time"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/popup_time_text_number_margin_top"
+                            android:gravity="center_horizontal"
+                            android:text="30"
+                            android:textSize="@dimen/datxe_text_popup_time_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/dat_xe_phut" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_vien" />
+
+                    <LinearLayout
+                        android:id="@+id/ln30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_datxe_time"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/popup_time_text_number_margin_top"
+                            android:gravity="center_horizontal"
+                            android:text="60"
+                            android:textSize="@dimen/datxe_text_popup_time_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/dat_xe_phut" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_vien" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/border_vien" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/datxe_buttom_ok_height" >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.onepas.android.pasgo.widgets.AutoBGButton
+                    android:id="@+id/btnOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttom_popup_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/datxe_buttom_ok_margin"
+                    android:layout_marginEnd="@dimen/datxe_buttom_ok_margin"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@drawable/selector_bg_red"
+                    android:text="OK"
+                    android:textColor="@android:color/white" />
+
+                <com.onepas.android.pasgo.widgets.AutoBGButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttom_popup_height"
+                    android:layout_alignBaseline="@+id/btnOk"
+                    android:layout_alignBottom="@+id/btnOk"
+                    android:layout_marginStart="@dimen/datxe_buttom_ok_margin"
+                    android:layout_marginEnd="@dimen/datxe_buttom_ok_margin"
+                    android:layout_toStartOf="@+id/view"
+                    android:background="@drawable/selector_bg_red"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnDateS"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/popup_time_margin"
+            android:orientation="vertical" >
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:endYear="2020"
+                android:startYear="2010"
+				android:datePickerMode="spinner"
+				android:calendarViewShown="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/datxe_buttom_ok_height" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <com.onepas.android.pasgo.widgets.AutoBGButton
+                    android:id="@+id/btnDateOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttom_popup_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/datxe_buttom_ok_margin"
+                    android:layout_marginEnd="@dimen/datxe_buttom_ok_margin"
+                    android:layout_toEndOf="@+id/view1"
+                    android:background="@drawable/selector_bg_red"
+                    android:text="OK"
+                    android:textColor="@android:color/white" />
+
+                <com.onepas.android.pasgo.widgets.AutoBGButton
+                    android:id="@+id/btnDateCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttom_popup_height"
+                    android:layout_alignBaseline="@+id/btnDateOk"
+                    android:layout_alignBottom="@+id/btnDateOk"
+                    android:layout_marginStart="@dimen/datxe_buttom_ok_margin"
+                    android:layout_marginEnd="@dimen/datxe_buttom_ok_margin"
+                    android:layout_toStartOf="@+id/view1"
+                    android:background="@drawable/selector_bg_red"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

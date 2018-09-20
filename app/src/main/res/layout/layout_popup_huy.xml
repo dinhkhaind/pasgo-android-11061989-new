@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/corner_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <TextView
+            android:id="@+id/tvHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/tttx_huy_goi_text_margin"
+            android:text="@string/rat_tiec_tb"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tttx_huy_goi_text_margin" />
+
+        <Spinner
+            android:id="@+id/spnChoXe"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/tttx_huy_view_margin"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtLyDoKhac"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_edittext_ly_do_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="@dimen/tttx_huy_view_margin"
+            android:hint="@string/hoac_ly_do_khac" />
+
+        <com.onepas.android.pasgo.widgets.AutoBGButton
+            android:id="@+id/btnGui"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttom_popup_height"
+            android:background="@drawable/selector_bg_blue"
+            android:layout_marginTop="@dimen/tttx_huy_view_margin"
+            android:layout_marginBottom="@dimen/tttx_huy_view_margin"
+            android:text="@string/gui"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

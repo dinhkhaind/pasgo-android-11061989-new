@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnNhomKhuyenMai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_transparent_gray"
+    android:orientation="vertical">
+    <!--android:background="@drawable/selector_bg_transparent_gray"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/filter_price__item_margin_left_right"
+        android:layout_marginEnd="@dimen/filter_price__item_margin_left_right"
+        android:minHeight="@dimen/filter_horizontal_lv_height"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="$"
+            android:textSize="@dimen/filter_price_item_title"
+            android:paddingTop="@dimen/margin_all"
+            android:textColor="@color/nhomkm_lv_text_color"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin_all"
+            android:textSize="@dimen/filter_price_item_name"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_below="@+id/tvTitle"
+            android:text="@string/tat_ca"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

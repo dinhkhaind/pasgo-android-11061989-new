@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="1dip"
+        android:color="@color/bg_duong_vien" />
+    <!-- android:color="@color/item_duong_vien" -->
+    <padding
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1.5dp" />
+
+    <corners android:radius="3dp" />
+
+    <gradient
+        android:angle="270"
+        android:endColor="@color/white"
+        android:startColor="@color/white" />
+
+</shape>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_horizontal_lv_height"
+    android:id="@+id/item_khuyen_mai_rl"
+    android:background="@color/bg_horizontal_lv">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/khuyen_mai_lv"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_horizontal_lv_height"
+        android:layout_centerHorizontal="true"
+        tools:context=".MainActivity"
+        />
+
+    <TextView
+        android:id="@+id/no_data_nhom_km_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/arrow_left_img"
+        android:layout_toStartOf="@+id/arrow_right_img"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_nhom_km"/>
+
+</RelativeLayout>

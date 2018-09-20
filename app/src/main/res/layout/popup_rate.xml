@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bottom_popup"
+        android:orientation="vertical" >
+        <include layout="@layout/layout_logo_pasgo" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvContentConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/view"
+                android:gravity="center_horizontal"
+                android:text="@string/ban_danh_gia_tx"
+                android:textColor="@color/info_taxi"
+                android:textSize="@dimen/popup_text_size" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_toStartOf="@+id/close"
+                android:background="@color/xam" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/ic_close_laixe" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/padding_gray" />
+
+            <EditText
+                android:id="@+id/tt_danh_gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_item"
+                android:hint="@string/nhap_tt_nhan_xet"
+                android:lines="1"
+                android:maxLength="160"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:scrollbars="horizontal|vertical"
+                android:textColor="@color/info_driver"
+                android:textColorHint="@color/info_driver"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/liner_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_liner_like"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/im_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_like0" />
+
+                    <TextView
+                        android:id="@+id/txt_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/tot" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_kem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/rounded_liner_like"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/im_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_dislike0" />
+
+                    <TextView
+                        android:id="@+id/txt_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/kem" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.onepas.android.pasgo.widgets.AutoBGButton
+                android:id="@+id/btnGui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/datxe_buttom_datxe_left_right"
+                android:layout_marginEnd="@dimen/datxe_buttom_datxe_left_right"
+                android:layout_marginTop="@dimen/datxe_buttom_margin_top"
+                android:background="@color/bg_do_dun"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/gui"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

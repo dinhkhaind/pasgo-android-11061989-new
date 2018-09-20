@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dkinfo"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_tool_bar_title"/>
+    <include layout="@layout/error_connect_network_layout" />
+    <include layout="@layout/disconnect_please_try_again"/>
+    <LinearLayout
+        android:id="@+id/lyLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_chitiet"
+        android:visibility="gone" >
+
+        <include
+            layout="@layout/layout_loadding_data" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fragment_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/lyKhongCoThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvNoDataTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/km_nodata"
+            android:textSize="20sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNoDataTitle"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/xem_them_tai_pasgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/km_nodata_1"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/link_kmNodata"
+                android:paddingStart="5dp"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

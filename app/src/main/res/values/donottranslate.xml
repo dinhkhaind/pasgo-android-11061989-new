@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_operator">PasGo (Operator)</string>
+    <string name="app_name">PasGo </string>
+    <string name="app_id">584525768323186</string>
+    <string formatted="false" name="check_in_ngoai_gio_phuc_vu">Sorry &lt;b>%s&lt;/b> is out of service at this time!.\nPlease review the hours  of your reservation, then reselect at &lt;b>Time&lt;/b>.\nOr call 1900 6005 or send email to &lt;font color=\'blue\'>cskh@pasgo.vn&lt;/font> for consulting.&lt;br/>Thank you!</string>
+    <!--<string formatted="false" name="check_in_ngoai_gio_phuc_vu">Rất tiếc ngoài giờ phục vụ của &lt;b>%s&lt;/b>. Vui lòng chọn lại giờ đến để &lt;b>%s&lt;/b> được phục vụ bạn. Cảm ơn quý khách đã sử dụng PASGO</string>-->
+    <string name="action_settings">Settings</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+
+</resources>

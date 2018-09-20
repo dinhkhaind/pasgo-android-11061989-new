@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+    <LinearLayout
+        android:id="@+id/toolbar_f_ln"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/layout_tool_bar_home_filter" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_ln"
+        android:layout_below="@+id/toolbar_f_ln">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/error_connect_network_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/filter_vitri">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/filter_location_height"
+                    android:layout_margin="@dimen/filter_location_margin"
+                    android:background="@drawable/corner_white_no_border"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/filter_location_margin_left"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/vi_tri_ln"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/arr_vi_tri_img"
+                            android:background="@drawable/selector_transparent"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bl_vi_tri" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/text_margin_left_right"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="@string/vi_tri"
+                                android:textSize="@dimen/filter_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:layout_marginEnd="@dimen/text_margin_left_right"
+                                android:text=":"
+                                android:textSize="@dimen/filter_text_size" />
+
+                            <TextView
+                                android:id="@+id/vi_tri_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ha_noi"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/filter_text_size" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/arr_vi_tri_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/arrow_down_gray_small" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_all"
+                        android:layout_marginBottom="@dimen/margin_all"
+                        android:layout_marginStart="@dimen/text_margin_left_right"
+                        android:layout_marginEnd="@dimen/text_margin_left_right"
+                        android:background="@color/gray_2" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/text_margin_left_right"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/khu_vuc_ln"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@+id/arr_khu_vuc_img"
+                            android:background="@drawable/selector_transparent"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/text_margin_left_right"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:text="@string/khu_vuc"
+                                android:textSize="@dimen/filter_text_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/text_margin_left_right"
+                                android:text=":"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/filter_text_size" />
+
+                            <TextView
+                                android:id="@+id/khu_vuc_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tat_ca"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/filter_text_size" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/arr_khu_vuc_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/filter_location_margin_left"
+                            android:src="@drawable/arrow_down_gray_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_item_width"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlCheckDistanct"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_transparent">
+
+                    <TextView
+                        android:id="@+id/tvNameDistanct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_all_one_half"
+                        android:layout_marginEnd="@dimen/margin_all_one_half"
+                        android:text="@string/distance"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/mau_den"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/check_distanct_chk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_all_one_half"
+                        android:button="@drawable/custom_checkbox_filter" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_all"
+                    android:layout_marginTop="@dimen/margin_all"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/rlCheckDeals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_transparent">
+
+                    <TextView
+                        android:id="@+id/tvNameDeals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin_all_one_half"
+                        android:layout_marginEnd="@dimen/margin_all_one_half"
+                        android:text="@string/muc_uu_dai"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="@color/mau_den"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/check_deals_chk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_all_one_half"
+                        android:button="@drawable/custom_checkbox_filter" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray_2" />
+
+            <TextView
+                android:id="@+id/gia_trung_binh_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_item_width"
+                android:paddingStart="@dimen/margin_all"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:textAllCaps="true"
+                android:text="@string/app_name" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/price_rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <com.onepas.android.pasgo.utils.ExpandableHeightListView
+                android:id="@+id/kq_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/button_ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/load_more_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/top_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/xam"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/load_more_progressBar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/costum_progress_bar"
+                android:padding="3dp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/filter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_red_no_corner"
+            android:text="@string/loc_kq"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loading_ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_f_ln"
+        android:visibility="gone">
+        <include layout="@layout/layout_loadding_data" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnDisconnect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar_f_ln"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loi_ket_noi"
+                    android:textColor="@color/red_strong"
+                    android:textSize="15sp"/>
+                <Button
+                    android:id="@+id/btnTryAGain"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bg_red"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/margin_all"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/thu_lai"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_line_padding" />
+    </LinearLayout>
+
+</RelativeLayout>

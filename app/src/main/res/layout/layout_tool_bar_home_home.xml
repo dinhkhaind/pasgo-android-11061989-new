@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/tool_bar_ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:background="@color/bg_actionbar"
+            android:gravity="center"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            style="@style/Widget.AppCompat.Toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/main_actionbar_margin_right"
+                    android:gravity="center_horizontal">
+                    <LinearLayout
+                        android:id="@+id/tinh_ln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/selector_bg_thong_bao">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vi_tri"
+                            android:textSize="@dimen/home_toolbar_vi_tri_tv"
+                            android:textColor="@color/gray_1"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tinh_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="3dp"
+                                android:text="....."
+                                android:textSize="@dimen/tool_bar_reserver_title_size"
+                                android:textColor="@color/white"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="9dp"
+                                android:src="@drawable/mui_ten_xuong"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlthong_bao"
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_bg_thong_bao">
+
+                    <ImageView
+                        android:id="@+id/im_thong_bao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/home_home_message_margin_top"
+                        android:layout_toStartOf="@+id/circle"
+                        android:src="@drawable/thong_bao_home" />
+
+                    <RelativeLayout
+                        android:id="@+id/circle"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="@dimen/home_home_message_margin_top"
+                        android:background="@drawable/oval"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="10"
+                            android:textColor="@color/bg_actionbar"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/toolbar_progress_bar"
+                        android:layout_width="@dimen/tool_bar_progress_loading_w_h"
+                        android:layout_height="@dimen/tool_bar_progress_loading_w_h"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:indeterminateTint="@color/white"
+                        android:indeterminateTintMode="src_atop"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/error_connect_network_layout" />
+    </LinearLayout>
+</LinearLayout>
