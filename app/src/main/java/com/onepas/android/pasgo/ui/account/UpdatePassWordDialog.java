@@ -74,11 +74,11 @@ public class UpdatePassWordDialog extends Activity implements OnClickListener {
     private void actionUpdatePassWord()
     {
         if(StringUtils.isEmpty(mEdtPassword.getText().toString().trim())||StringUtils.isEmpty(mEdtPasswordAgain.getText().toString().trim()))
-            ToastUtils.showToast(UpdatePassWordDialog.this, R.string.thieu_thong_tin);
+            ToastUtils.showToastWaring(UpdatePassWordDialog.this, R.string.thieu_thong_tin);
         else if(mEdtPassword.getText().toString().trim().length()<6)
-            ToastUtils.showToast(UpdatePassWordDialog.this,R.string.password_leng);
+            ToastUtils.showToastWaring(UpdatePassWordDialog.this,R.string.password_leng);
         else if(!mEdtPassword.getText().toString().trim().equals(mEdtPasswordAgain.getText().toString().trim()))
-            ToastUtils.showToast(UpdatePassWordDialog.this,R.string.password_khong_trung_nhau);
+            ToastUtils.showToastWaring(UpdatePassWordDialog.this,R.string.password_khong_trung_nhau);
         else
         {
             updatePassword();

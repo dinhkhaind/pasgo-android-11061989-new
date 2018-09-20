@@ -420,7 +420,7 @@ public class FragmentChatActivity extends BaseFragment implements MessagesListAd
             String phone = mTvPhone.getText().toString().trim();
             String email = mTvEmail.getText().toString().trim();
             if (!StringUtils.isEmpty(mTvEmail.getText().toString().trim()) && !StringUtils.checkEmail(mTvEmail.getText().toString().trim())) {
-                ToastUtils.showToast(getActivity(), R.string.email_kott);
+                ToastUtils.showToastWaring(getActivity(), R.string.email_kott);
                 return;
             }
             JSONObject obj = new JSONObject();
@@ -446,7 +446,7 @@ public class FragmentChatActivity extends BaseFragment implements MessagesListAd
                                     Pasgo.getInstance().prefs.putChatUpdateInfo(true);
                                     mLnChatInfo.setVisibility(View.GONE);
                                 } else {
-                                    ToastUtils.showToast(getActivity(), message);
+                                    ToastUtils.showToastWaring(getActivity(), message);
                                 }
                             }
                         });

@@ -511,7 +511,7 @@ public class ReservedHistoryFragment extends BaseFragment {
 						&& grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 					callClick();
 				} else {
-					ToastUtils.showToast(mActivity, "Permission was denied");
+					ToastUtils.showToastWaring(mActivity, "Permission was denied");
 				}
 				return;
 			}

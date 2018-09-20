@@ -1722,7 +1722,7 @@ public class FragmentNearYou extends BaseFragment implements View.OnClickListene
         if (Pasgo.getInstance().prefs.getLatLocationRecent() == null
                 || "".equals(Pasgo.getInstance().prefs
                 .getLatLocationRecent())) {
-            ToastUtils.showToast(
+            ToastUtils.showToastWaring(
                     mActivity,
                     getResources().getString(
                             R.string.title_not_get_current_location));

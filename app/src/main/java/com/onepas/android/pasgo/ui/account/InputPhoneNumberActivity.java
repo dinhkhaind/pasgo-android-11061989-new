@@ -235,17 +235,17 @@ public class InputPhoneNumberActivity extends BaseAppCompatActivity implements
         String phone = mEdtPhoneNumber.getText().toString().trim();
         if(StringUtils.isEmpty(mNationCode))
         {
-            ToastUtils.showToast(mContext,R.string.plz_input_language);
+            ToastUtils.showToastWaring(mContext,R.string.plz_input_language);
             return;
         }
         if(StringUtils.isEmpty(phone))
         {
-            ToastUtils.showToast(mContext,R.string.plz_input_phone_number);
+            ToastUtils.showToastWaring(mContext,R.string.plz_input_phone_number);
             return;
         }
         if(phone.length()<9)
         {
-            ToastUtils.showToast(mContext,R.string.plz_input_phone_number_format);
+            ToastUtils.showToastWaring(mContext,R.string.plz_input_phone_number_format);
             return;
         }
 
@@ -382,13 +382,13 @@ public class InputPhoneNumberActivity extends BaseAppCompatActivity implements
             } catch (Exception e) {
                 e.printStackTrace();
                 closeProgressDialog();
-                ToastUtils.showToast(mContext,
+                ToastUtils.showToastError(mContext,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(mContext,
+            ToastUtils.showToastError(mContext,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -435,13 +435,13 @@ public class InputPhoneNumberActivity extends BaseAppCompatActivity implements
             } catch (Exception e) {
                 e.printStackTrace();
                 closeProgressDialog();
-                ToastUtils.showToast(mContext,
+                ToastUtils.showToastError(mContext,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(mContext,
+            ToastUtils.showToastWaring(mContext,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }

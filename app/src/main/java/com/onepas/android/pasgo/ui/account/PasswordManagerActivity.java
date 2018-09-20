@@ -204,7 +204,7 @@ public class PasswordManagerActivity extends BaseAppCompatActivity implements Vi
                     @Override
                     public void onResponse(JSONObject response) {
                         Utils.Log(TAG, "response" + response.toString());
-                        ToastUtils.showToast(mContext, getString(R.string.update_password_successfully));
+                        ToastUtils.showToastSuccess(mContext, getString(R.string.update_password_successfully));
                         finishToRightToLeft();
                         dismissDialog();
                     }
@@ -224,23 +224,23 @@ public class PasswordManagerActivity extends BaseAppCompatActivity implements Vi
 
     private void actionUpdatePassWord() {
         if (StringUtils.isEmpty(mEdtPasswordOld.getText().toString().trim())) {
-            ToastUtils.showToast(mContext, R.string.plz_input_password_old);
+            ToastUtils.showToastWaring(mContext, R.string.plz_input_password_old);
             return;
         }
         if (StringUtils.isEmpty(mEdtPasswordNew.getText().toString().trim())) {
-            ToastUtils.showToast(mContext, R.string.plz_input_password_new);
+            ToastUtils.showToastWaring(mContext, R.string.plz_input_password_new);
             return;
         }
         if (mEdtPasswordNew.getText().toString().trim().length() < 6) {
-            ToastUtils.showToast(mContext, R.string.password_leng);
+            ToastUtils.showToastWaring(mContext, R.string.password_leng);
             return;
         }
         if (StringUtils.isEmpty(mEdtPasswordAgain.getText().toString().trim())) {
-            ToastUtils.showToast(mContext, R.string.plz_input_password_new_again);
+            ToastUtils.showToastWaring(mContext, R.string.plz_input_password_new_again);
             return;
         }
         if (!mEdtPasswordNew.getText().toString().trim().equals(mEdtPasswordAgain.getText().toString().trim())) {
-            ToastUtils.showToast(mContext, R.string.password_khong_trung_nhau);
+            ToastUtils.showToastWaring(mContext, R.string.password_khong_trung_nhau);
             return;
         }
         updatePassword();

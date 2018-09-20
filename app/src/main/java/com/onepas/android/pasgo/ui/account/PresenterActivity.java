@@ -191,7 +191,7 @@ public class PresenterActivity extends BaseAppCompatActivity implements View.OnC
 
     private void actionUpdate() {
         if (StringUtils.isEmpty(mEdtPresenter.getText().toString().trim()))
-            ToastUtils.showToast(mContext, R.string.plz_enter_presenter);
+            ToastUtils.showToastWaring(mContext, R.string.plz_enter_presenter);
         else {
             updatePassword();
         }
@@ -216,7 +216,7 @@ public class PresenterActivity extends BaseAppCompatActivity implements View.OnC
                         int maLoi = ParserUtils.getIntValueResponse(response, "MaLoi");
                         if(maLoi == Constants.KEY_SUCCESS_RESPONSE) {
                             gotoMain();
-                            ToastUtils.showToast(mContext,getString(R.string.update_presenter_successful));
+                            ToastUtils.showToastSuccess(mContext,getString(R.string.update_presenter_successful));
                         }
                         else if(maLoi == Constants.KEY_PRESENTER_CODE_INVAIL)
                         {

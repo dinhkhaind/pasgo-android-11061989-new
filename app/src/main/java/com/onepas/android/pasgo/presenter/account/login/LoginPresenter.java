@@ -18,7 +18,7 @@ import com.onepas.android.pasgo.utils.WebServiceUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> implements LoginMvpPresenter<V> {
+public class LoginPresenter<V extends ILoginView> extends BasePresenter<V> implements ILoginPresenter<V> {
     private Context context;
     public LoginPresenter() {
         this.context = Pasgo.getInstance();
@@ -26,26 +26,29 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
 
     @Override
     public void onServerLoginClick(String maQuocGia, String sdt, String matKhau) {
-        if(StringUtils.isEmpty(maQuocGia))
+        LoginModel loginModel = new LoginModel(sdt,matKhau,maQuocGia);
+        int status = loginModel.isValidData();
+        String msg ="";
+        if(status>0)
         {
-            ToastUtils.showToast(context, R.string.plz_input_language);
+            switch (status){
+                case 1:
+                    msg = Pasgo.getInstance().getString(R.string.plz_input_language);
+                    break;
+                case 2:
+                    msg = Pasgo.getInstance().getString(R.string.plz_input_phone_number);
+                    break;
+                case 3:
+                    msg = Pasgo.getInstance().getString(R.string.plz_input_phone_number_format);
+                    break;
+                case 4:
+                    msg = Pasgo.getInstance().getString(R.string.plz_input_password);
+                    break;
+            }
+            getMvpView().loginWarning(msg);
             return;
         }
-        if(StringUtils.isEmpty(sdt))
-        {
-            ToastUtils.showToast(context,R.string.plz_input_phone_number);
-            return;
-        }
-        if(sdt.length()<9)
-        {
-            ToastUtils.showToast(context,R.string.plz_input_phone_number_format);
-            return;
-        }
-        if(StringUtils.isEmpty(matKhau))
-        {
-            ToastUtils.showToast(context, R.string.plz_input_password);
-            return;
-        }
+
         String url = WebServiceUtils
                 .URL_LOGIN(Pasgo.getInstance().token);
         JSONObject jsonParams = new JSONObject();
@@ -93,7 +96,7 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
                                 pasWayPref.putIsUpdatePassword(true);
                                 pasWayPref.putIsUpdatePasswordActivity(false);
                                 Pasgo.getInstance().isUpdatePassWord = true;
-                                getMvpView().loginSuccess();
+                                getMvpView().loginSuccess("");
                                 getMvpView().hiddenDialog();
 
                             } catch (JSONException e) {
@@ -103,21 +106,21 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
 
                         @Override
                         public void onError(int maloi) {
-                            getMvpView().loginError();
+                            getMvpView().loginError("");
                             getMvpView().hiddenDialog();
                         }
 
                     }, new Pasgo.PWErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            getMvpView().loginError();
+                            getMvpView().loginError("");
                             getMvpView().hiddenDialog();
                         }
                     });
         }else
         {
-            getMvpView().loginError();
-            ToastUtils.showToast(context,
+            getMvpView().loginError("");
+            ToastUtils.showToastError(context,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -171,13 +174,13 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
             } catch (Exception e) {
                 e.printStackTrace();
                 getMvpView().hiddenDialog();
-                ToastUtils.showToast(context,
+                ToastUtils.showToastError(context,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             getMvpView().hiddenDialog();
-            ToastUtils.showToast(context,
+            ToastUtils.showToastError(context,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -219,13 +222,13 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V> imp
             } catch (Exception e) {
                 e.printStackTrace();
                 getMvpView().hiddenDialog();
-                ToastUtils.showToast(context,
+                ToastUtils.showToastError(context,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             getMvpView().hiddenDialog();
-            ToastUtils.showToast(context,
+            ToastUtils.showToastError(context,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }

@@ -11,6 +11,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Editable;
 import android.text.SpannableString;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.text.style.UnderlineSpan;
 import android.view.KeyEvent;
@@ -30,7 +31,7 @@ import com.onepas.android.pasgo.Constants;
 import com.onepas.android.pasgo.Pasgo;
 import com.onepas.android.pasgo.R;
 import com.onepas.android.pasgo.prefs.PastaxiPref;
-import com.onepas.android.pasgo.presenter.account.login.LoginMvpView;
+import com.onepas.android.pasgo.presenter.account.login.ILoginView;
 import com.onepas.android.pasgo.presenter.account.login.LoginPresenter;
 import com.onepas.android.pasgo.ui.BaseAppCompatActivity;
 import com.onepas.android.pasgo.ui.home.HomeActivity;
@@ -38,7 +39,9 @@ import com.onepas.android.pasgo.utils.StringUtils;
 import com.onepas.android.pasgo.utils.ToastUtils;
 import com.onepas.android.pasgo.utils.Utils;
 
-public class LoginActivity extends BaseAppCompatActivity implements View.OnClickListener, LoginMvpView {
+import es.dmoral.toasty.Toasty;
+
+public class LoginActivity extends BaseAppCompatActivity implements View.OnClickListener, ILoginView {
 
     private static final String TAG ="LoginActivity";
     private TextView mTvForgorPassword;
@@ -58,7 +61,7 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
     private boolean mIsTrialRegisterActivity=false;
     private TextView mTvDieuKhoan;
     private CheckBox mChkAccept;
-    private LoginPresenter<LoginMvpView> mLoginPresenter;
+    private LoginPresenter<ILoginView> mLoginPresenter;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,7 +124,7 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
         mTvDieuKhoan = (TextView) findViewById(R.id.tvDieuKhoan);
         Utils.setTextViewHtml(mTvDieuKhoan,getString(R.string.dieukhoan));
         mChkAccept = (CheckBox) findViewById(R.id.chkAccept);
-        mLoginPresenter = new LoginPresenter<LoginMvpView>();
+        mLoginPresenter = new LoginPresenter<ILoginView>();
         mLoginPresenter.onAttach(LoginActivity.this);
 
     }
@@ -445,7 +448,9 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
     }
 
     @Override
-    public void loginSuccess() {
+    public void loginSuccess(String msg) {
+        if(!TextUtils.isEmpty(msg))
+            ToastUtils.showToastSuccess(LoginActivity.this,msg);
         hideKeyboard();
         Intent intent =new Intent(LoginActivity.this, HomeActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -453,7 +458,17 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
         finishOurLeftInLeft();
     }
     @Override
-    public void loginError() {
+    public void loginError(String msg) {
+        if(!TextUtils.isEmpty(msg))
+            ToastUtils.showToastWaring(LoginActivity.this,msg);
+        hiddenDialog();
+
+    }
+
+    @Override
+    public void loginWarning(String msg) {
+        if(!TextUtils.isEmpty(msg))
+            ToastUtils.showToastWaring(LoginActivity.this,msg);
         hiddenDialog();
     }
 
@@ -484,12 +499,12 @@ public class LoginActivity extends BaseAppCompatActivity implements View.OnClick
         String phone = mEdtPhoneNumber.getText().toString().trim();
         if(StringUtils.isEmpty(phone))
         {
-            ToastUtils.showToast(LoginActivity.this,R.string.plz_input_phone_number);
+            ToastUtils.showToastWaring(LoginActivity.this,R.string.plz_input_phone_number);
             return;
         }
         if(phone.length()<9)
         {
-            ToastUtils.showToast(LoginActivity.this,R.string.plz_input_phone_number_format);
+            ToastUtils.showToastWaring(LoginActivity.this,R.string.plz_input_phone_number_format);
             return;
         }
         verifySdtKichHoat();

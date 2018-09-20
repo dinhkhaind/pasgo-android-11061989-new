@@ -693,7 +693,7 @@ public class XacNhanDatXeActivity extends BaseAppCompatActivity implements
 			Utils.Log(TAG,result.toString());
 			if (result == null) {
 				closeProgressDialog();
-				ToastUtils.showToast(mContext,
+				ToastUtils.showToastError(mContext,
 						R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
 			} else
 				addDatXe(result);
@@ -792,7 +792,7 @@ public class XacNhanDatXeActivity extends BaseAppCompatActivity implements
 					@Override
 					public void onErrorResponse(VolleyError error) {
 						closeProgressDialog();
-						ToastUtils.showToast(mContext,
+						ToastUtils.showToastError(mContext,
 								R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
 					}
 				});
@@ -1011,7 +1011,7 @@ public class XacNhanDatXeActivity extends BaseAppCompatActivity implements
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			ToastUtils.showToast(mContext,
+			ToastUtils.showToastError(mContext,
 					R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
 			Utils.setBackground(mBtnTiepTuc,
 					Utils.getDrawable(mContext, R.drawable.btn_gray));
@@ -1116,7 +1116,7 @@ public class XacNhanDatXeActivity extends BaseAppCompatActivity implements
 					@Override
 					public void onErrorResponse(VolleyError error) {
 						closeProgressDialog();
-						ToastUtils.showToast(mContext,
+						ToastUtils.showToastError(mContext,
 								R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
 					}
 				});

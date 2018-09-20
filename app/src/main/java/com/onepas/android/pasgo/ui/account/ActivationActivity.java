@@ -205,7 +205,7 @@ public class ActivationActivity extends BaseAppCompatActivity implements OnClick
 	private void kichHoat() {
 		String maKichHoat = mEdtCode.getText().toString();
 		if (maKichHoat.equals("")) {
-			ToastUtils.showToast(mContext, getString(R.string.thieu_thong_tin));
+			ToastUtils.showToastWaring(mContext, getString(R.string.thieu_thong_tin));
 		} else {
 				kichHoatInfo(maKichHoat);
 		}
@@ -245,13 +245,13 @@ public class ActivationActivity extends BaseAppCompatActivity implements OnClick
             } catch (Exception e) {
                 e.printStackTrace();
                 dismissDialog();
-                ToastUtils.showToast(mContext,
+                ToastUtils.showToastError(mContext,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(mContext,
+            ToastUtils.showToastError(mContext,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -339,7 +339,7 @@ public class ActivationActivity extends BaseAppCompatActivity implements OnClick
         }else
         {
             dismissDialog();
-            ToastUtils.showToast(mContext,
+            ToastUtils.showToastError(mContext,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
 	}

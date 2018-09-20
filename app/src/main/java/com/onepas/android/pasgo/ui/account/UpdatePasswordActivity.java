@@ -176,11 +176,11 @@ public class UpdatePasswordActivity extends BaseAppCompatActivity implements Vie
 
     private void actionUpdatePassWord() {
         if (StringUtils.isEmpty(mEdtPassword.getText().toString().trim()) || StringUtils.isEmpty(mEdtPasswordAgain.getText().toString().trim()))
-            ToastUtils.showToast(mContext, R.string.thieu_thong_tin);
+            ToastUtils.showToastWaring(mContext, R.string.thieu_thong_tin);
         else if (mEdtPassword.getText().toString().trim().length() < 6)
-            ToastUtils.showToast(mContext, R.string.password_leng);
+            ToastUtils.showToastWaring(mContext, R.string.password_leng);
         else if (!mEdtPassword.getText().toString().trim().equals(mEdtPasswordAgain.getText().toString().trim()))
-            ToastUtils.showToast(mContext, R.string.password_khong_trung_nhau);
+            ToastUtils.showToastWaring(mContext, R.string.password_khong_trung_nhau);
         else {
             updatePassword();
         }
@@ -235,7 +235,7 @@ public class UpdatePasswordActivity extends BaseAppCompatActivity implements Vie
         else
         {
             dismissDialog();
-            ToastUtils.showToast(mContext,
+            ToastUtils.showToastError(mContext,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }

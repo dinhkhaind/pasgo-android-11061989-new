@@ -355,12 +355,12 @@ public class LoginAgainActivity extends BaseAppCompatActivity implements View.On
                 String phone = mEdtPhoneNumber.getText().toString().trim();
                 if(StringUtils.isEmpty(phone))
                 {
-                    ToastUtils.showToast(LoginAgainActivity.this,R.string.plz_input_phone_number);
+                    ToastUtils.showToastWaring(LoginAgainActivity.this,R.string.plz_input_phone_number);
                     return;
                 }
                 if(phone.length()<9)
                 {
-                    ToastUtils.showToast(LoginAgainActivity.this,R.string.plz_input_phone_number_format);
+                    ToastUtils.showToastWaring(LoginAgainActivity.this,R.string.plz_input_phone_number_format);
                     return;
                 }
                 verifySdtKichHoat();
@@ -392,22 +392,22 @@ public class LoginAgainActivity extends BaseAppCompatActivity implements View.On
         String phone = mEdtPhoneNumber.getText().toString().trim();
         if(StringUtils.isEmpty(mNationCode))
         {
-            ToastUtils.showToast(LoginAgainActivity.this, R.string.plz_input_language);
+            ToastUtils.showToastWaring(LoginAgainActivity.this, R.string.plz_input_language);
             return;
         }
         if(StringUtils.isEmpty(phone))
         {
-            ToastUtils.showToast(LoginAgainActivity.this,R.string.plz_input_phone_number);
+            ToastUtils.showToastWaring(LoginAgainActivity.this,R.string.plz_input_phone_number);
             return;
         }
         if(phone.length()<9)
         {
-            ToastUtils.showToast(LoginAgainActivity.this,R.string.plz_input_phone_number_format);
+            ToastUtils.showToastWaring(LoginAgainActivity.this,R.string.plz_input_phone_number_format);
             return;
         }
         if(StringUtils.isEmpty(mEdtPassWord.getText().toString().trim()))
         {
-            ToastUtils.showToast(LoginAgainActivity.this, R.string.plz_input_password);
+            ToastUtils.showToastWaring(LoginAgainActivity.this, R.string.plz_input_password);
             return;
         }
         login();
@@ -495,13 +495,13 @@ public class LoginAgainActivity extends BaseAppCompatActivity implements View.On
             } catch (Exception e) {
                 e.printStackTrace();
                 closeProgressDialog();
-                ToastUtils.showToast(LoginAgainActivity.this,
+                ToastUtils.showToastError(LoginAgainActivity.this,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(LoginAgainActivity.this,
+            ToastUtils.showToastError(LoginAgainActivity.this,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -567,13 +567,13 @@ public class LoginAgainActivity extends BaseAppCompatActivity implements View.On
             } catch (Exception e) {
                 e.printStackTrace();
                 closeProgressDialog();
-                ToastUtils.showToast(LoginAgainActivity.this,
+                ToastUtils.showToastError(LoginAgainActivity.this,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(LoginAgainActivity.this,
+            ToastUtils.showToastError(LoginAgainActivity.this,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }
@@ -646,7 +646,7 @@ public class LoginAgainActivity extends BaseAppCompatActivity implements View.On
         }else
         {
             closeProgressDialog();
-            ToastUtils.showToast(LoginAgainActivity.this,
+            ToastUtils.showToastError(LoginAgainActivity.this,
                     R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
         }
     }

@@ -1414,7 +1414,7 @@ public class DetailActivity extends BaseAppCompatActivity implements
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     fetchCallData();
                 } else {
-                    ToastUtils.showToast(mContext,"Permission was denied");
+                    ToastUtils.showToastWaring(mContext,"Permission was denied");
                 }
                 return;
             }

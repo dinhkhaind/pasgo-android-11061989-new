@@ -479,7 +479,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
                 }
                 if (mIsDiemDon == false) {
                     if (txtSearchChange.equals("") || txtSearchChange == null) {
-                        ToastUtils.showToast(mContext,
+                        ToastUtils.showToastWaring(mContext,
                                 getString(R.string.key_search_empty));
                     } else {
                         nearbyFoursquare.execute();
@@ -506,7 +506,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
                 if (mIsDiemDon == false) {
                     // diem den
                     if (txtSearchChange.equals("") || txtSearchChange == null) {
-                        ToastUtils.showToast(mContext,
+                        ToastUtils.showToastWaring(mContext,
                                 getString(R.string.key_search_empty));
                     } else {
                         new GetPlaces(mContext, txtSearchChange, 0, mIsDiemDon, 0,
@@ -565,7 +565,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
         if (Pasgo.getInstance() == null
                 || Pasgo.getInstance().prefs == null
                 || Pasgo.getInstance().prefs.getLatLocationRecent() == null) {
-            ToastUtils.showToast(mContext, R.string.tb_xac_dinh_vi_tri);
+            ToastUtils.showToastWaring(mContext, R.string.tb_xac_dinh_vi_tri);
             return;
         }
         mLat = Double.parseDouble(Pasgo.getInstance().prefs
@@ -595,7 +595,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
                 }
             } else {
                 if (txtSearch.equals("") || txtSearch == null) {
-                    ToastUtils.showToast(mContext,
+                    ToastUtils.showToastWaring(mContext,
                             getString(R.string.key_search_empty));
                 } else {
                     searchByName(txtSearch, mIsDiemDon, KEY_SEARCH_FOURSQUARE);
@@ -614,7 +614,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
                 if (txtSearch.length() > 0) {
                     new getNearbyFoursquare(mContext, txtSearch, 0).execute();
                 } else {
-                    ToastUtils.showToast(mContext,
+                    ToastUtils.showToastWaring(mContext,
                             getString(R.string.key_search_empty));
                 }
             }
@@ -628,7 +628,7 @@ public class SearchActivity extends BaseAppCompatActivity implements
                     new GetPlaces(mContext, txtSearch, 0, mIsDiemDon,
                             searchText, false).execute();
                 } else {
-                    ToastUtils.showToast(mContext,
+                    ToastUtils.showToastWaring(mContext,
                             getString(R.string.key_search_empty));
                 }
             }

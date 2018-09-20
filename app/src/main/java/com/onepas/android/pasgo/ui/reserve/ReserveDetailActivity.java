@@ -340,7 +340,7 @@ public class ReserveDetailActivity extends BaseAppCompatActivity implements
                 mThoiGianDonXe, DatehepperUtil.yyyyMMddHHmmss);
 
         if (dateSelect + 60000 < (dateCurrent + 15 * 60000)) {
-            ToastUtils.showToast(mContext, R.string.tb_thoi_gian_checkIn);
+            ToastUtils.showToastWaring(mContext, R.string.tb_thoi_gian_checkIn);
             check = false;
         } else
             check = true;
@@ -928,7 +928,7 @@ public class ReserveDetailActivity extends BaseAppCompatActivity implements
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     fetchCallData();
                 } else {
-                    ToastUtils.showToast(mContext,"Permission was denied");
+                    ToastUtils.showToastWaring(mContext,"Permission was denied");
                 }
                 return;
             }

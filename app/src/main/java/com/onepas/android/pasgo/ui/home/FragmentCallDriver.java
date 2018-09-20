@@ -686,7 +686,7 @@ public class FragmentCallDriver extends BaseFragment implements View.OnClickList
         Long dateSelect = DatehepperUtil.convertDatetimeToLongDate(
                 mThoiGianDonXe, DatehepperUtil.yyyyMMddHHmmss);
         if (dateSelect + 60000 < dateCurrent && !mIsDatTruoc) {
-            ToastUtils.showToast(mActivity, R.string.tb_thoi_gian_dat_xe);
+            ToastUtils.showToastWaring(mActivity, R.string.tb_thoi_gian_dat_xe);
             check = false;
         } else if ((dateSelect < dateCurrent + (29 * 60000)) && mIsDatTruoc) {
             check = false;
@@ -731,7 +731,7 @@ public class FragmentCallDriver extends BaseFragment implements View.OnClickList
                         || StringUtils.isEmpty(mEndAddress)
 
                 ) || !mIsDatXe) {
-                    ToastUtils.showToast(mActivity, R.string.plz_nhap_diem_dau_cuoi);
+                    ToastUtils.showToastWaring(mActivity, R.string.plz_nhap_diem_dau_cuoi);
                     return;
                 }
                 if (mTvGoiNgayBayGio.getText().toString().equals(getString(R.string.dat_xe_goi_ngay_bay_gio)) || StringUtils.isEmpty(mThoiGianDonXe))
@@ -894,7 +894,7 @@ public class FragmentCallDriver extends BaseFragment implements View.OnClickList
             } catch (Exception e) {
                 e.printStackTrace();
                 dismissDialog();
-                ToastUtils.showToast(mActivity,
+                ToastUtils.showToastError(mActivity,
                         R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
             }
         }
@@ -908,7 +908,7 @@ public class FragmentCallDriver extends BaseFragment implements View.OnClickList
     private void datXe() {
         if (mStartLat == 0 || mStartLng == 0 || mEndLat == 0 || mEndLng == 0
                 ||StringUtils.isEmpty(mStartName)||StringUtils.isEmpty(mEndName)) {
-            ToastUtils.showToast(mActivity, R.string.plz_nhap_diem_dau_cuoi);
+            ToastUtils.showToastWaring(mActivity, R.string.plz_nhap_diem_dau_cuoi);
             return;
         }
         String maKhuyenMai =mTvKhuyenMai.getText().toString().equals(getString(R.string.dat_xe_ma_khuyen_mai))?"":mTvKhuyenMai.getText().toString();
@@ -1092,7 +1092,7 @@ public class FragmentCallDriver extends BaseFragment implements View.OnClickList
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     fetchCallData();
                 } else {
-                    ToastUtils.showToast(mActivity,"Permission was denied");
+                    ToastUtils.showToastWaring(mActivity,"Permission was denied");
                 }
                 return;
             }

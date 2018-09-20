@@ -553,7 +553,7 @@ public class UserInfoActivity extends BaseAppCompatActivity implements View.OnCl
         if (mRdoFeMale.isChecked())
             isGender = false;
         if (!StringUtils.isEmpty(mEdtEmail.getText().toString().trim()) && !StringUtils.checkEmail(mEdtEmail.getText().toString().trim())) {
-            ToastUtils.showToast(mContext, R.string.email_kott);
+            ToastUtils.showToastWaring(mContext, R.string.email_kott);
             return;
         }
         String birthDay = mTvBirthDay.getText().toString().trim();
@@ -567,7 +567,7 @@ public class UserInfoActivity extends BaseAppCompatActivity implements View.OnCl
                     int yearBirth = Integer.parseInt(dates[0]);
                     int yearCurrent = DatehepperUtil.getYearCurrent(mContext);
                     if (yearBirth >= yearCurrent || yearBirth + 120 < yearCurrent) {
-                        ToastUtils.showToast(mContext, R.string.birth_valid);
+                        ToastUtils.showToastWaring(mContext, R.string.birth_valid);
                         return;
                     }
                 } catch (NumberFormatException nfe) {
@@ -594,7 +594,7 @@ public class UserInfoActivity extends BaseAppCompatActivity implements View.OnCl
                         public void onResponse(JSONObject json) {
                             if (json != null) {
                                 Utils.Log(TAG, json.toString());
-                                ToastUtils.showToast(mContext, getString(R.string.update_user_successfully));
+                                ToastUtils.showToastWaring(mContext, getString(R.string.update_user_successfully));
                                 PastaxiPref pref = new PastaxiPref(mContext);
                                 Pasgo.getInstance().username = mEdtName.getText().toString().trim();
                                 pref.putUserName(Pasgo.getInstance().username);

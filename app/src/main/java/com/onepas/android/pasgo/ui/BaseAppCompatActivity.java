@@ -621,7 +621,7 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity
 					@Override
 					public void onErrorResponse(VolleyError error) {
 						closeProgressDialog();
-						ToastUtils.showToast(mContext,
+						ToastUtils.showToastError(mContext,
 								R.string.tb_khong_the_ket_noi_voi_voi_may_chu);
 					}
 				});

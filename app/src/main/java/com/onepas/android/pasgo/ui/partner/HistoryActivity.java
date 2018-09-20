@@ -108,7 +108,7 @@ public class HistoryActivity extends BaseAppCompatActivity {
 									gotoNoiDung(item);
 
 								} else {
-									ToastUtils.showToast(mContext,
+									ToastUtils.showToastWaring(mContext,
 											getString(R.string.het_han));
 								}
 

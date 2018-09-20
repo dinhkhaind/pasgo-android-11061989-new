@@ -481,12 +481,12 @@ public class Pasgo extends Application {
 								Utils.Log(TAG, objD.getString(Constants.KEY_INFO_RESPONSE));
 								break;
 							case Constants.KEY_CHECKIN_IS_EXISTS:
-								ToastUtils.showToast(getBaseContext(), getString(R.string.reserve_is_exists));
+								ToastUtils.showToastWaring(getBaseContext(), getString(R.string.reserve_is_exists));
 								listener.onError(iMaLoi);
 								break;
 							default:
 								listener.onError(iMaLoi);
-                                ToastUtils.showToast(getBaseContext(),objD.getString(Constants.KEY_INFO_RESPONSE));
+                                ToastUtils.showToastWaring(getBaseContext(),objD.getString(Constants.KEY_INFO_RESPONSE));
 								break;
 							}
 						} catch (JSONException e) {
@@ -500,7 +500,7 @@ public class Pasgo extends Application {
 						if (errorListener != null)
 							errorListener.onErrorResponse(error);
 						else {
-                            ToastUtils.showToast(getBaseContext(),getResources()
+                            ToastUtils.showToastError(getBaseContext(),getResources()
                                     .getString(
                                             R.string.connect_error_check_network));
 						}
@@ -566,7 +566,7 @@ public class Pasgo extends Application {
 								break;
 							default:
 								listener.onError(iMaLoi);
-                                ToastUtils.showToast(getBaseContext(),objD.getString(Constants.KEY_INFO_RESPONSE));
+                                ToastUtils.showToastWaring(getBaseContext(),objD.getString(Constants.KEY_INFO_RESPONSE));
 								break;
 							}
 						} catch (JSONException e) {
@@ -579,7 +579,7 @@ public class Pasgo extends Application {
 						if (errorListener != null)
 							errorListener.onErrorResponse(error);
 						else {
-                            ToastUtils.showToast(getBaseContext(),getResources()
+                            ToastUtils.showToastError(getBaseContext(),getResources()
                                     .getString(
 											R.string.connect_error_check_network));
 						}
@@ -615,7 +615,7 @@ public class Pasgo extends Application {
 						if (errorListener != null)
 							errorListener.onErrorResponse(error);
 						else {
-							ToastUtils.showToast(getBaseContext(),getResources()
+							ToastUtils.showToastError(getBaseContext(),getResources()
 									.getString(
 											R.string.connect_error_check_network));
 						}
@@ -640,7 +640,7 @@ public class Pasgo extends Application {
 				if (errorListener != null)
 					errorListener.onErrorResponse(error);
 				else {
-					ToastUtils.showToast(getBaseContext(),getResources()
+					ToastUtils.showToastError(getBaseContext(),getResources()
 							.getString(
 									R.string.connect_error_check_network));
 				}

@@ -143,7 +143,7 @@ public class DialogRate extends Activity implements OnClickListener {
 		case R.id.btnGui:
 
 			if (typeRate == 2) {
-				ToastUtils.showToast(getApplicationContext(),
+				ToastUtils.showToastWaring(getApplicationContext(),
 						getString(R.string.ban_chua_danh_gia));
 			} else {
 				guiDanhGia();
@@ -195,7 +195,7 @@ public class DialogRate extends Activity implements OnClickListener {
 						@Override
 						public void onResponse(JSONObject response) {
 							Utils.Log("", "response rate :" + response);
-							ToastUtils.showToast(getApplicationContext(),
+							ToastUtils.showToastSuccess(getApplicationContext(),
 									getString(R.string.danh_gia_thanh_cong));
 							finish();
 						}

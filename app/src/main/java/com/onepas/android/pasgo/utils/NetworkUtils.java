@@ -81,7 +81,7 @@ public final class NetworkUtils {
 		boolean isCheck = NetworkUtils.getInstance(context)
 				.isNetworkAvailable();
 		if (!isCheck)
-			ToastUtils.showToast(context,
+			ToastUtils.showToastError(context,
 					context.getString(R.string.connect_error_check_network));
 		return isCheck;
 	}

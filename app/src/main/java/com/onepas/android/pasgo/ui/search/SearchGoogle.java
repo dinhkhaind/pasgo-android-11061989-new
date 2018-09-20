@@ -217,7 +217,7 @@ public class SearchGoogle extends BaseAppCompatActivity implements
             {
                 // diem den
                 if (txtSearchChange.equals("") || txtSearchChange == null) {
-                    ToastUtils.showToast(mContext,
+                    ToastUtils.showToastWaring(mContext,
                             getString(R.string.key_search_empty));
                 } else {
                     new GetPlaces(mContext, txtSearchChange, 0, true).execute();
@@ -251,7 +251,7 @@ public class SearchGoogle extends BaseAppCompatActivity implements
                     // search text place google
                     new GetPlaces(mContext, txtSearch, 0, true).execute();
                 } else {
-                    ToastUtils.showToast(mContext,
+                    ToastUtils.showToastWaring(mContext,
                             getString(R.string.key_search_empty));
                 }
             }
